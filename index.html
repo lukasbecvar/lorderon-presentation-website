@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorderon</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="assets/font.css" rel="stylesheet">
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorderon - Game presentation">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <button class="mobile-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="sidebar">
+        <div class="sidebar-logo">L</div>
+        <ul>
+            <li><a href="#uvod" class="active">Úvod</a></li>
+            <li><a href="#predstaveni">Představení</a></li>
+            <li><a href="#start-game">Začátek hry</a></li>
+            <li><a href="#multilanguage">Podpora jazyků</a></li>
+            <li><a href="#characters">Postavy</a></li>
+            <li><a href="#dungeons">Dungeon systém</a></li>
+            <li><a href="#alchemy">Dračí alchymie</a></li>
+            <li><a href="#sash">Systém šerp</a></li>
+            <li><a href="#aura">Systém aury</a></li>
+            <li><a href="#talismans">Talismany</a></li>
+            <li><a href="#biologist">Biolog</a></li>
+            <li><a href="#pets">Mazlíčci</a></li>
+            <li><a href="#mounts">Mount systém</a></li>
+            <li><a href="#ward-boost">PvP schopnosti</a></li>
+            <li><a href="#offline-shop">Offline obchod</a></li>
+            <li><a href="#target-info">Target Info</a></li>
+            <li><a href="#wiki">Ingame Wikipedia</a></li>
+            <li><a href="#daily-reward">Denní odměny</a></li>
+            <li><a href="#events">Automatické eventy</a></li>
+            <li><a href="#qol">Quality of Life</a></li>
+            <li><a href="#itemshop">Itemshop</a></li>
+            <li><a href="#faq">Časté dotazy (FAQ)</a></li>
+            <li><a href="#footer">Závěr</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <header id="uvod" class="hero-section">
+            <div class="hero-content">
+                <h1>Lorderon</h1>
+                <div class="divider"></div>
+                <p class="hero-subtitle">Vstupte do světa, kde se legendy stávají skutečností.</p>
+                <a href="#predstaveni" class="cta-button">Zjistit víc</a>
+            </div>
+        </header>
+        <main>
+            <section id="predstaveni" class="presentation-section reveal">
+                <h2>Představení</h2>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <p>
+                            Svět Lorderonu dokáže být krutý a nelítostný, je to místo, kde přežijí jen ti nejsilnější a nejvytrvalejší bojovníci. Z tohoto důvodu je celá hra postavena tak, aby vám nedala nic zadarmo a vše jste si museli tvrdě vybojovat.
+                        </p>
+                        <p>
+                            Zkušenosti potřebné k postupu i míra získávání předmětů jsou pečlivě vybalancovány. Cesta vzhůru je plynulá, ale každý krok a každý dosažený úspěch představuje adekvátní odměnu za vaše snažení.
+                        </p>
+                        <p>
+                            Díky tomu získáte unikátní zážitek, kdy vaše tvrdá práce nese skutečné ovoce. Lorderon není monotónní rutinou, ale výzvou, která prověří vaše schopnosti a odmění vaši vytrvalost.
+                        </p>
+                    </div>
+                    <div class="section-image">
+                        <img src="assets/ninja.png" alt="Ninja Character" class="character-render">
+                    </div>
+                </div>
+            </section>
+
+            <section id="start-game" class="presentation-section reveal">
+                <h2>Začátek hry</h2>
+                <p>
+                    Vstup do světa Lorderonu je navržen tak, aby váš start byl plynulý a mohli jste se hned vrhnout do akce. Každý nový hrdina obdrží do začátku pečlivě vybraný startovní balíček.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Startovní výbava</h3>
+                        <p>
+                            Od prvního okamžiku budete vybaveni základní výzbrojí a zbraněmi vylepšenými na <strong>+3</strong>, což vám zajistí dostatečnou sílu a obranu pro první souboje s nestvůrami.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Věrný společník:</strong> Do začátku získáte startovního mazlíčka na <strong>7 dnů</strong>, který vám poskytne pomocné bonusy.</li>
+                            <li><strong>Rychlý přesun:</strong> Obdržíte také základního mounta (jezdecké zvíře), díky kterému se budete po mapách pohybovat mnohem rychleji.</li>
+                            <li><strong>Plná podpora:</strong> Startovní balíček obsahuje vše potřebné, abyste se mohli plně soustředit na objevování světa a plnění úkolů.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/start-preview.png" alt="Startovní výbava" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Obsah startovního balíčku</span>
+                </div>
+            </section>
+
+            <section id="multilanguage" class="presentation-section reveal">
+                <h2>Multijazyčná podpora</h2>
+                <p>
+                    Chceme vytvořit velkou a různorodou komunitu, proto je ve hře implementován pokročilý systém pro přepínání jazyků. Zároveň je u každé postavy viditelně zobrazen nastavený jazyk, což výrazně zjednodušuje komunikaci a interakci mezi hráči z různých koutů světa.
+                </p>
+                <div class="flags-container">
+                    <div class="flag-item"><img src="assets/lang-flags/cz.png" alt="Czech"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/en.png" alt="English"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/de.png" alt="German"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/pl.png" alt="Polish"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/tr.png" alt="Turkish"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/ro.png" alt="Romanian"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/es.png" alt="Spanish"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/it.png" alt="Italian"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/hu.png" alt="Hungarian"></div>
+                    <div class="flag-item"><img src="assets/lang-flags/pt.png" alt="Portuguese"></div>
+                </div>
+            </section>
+
+            <section id="characters" class="presentation-section reveal">
+                <h2>Postavy</h2>
+                <p>
+                    Ve světě Lorderonu je k dispozici celkem 5 unikátních postav. Každá postava (vyjma Lycana) nabízí na výběr ze dvou možných zaměření schopností, což umožňuje hráčům přizpůsobit herní styl svým preferencím.
+                </p>
+                <div class="character-grid">
+                    <!-- Warrior -->
+                    <div class="character-card">
+                        <div class="char-image">
+                            <img src="assets/characters/war.png" alt="Válečník">
+                        </div>
+                        <div class="char-info">
+                            <h3>Válečník</h3>
+                            <p>Válečníci hrají díky svým schopnostem, zbraním a těžké výstroji důležitou roli v boji tělo na tělo. Usilují o fyzickou sílu a vyrovnaný klid ducha. Mohou napáchat zničující škody dvouručními zbraněmi nebo elegantně odrážet útoky mečem a štítem.</p>
+                            <div class="specialization">
+                                <span>Na tělo</span>
+                                <span>Mentálně</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sura -->
+                    <div class="character-card">
+                        <div class="char-image">
+                            <img src="assets/characters/sura.png" alt="Sura">
+                        </div>
+                        <div class="char-info">
+                            <h3>Sura</h3>
+                            <p>Surové jsou bojovníci, kteří získali magické síly poté, co nechali ve své náruči vyklíčit sémě ďábla. Jsou schopni hbitě bojovat mečem zblízka nebo poškozovat soupeře magií na dálku, kterou neustále vylepšují.</p>
+                            <div class="specialization">
+                                <span>Magické zbraně</span>
+                                <span>Černá magie</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ninja -->
+                    <div class="character-card">
+                        <div class="char-image">
+                            <img src="assets/characters/ninja.png" alt="Ninja">
+                        </div>
+                        <div class="char-info">
+                            <h3>Ninja</h3>
+                            <p>Ninjové jsou profesionální vrazi, schopni zákeřně a bez hlesu zaútočit. Nosí pouze lehká brnění, která jim nebrání v rychlých a splývavých pohybech. Mistrovsky ovládají dýky i luk pro boj na dálku.</p>
+                            <div class="specialization">
+                                <span>Boj zblízka</span>
+                                <span>Boj na dálku</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shaman -->
+                    <div class="character-card">
+                        <div class="char-image">
+                            <img src="assets/characters/shaman.png" alt="Šaman">
+                        </div>
+                        <div class="char-info">
+                            <h3>Šaman</h3>
+                            <p>Šamani využívají v boji moudrost, kouzla a magii. Jejich mystické schopnosti prospívají nejen jim, ale i jejich spolubojovníkům. Mají možnost zesílit útoky nebo vyvolat mocná kouzla pro léčbu a podporu týmu.</p>
+                            <div class="specialization">
+                                <span>Dračí moc</span>
+                                <span>Léčení</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lycan -->
+                    <div class="character-card">
+                        <div class="char-image">
+                            <img src="assets/characters/lycan.png" alt="Lycan">
+                        </div>
+                        <div class="char-info">
+                            <h3>Lycan</h3>
+                            <p>Lykani jsou impozantní vlčí bytosti, které kdysi nákaza virem změnila v dravé bestie. Díky nespoutané energii a instinktům jsou nepřekonatelní v boji na blízko. (Dostupné pouze pro mužské pohlaví).</p>
+                            <div class="specialization">
+                                <span>Instinkt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dungeons" class="presentation-section reveal">
+                <h2>Dungeon Systém</h2>
+                <p>
+                    Lorderon přináší propracovaný dungeon systém, který vám poskytne veškeré potřebné informace přímo ve hře. Zapomeňte na neustálé hledání informací na wiki – vše důležité máte na dosah ruky.
+                </p>
+                <div class="section-flex dungeon-layout">
+                    <div class="section-text">
+                        <p>
+                            V přehledném rozhraní naleznete kompletní detaily o každé instanci: od typu dungeonu, přes potřebné bonusy a obrany, až po přesné časy a podmínky vstupu. Každý krok vaší výpravy je tak doprovázen maximální informovaností.
+                        </p>
+                        <p>
+                            Pro ty nejambicióznější z vás jsme implementovali <strong>Dungeon Ranking</strong>. Sledujte nejlepší časy, nejvyšší udělené poškození nebo počet úspěšných dokončení. Trumfněte ostatní hráče a zapište se do historie Lorderonu jako nepřekonatelní šampioni.
+                        </p>
+                    </div>
+                </div>
+                <div class="dungeon-gallery">
+                    <div class="dungeon-img-wrapper">
+                        <img src="assets/dungeon-info/dungeon-info.png" alt="Dungeon Info" class="dungeon-screenshot">
+                        <span class="img-caption">Detailní přehled dungeonu</span>
+                    </div>
+                    <div class="dungeon-img-wrapper">
+                        <img src="assets/dungeon-info/dungeon-ranking.png" alt="Dungeon Ranking" class="dungeon-screenshot">
+                        <span class="img-caption">Kompetitivní žebříček</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="alchemy" class="presentation-section reveal">
+                <h2>Alchymie Dračích kamenů</h2>
+                <p>
+                    Dračí alchymie je mocný systém navržený pro zkušené bojovníky, kteří chtějí posunout hranice síly své postavy. Tento systém umožňuje osadit postavu šesticí unikátních kamenů, z nichž každý nabízí specifické bonusy a elementární sílu.
+                </p>
+                <div class="section-flex alchemy-main">
+                    <div class="section-image">
+                        <img src="assets/dragon-soul-alchemy/dragon-soul-window.png" alt="Dragon Soul Alchemy Window" class="dungeon-screenshot">
+                    </div>
+                    <div class="section-text">
+                        <h3>Šest elementárních sil</h3>
+                        <div class="alchemy-stones-grid">
+                            <div class="stone-item"><strong>Diamant:</strong> Inteligence, Odolnost ledu, Poškození schopností.</div>
+                            <div class="stone-item"><strong>Rubín:</strong> Síla, Odolnost ohni, Hodnota útoku a Průměrná škoda.</div>
+                            <div class="stone-item"><strong>Nefrit:</strong> Max. MB, Odolnost větru, Max. ZB a Obnova ZB.</div>
+                            <div class="stone-item"><strong>Safír:</strong> Pohyblivost, Odolnost zemi, Silný/Obrana proti postavám.</div>
+                            <div class="stone-item"><strong>Granát:</strong> Max. ZB, Odolnost blesku, Max. MB a Obnova MB.</div>
+                            <div class="stone-item"><strong>Onyx:</strong> Vitální síla, Odolnost temnotě, Odvrácení a Odolnost kritice.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="refinement-info">
+                    <h3>Zušlechťování a zdokonalování</h3>
+                    <p>Každý kámen lze vylepšovat ve třech různých směrech, což zvyšuje jeho efektivitu a počet bonusů:</p>
+                    <div class="refine-grid">
+                        <div class="refine-card">
+                            <img src="assets/dragon-soul-alchemy/class-refine.png" alt="Class Refine" class="dungeon-screenshot">
+                            <h4>Stupeň & Čirost</h4>
+                            <p>Zvyšováním stupně (od Surového po Mýtický) získává kámen více bonusů. Čirost pak určuje samotnou hodnotu těchto bonusů.</p>
+                        </div>
+                        <div class="refine-card">
+                            <img src="assets/dragon-soul-alchemy/level-refine.png" alt="Level Refine" class="dungeon-screenshot">
+                            <h4>Úroveň (+0 až +6)</h4>
+                            <p>Pomocí Dračích fazolí můžete zvyšovat úroveň kamene, čímž dále posilujete jeho základní i doplňkové vlastnosti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alchemy-advanced">
+                    <div class="section-flex">
+                        <div class="section-text">
+                            <h3>Točení bonusů (Dračí plamen)</h3>
+                            <p>
+                                Pokud nejste spokojeni s doplňkovými bonusy u svých Legendárních nebo Mýtických kamenů, můžete využít <strong>Dračí plamen</strong>. Tento vzácný předmět vám umožní přetočit bonusy kamene a pokusit se tak získat ideální kombinaci (např. Průměrnou škodu a Hodnotu útoku u Rubínu).
+                            </p>
+                            <div class="set-bonus-box">
+                                <h3>Setový Bonus</h3>
+                                <p>
+                                    Při osazení a aktivaci kompletního setu šesti dračích kamenů <strong>stejného stupně</strong> získává vaše postava speciální bonus setu. Tento efekt výrazně navyšuje základní atributy všech osazených kamenů, což z mýtického setu činí jeden z nejsilnějších prvků výbavy ve hře.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-image">
+                            <img src="assets/dragon-soul-alchemy/bonus-switcher.png" alt="Bonus Switcher" class="dungeon-screenshot">
+                            <span class="img-caption">Rozhraní pro změnu bonusů</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p><strong>Důležité:</strong> Dračí alchymie se aktivuje v setech (Nebesa/Země). Aktivací začíná ubíhat čas kamene, který lze doplňovat pomocí Elixírů času vyrobených u Alchymisty.</p>
+                </div>
+            </section>
+
+            <section id="sash" class="presentation-section reveal">
+                <h2>Systém šerp</h2>
+                <p>
+                    Šerpy jsou prestižní součástí výbavy, která nejen skvěle vypadá, ale především umožňuje postavě absorbovat část síly jiné zbraně či brnění. O vylepšování a úpravu šerp se ve světě Lorderonu stará mistr Theowahdan.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Absorpce bonusů</h3>
+                        <p>
+                            Unikátní vlastností šerp je jejich schopnost absorbovat atributy z jiného předmětu. Kvalita šerpy určuje, kolik procent z původní síly předmětu získáte (až 25 % u uživatelských šerp). Tímto způsobem můžete na šerpu přenést poškození z mocných zbraní nebo obranu z brnění.
+                        </p>
+                    </div>
+                    <div class="section-image">
+                        <img src="assets/sash-system/sash-absorbation.png" alt="Sash Absorption" class="dungeon-screenshot">
+                        <span class="img-caption">Proces absorpce bonusů</span>
+                    </div>
+                </div>
+                <div class="sash-mechanics">
+                    <div class="section-flex reverse">
+                        <div class="section-image">
+                            <img src="assets/sash-system/sash-combination.png" alt="Sash Combination" class="dungeon-screenshot">
+                            <span class="img-caption">Kombinování a vylepšování</span>
+                        </div>
+                        <div class="section-text">
+                            <h3>Kombinování a stupně kvality</h3>
+                            <p>Šerpy existují ve čtyřech stupních kvality: <strong>Obyčejná, Jemná, Noblesní a Uživatelská</strong>. Spojením dvou šerp stejného stupně u Theowahdana můžete získat šerpu vyšší kvality, čímž zvýšíte její absorpční poměr.</p>
+                            <ul class="sash-list">
+                                <li><strong>Obyčejné:</strong> Absorpce až 1 %</li>
+                                <li><strong>Jemné:</strong> Absorpce až 5 %</li>
+                                <li><strong>Noblesní:</strong> Absorpce až 10 %</li>
+                                <li><strong>Uživatelské:</strong> Absorpce 11% až 25% (lze dále vylepšovat)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sash-gallery-container">
+                    <div class="sash-model-grid">
+                        <div class="sash-group">
+                            <h4>Šerpa Lorda</h4>
+                            <div class="sash-renders">
+                                <img src="assets/sash-system/sash-models/IG-Lord_Sash_(basic).png" title="Obyčejná">
+                                <img src="assets/sash-system/sash-models/IG-Lord_Sash_(fine).png" title="Jemná">
+                                <img src="assets/sash-system/sash-models/IG-Lord_Sash_(noble).png" title="Noblesní">
+                                <img src="assets/sash-system/sash-models/IG-Lord_Sash_(custom).png" title="Uživatelská">
+                            </div>
+                        </div>
+                        <div class="sash-group">
+                            <h4>Šerpa Mistra</h4>
+                            <div class="sash-renders">
+                                <img src="assets/sash-system/sash-models/IG-Master_Sash_(basic).png" title="Obyčejná">
+                                <img src="assets/sash-system/sash-models/IG-Master_Sash_(fine).png" title="Jemná">
+                                <img src="assets/sash-system/sash-models/IG-Master_Sash_(noble).png" title="Noblesní">
+                                <img src="assets/sash-system/sash-models/IG-Master_Sash_(custom).png" title="Uživatelská">
+                            </div>
+                        </div>
+                        <div class="sash-group">
+                            <h4>Královská Šerpa</h4>
+                            <div class="sash-renders">
+                                <img src="assets/sash-system/sash-models/IG-Royal_Sash_(basic).png" title="Obyčejná">
+                                <img src="assets/sash-system/sash-models/IG-Royal_Sash_(fine).png" title="Jemná">
+                                <img src="assets/sash-system/sash-models/IG-Royal_Sash_(noble).png" title="Noblesní">
+                                <img src="assets/sash-system/sash-models/IG-Royal_Sash_(custom).png" title="Uživatelská">
+                            </div>
+                        </div>
+                        <div class="sash-group">
+                            <h4>Šerpa Vládce</h4>
+                            <div class="sash-renders">
+                                <img src="assets/sash-system/sash-models/IG-Sovereign_Sash_(basic).png" title="Obyčejná">
+                                <img src="assets/sash-system/sash-models/IG-Sovereign_Sash_(fine).png" title="Jemná">
+                                <img src="assets/sash-system/sash-models/IG-Sovereign_Sash_(noble).png" title="Noblesní">
+                                <img src="assets/sash-system/sash-models/IG-Sovereign_Sash_(custom).png" title="Uživatelská">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="aura" class="presentation-section reveal">
+                <h2>Systém aury</h2>
+                <p>
+                    Kostým s aurou funguje na obdobném principu jako Systém šerp, ale s unikátními vlastnostmi. Tento kostým absorbuje bonusy z náramků, náušnic, náhrdelníků a štítů.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Absorpce bonusů</h3>
+                        <p>
+                            K přenosu bonusů dochází u mistra Theowahdana. Předmět, ze kterého bonusy absorbujete, je při procesu zničen. Procento absorpce závisí na aktuální úrovni a kvalitě vaší aury.
+                        </p>
+                        <p>
+                            Zatímco běžné bonusy jsou kráceny absorpčním poměrem, speciální bonusy jako <strong>Obrana proti bezvědomí</strong> nebo <strong>zpomalení</strong> jsou absorbovány vždy v plné výši.
+                        </p>
+                        <div class="set-bonus-box">
+                            <p><strong>Tip:</strong> Při absorpci se hodnoty zaokrouhlují dolů, pokud je však výsledná hodnota menší než 1, zaokrouhlí se nahoru na 1.</p>
+                        </div>
+                    </div>
+                    <div class="section-image">
+                        <img src="assets/aura-system/aura-bonus-absorbation.png" alt="Aura Absorption" class="dungeon-screenshot">
+                        <span class="img-caption">Rozhraní absorpce aury</span>
+                    </div>
+                </div>
+                <div class="refinement-info">
+                    <h3>Vylepšování a evoluce</h3>
+                    <p>
+                        Kostým s aurou má celkem <strong>250 úrovní</strong>. Každá úroveň zvyšuje absorpční poměr o 0,1 %, až do maximálních <strong>25 %</strong>. K vylepšování se používají speciální Ledové a Ohnivé runy, které dodávají auře potřebné zkušenosti (BZK).
+                    </p>
+                    <div class="runes-info">
+                        <div class="rune-item">
+                            <strong>Ledová runa s aurou:</strong> Základní runa, přidává 0,1 % BZK.
+                        </div>
+                        <div class="rune-item">
+                            <strong>Ohnivá runa s aurou:</strong> Existuje v několika variantách (10, 50, 100, 250, 500) podle množství dodávaných zkušeností. Např. varianta (10) přidá 1 % BZK.
+                        </div>
+                    </div>
+                    <div class="aura-evolution-grid">
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Ordinary_Aura_Outfit.gif" alt="Běžná aura">
+                            <h4>Běžná</h4>
+                            <span>Úroveň 1-49</span>
+                        </div>
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Simple_Aura_Outfit.gif" alt="Prostá aura">
+                            <h4>Prostá</h4>
+                            <span>Úroveň 50-99</span>
+                        </div>
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Noble_Aura_Outfit.gif" alt="Vznešená aura">
+                            <h4>Vznešená</h4>
+                            <span>Úroveň 100-149</span>
+                        </div>
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Magnificent_Aura_Outfit.gif" alt="Zářivá aura">
+                            <h4>Zářivá</h4>
+                            <span>Úroveň 150-199</span>
+                        </div>
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Sparkling_Aura_Outfit.gif" alt="Úžasná aura">
+                            <h4>Úžasná</h4>
+                            <span>Úroveň 200-249</span>
+                        </div>
+                        <div class="aura-evo-card">
+                            <img src="assets/aura-system/IG-Radiant_Aura_Outfit.gif" alt="Zářící aura">
+                            <h4>Zářící</h4>
+                            <span>Úroveň 250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p><strong>Upozornění:</strong> Při každé padesáté úrovni (49, 99, 149...) je nutné provést evoluci u Theowahdana, aby se odemkl další stupeň aury a změnil se její vizuální efekt.</p>
+                </div>
+            </section>
+
+            <section id="talismans" class="presentation-section reveal">
+                <h2>Systém talismanů</h2>
+                <p>
+                    Talisman je unikátní součást výbavy, která se umísťuje do speciálního slotu v inventáři (nalevo od opasků). Tyto mocné předměty poskytují postavě elementární sílu a další specifické bonusy nezbytné pro zdolávání nejnáročnějších výzev.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Vlastnosti a bonusy</h3>
+                        <p>
+                            Každý talisman obsahuje svůj specifický elementární bonus, jehož síla se zvyšuje s úrovní talismanu. Například <strong>Talisman větru +57</strong> poskytuje masivní bonus <strong>+57 % Síly větru</strong>.
+                        </p>
+                        <p>
+                            Do talismanů lze navíc přidat vedlejší bonusy, které mohou účinkovat i na nestvůry, pro které není daný talisman primárně určen.
+                        </p>
+                    </div>
+                </div>
+                <div class="talisman-list-container">
+                    <h3>Seznam elementárních talismanů</h3>
+                    <div class="talisman-grid">
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Fire_Talisman.png" alt="Talisman ohně">
+                            <div class="talisman-info">
+                                <h4>Talisman ohně</h4>
+                                <p>Poskytuje <strong>Sílu ohně</strong> (až 200 %). Účinný v Ohnivé zemi a proti ohnivým bytostem.</p>
+                            </div>
+                        </div>
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Ice_Talisman.png" alt="Talisman ledu">
+                            <div class="talisman-info">
+                                <h4>Talisman ledu</h4>
+                                <p>Poskytuje <strong>Sílu ledu</strong> (až 200 %). Nezbytný pro výpravy do Ledové jeskyně.</p>
+                            </div>
+                        </div>
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Earth_Talisman.png" alt="Talisman země">
+                            <div class="talisman-info">
+                                <h4>Talisman země</h4>
+                                <p>Poskytuje <strong>Sílu země</strong> (až 200 %). Efektivní proti zemním elementálům.</p>
+                            </div>
+                        </div>
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Wind_Talisman.png" alt="Talisman větru">
+                            <div class="talisman-info">
+                                <h4>Talisman větru</h4>
+                                <p>Poskytuje <strong>Sílu větru</strong> (až 200 %). Zvyšuje efektivitu v místech ovládaných větrnými živly.</p>
+                            </div>
+                        </div>
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Dark_Talisman.png" alt="Talisman temnoty">
+                            <div class="talisman-info">
+                                <h4>Talisman temnoty</h4>
+                                <p>Poskytuje <strong>Sílu temnoty</strong> (až 200 %). Klíčový pro boj v temných chrámech.</p>
+                            </div>
+                        </div>
+                        <div class="talisman-card">
+                            <img src="assets/talisman-system/Lightning_Talisman.png" alt="Talisman blesku">
+                            <div class="talisman-info">
+                                <h4>Talisman blesku</h4>
+                                <p>Poskytuje <strong>Sílu blesku</strong> (až 200 %). Pomáhá překonávat bleskové pasti a nepřátele.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p><strong>Získávání:</strong> Talismany nelze zakoupit u žádného NPC. Lze je získat pouze z mocných bossů nebo jako odměnu v náročných dungeonech.</p>
+                </div>
+            </section>
+
+            <section id="biologist" class="presentation-section reveal">
+                <h2>Systém biologa</h2>
+                <p>
+                    Biologické výzkumy jsou klíčovou součástí vývoje vaší postavy. Pomozte biologovi Chaegirabovi a učenci Seon-Pyeongovi s jejich bádáním a získejte za odměnu <strong>trvalé bonusy</strong>, které výrazně posílí vaše statistiky.
+                </p>
+                <div class="section-flex biologist-intro">
+                    <div class="section-image bio-ui-wrapper">
+                        <img src="assets/bio-system/bio-ui.png" alt="Biologist UI" class="dungeon-screenshot">
+                        <span class="img-caption">Přehledné rozhraní výzkumu</span>
+                    </div>
+                    <div class="section-text">
+                        <h3>Průběh výzkumu</h3>
+                        <p>
+                            Po dosažení požadované úrovně se vám automaticky zpřístupní úkol. Vaším cílem je sbírat specifické předměty z nestvůr a odevzdávat je biologovi. 
+                        </p>
+                        <div class="set-bonus-box">
+                            <p><strong>Info:</strong> V našem systému odevzdáváte pouze samotné předměty pro výzkum, kameny duší nejsou pro dokončení vyžadovány.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio-table-container">
+                    <h3>Přehled biologických výzkumů</h3>
+                    <div class="table-responsive">
+                        <table class="bio-table">
+                            <thead>
+                                <tr>
+                                    <th>Lv.</th>
+                                    <th>Předmět k odevzdání</th>
+                                    <th>Trvalá odměna</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30</td>
+                                    <td>10x Zub orka</td>
+                                    <td>+10 Rychlost pohybu</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>15x Kniha klateb</td>
+                                    <td>+5% Rychlost útoku</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>15x Upomínka na démona</td>
+                                    <td>+60 Obrana</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>20x Ledová kulička</td>
+                                    <td>+50 Hodnota útoku</td>
+                                </tr>
+                                <tr>
+                                    <td>70</td>
+                                    <td>25x Zelkova větev</td>
+                                    <td>+11% Rychlost pohybu, +10% Snížení škody</td>
+                                </tr>
+                                <tr>
+                                    <td>80</td>
+                                    <td>30x Tabulka tugyise</td>
+                                    <td>+6% Rychlost útoku, +10% Hodnota útoku</td>
+                                </tr>
+                                <tr>
+                                    <td>85</td>
+                                    <td>40x Větev stromu duchů</td>
+                                    <td>+10% Odolnost proti hráčům</td>
+                                </tr>
+                                <tr>
+                                    <td>90</td>
+                                    <td>50x Poznámka vůdce</td>
+                                    <td>+8% Silný proti hráčům</td>
+                                </tr>
+                                <tr class="special-row">
+                                    <td colspan="3">Výzkumy Seon-Pyeonga</td>
+                                </tr>
+                                <tr>
+                                    <td>92</td>
+                                    <td>10x Zlovolný drahokam</td>
+                                    <td>Výběr: +1000 ZB / +120 Obrana / +51 Útok</td>
+                                </tr>
+                                <tr>
+                                    <td>94</td>
+                                    <td>20x Drahokam znalostí</td>
+                                    <td>Výběr: +1100 ZB / +140 Obrana / +60 Útok</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p>Nezapomeňte si po každém dokončeném výzkumu vyzvednout finální odměnu u Baek-Goa v prvním městě.</p>
+                </div>
+            </section>
+
+            <section id="pets" class="presentation-section reveal">
+                <h2>Systém mazlíčků</h2>
+                <p>
+                    Mazlíčci v našem světě nejsou jen estetickým doplňkem, ale mocnými společníky, kteří rostou spolu s vámi. Na rozdíl od běžných systémů je náš systém mazlíčků přímočarý a zaměřený na plynulý vývoj bez zbytečných komplikací.
+                </p>
+                <div class="section-flex pet-intro">
+                    <div class="section-text">
+                        <h3>Líhnutí a péče</h3>
+                        <p>
+                            Vše začíná získáním vejce z příslušného bosse. Po vylíhnutí (stisknutím klávesy <strong>P</strong> nebo přes panel rychlého přístupu) získá váš mazlíček náhodné výchozí bonusy do ZB, obrany a MB.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Chytrá výdrž:</strong> Doba trvání mazlíčka se odečítá pouze tehdy, když je aktivně vyvolán.</li>
+                            <li><strong>Unikátní společník:</strong> Mazlíčci jsou neobchodovatelní a zůstávají věrně u svého majitele.</li>
+                        </ul>
+                    </div>
+                    <div class="section-image pet-ui-wrapper">
+                        <img src="assets/pet-system/petinfo-ui.png" alt="Pet UI" class="dungeon-screenshot">
+                        <span class="img-caption">Informace o mazlíčkovi (P)</span>
+                    </div>
+                </div>
+                <div class="section-flex">
+                    <div class="section-image">
+                        <img src="assets/pet-system/Incubator_Screen.png" alt="Inkubátor" class="dungeon-screenshot">
+                        <span class="img-caption">Rozhraní inkubátoru</span>
+                    </div>
+                    <div class="section-text">
+                        <h3>Inkubátor</h3>
+                        <p>
+                            Jakmile kliknete pravým tlačítkem na vajíčko, otevře se okno <strong>Inkubátoru</strong>. Zde můžete svému novému společníkovi zvolit jméno (4 až 20 znaků). Po zaplacení poplatku 100.000 Zlata se mazlíček vylíhne a je připraven k vyvolání.
+                        </p>
+                    </div>
+                </div>
+                <div class="pet-showcase">
+                    <h3>Dostupní mazlíčci</h3>
+                    <div class="pet-grid">
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/monkey.png" alt="Opička">
+                            <h4>Opička</h4>
+                        </div>
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/spider.png" alt="Pavouk">
+                            <h4>Pavouk</h4>
+                        </div>
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/razador.png" alt="Razador">
+                            <h4>Razador</h4>
+                        </div>
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/nemere.png" alt="Nemere">
+                            <h4>Nemere</h4>
+                        </div>
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/meley.png" alt="Meley">
+                            <h4>Meley</h4>
+                        </div>
+                        <div class="pet-card">
+                            <img src="assets/pet-system/pets/minihydra.png" alt="Nessie">
+                            <h4>Nessie (Hydra)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-flex reverse">
+                    <div class="section-image">
+                        <img src="assets/pet-system/Pet_EXP_Balls.jpg" alt="Pet EXP" class="dungeon-screenshot">
+                    </div>
+                    <div class="section-text">
+                        <h3>Zkušenosti a úrovně</h3>
+                        <p>
+                            Váš mazlíček může dosáhnout až <strong>120. úrovně</strong>. Zkušenosti získává automaticky při zabíjení příšer, pokud je vyvolán. Úrovně se zvyšují plynule bez nutnosti provádět složité evoluce nebo vývojové stupně.
+                        </p>
+                        <p>
+                            Kromě červených zkušenostních koulí existuje i modrá koule, kterou můžete zaplnit "obětováním" nepotřebných předmětů z výzbroje, což urychlí růst vašeho společníka.
+                        </p>
+                    </div>
+                </div>
+                <div class="pet-skills-container">
+                    <h3>Schopnosti mazlíčka</h3>
+                    <p>
+                        Každý mazlíček se může naučit až <strong>3 unikátní schopnosti</strong> (pasivní i aktivní).
+                    </p>
+                    <div class="skills-info-grid">
+                        <div class="skill-learning">
+                            <h4>Trénink</h4>
+                            <p>Schopnosti se učí a vylepšují pomocí příslušných knih. Trénink probíhá až do <strong>úrovně 20</strong></p>
+                        </div>
+                        <div class="skill-types">
+                            <h4>Příklady schopností</h4>
+                            <div class="pet-skills-grid">
+                                <div class="skill-box">
+                                    <img src="assets/pet-system/skills/Berserker.png" alt="Berserker">
+                                    <span>Berserker</span>
+                                </div>
+                                <div class="skill-box">
+                                    <img src="assets/pet-system/skills/resistance.png" alt="Odolnost">
+                                    <span>Odolnost</span>
+                                </div>
+                                <div class="skill-box">
+                                    <img src="assets/pet-system/skills/Vampirism.png" alt="Upírství">
+                                    <span>Upírství</span>
+                                </div>
+                                <div class="skill-box">
+                                    <img src="assets/pet-system/skills/Immortality.png" alt="Nesmrtelnost">
+                                    <span>Nesmrtelnost</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p><strong>Tip:</strong> K obnově výdrže (času) použijte Proteinové tyčinky.</p>
+                </div>
+                <div class="set-bonus-box pet-dual-info">
+                    <h3>Kombinace mazlíčků</h3>
+                    <p>
+                        Kromě výše popsaného <strong>Levelable Pet systému</strong> je ve hře stále dostupný i <strong>klasický systém mazlíčků</strong>. To znamená, že hráč může mít v jeden okamžik vyvolané <strong>dva různé typy mazlíčků současně</strong> a těžit tak z bonusů obou systémů najednou.
+                    </p>
+                </div>
+            </section>
+
+            <section id="mounts" class="presentation-section reveal">
+                <h2>Mount systém</h2>
+                <p>
+                    Náš systém jezdeckých zvířat (mountů) je navržen pro maximální plynulost a pohodlí při vašem cestování světem Lorderonu.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Váš věrný společník</h3>
+                        <p>
+                            Po nasazení příslušné pečetě se mount objeví po vašem boku. Bude vás následovat na každém kroku, připraven k okamžitému nasednutí.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Plynulost:</strong> Systém funguje na stejném principu jako klasický kůň, což umožňuje bleskové a hladké nasedání i sesedání.</li>
+                            <li><strong>Dynamika:</strong> Mount vás následuje všude, kde se pohybujete pěšky, a je tak vždy po ruce pro rychlý přesun.</li>
+                            <li><strong>Styl a síla:</strong> Kromě rychlejšího pohybu poskytují mounti také dodatečné bonusy pro vaši postavu.</li>
+                        </ul>
+                        <div class="set-bonus-box">
+                            <p><strong>Tip:</strong> Pro nasednutí a sesednutí můžete využít standardní klávesové zkratky, na které jste zvyklí u koně (Ctrl+G / Ctrl+H).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/mount-system-preview.gif" alt="Mount System Preview" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Náhled fungování mount systému</span>
+                </div>
+            </section>
+
+            <section id="ward-boost" class="presentation-section reveal">
+                <h2>PvP schopnosti</h2>
+                <p>
+                    Vstupte do nové éry boje s <strong>7. a 8. schopností</strong>. Tyto pasivní dovednosti vám umožní buď minimalizovat poškození od nejsilnějších kouzel vašich protivníků, nebo naopak drasticky zvýšit sílu vašich vlastních útoků.
+                </p>
+                <div class="upgrade-steps">
+                    <div class="upgrade-card">
+                        <h4>7. Schopnost: Ochrana (Ward)</h4>
+                        <p>Umožňuje snížit poškození od jednoho konkrétního kouzla. Každý hráč si může vybrat libovolnou ochranu ze seznamu 9 dovedností.</p>
+                        <table class="stats-table">
+                            <thead>
+                                <tr><th>Úroveň</th><th>Snížení poškození</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>1,2 %</td></tr>
+                                <tr><td>M1</td><td>12 %</td></tr>
+                                <tr><td>G1</td><td>19,7 %</td></tr>
+                                <tr><td>P</td><td>30 %</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="upgrade-card">
+                        <h4>8. Schopnost: Posílení (Boost)</h4>
+                        <p>Zvyšuje poškození vašeho vlastního hlavního kouzla. Tuto schopnost lze získat až po dosažení 7. schopnosti na úrovni <strong>P</strong>.</p>
+                        <table class="stats-table">
+                            <thead>
+                                <tr><th>Úroveň</th><th>Zvýšení útoku</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>0,8 %</td></tr>
+                                <tr><td>M1</td><td>8 %</td></tr>
+                                <tr><td>G1</td><td>13,1 %</td></tr>
+                                <tr><td>P</td><td>20 %</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bio-table-container">
+                    <h3>Systém vylepšování</h3>
+                    <p>Vylepšování 7. a 8. schopnosti probíhá podobně jako u standardních dovedností, ale s využitím specifických předmětů:</p>
+                    <div class="alchemy-stones-grid">
+                        <div class="stone-item"><strong>1 - M1:</strong> Použití dovednostních bodů nebo speciálních knih výzkumu.</div>
+                        <div class="stone-item"><strong>M1 - G1:</strong> Čtení 55 kusů drahocenných knih dané schopnosti.</div>
+                        <div class="stone-item"><strong>G1 - P:</strong> Trénink pomocí Kámen duše+ (spotřebovává body hodnosti).</div>
+                    </div>
+                </div>
+                <h3>Dostupné schopnosti</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Sword_Spin_Boost-P.png" alt="Vířivé seknutí">
+                        <h4>Vířivé seknutí</h4>
+                        <p>Válečník (Tělo)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Ambush_Boost-P.png" alt="Léčka">
+                        <h4>Léčka</h4>
+                        <p>Ninja (Blízko)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Finger_Strike_Boost-P.png" alt="Rána prstem">
+                        <h4>Rána prstem</h4>
+                        <p>Sura (Zbraně)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Shooting_Dragon_Boost-P.png" alt="Střílení draků">
+                        <h4>Střílení draků</h4>
+                        <p>Šaman (Drak)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Spirit_Strike_Boost-P.png" alt="Prudká rána">
+                        <h4>Prudká rána</h4>
+                        <p>Válečník (Mentál)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Fire_Arrow_Boost-P.png" alt="Ohnivý šíp">
+                        <h4>Ohnivý šíp</h4>
+                        <p>Ninja (Dálka)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Dark_Strike_Boost-P.png" alt="Temná rána">
+                        <h4>Temná rána</h4>
+                        <p>Sura (Černá)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Summon_Lightning_Boost-P.png" alt="Vyvolat blesk">
+                        <h4>Vyvolat blesk</h4>
+                        <p>Šaman (Léčení)</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/ward-and-boost-skills/boost/Wolf's_Breath_Boost-P.png" alt="Vlčí dech">
+                        <h4>Vlčí dech</h4>
+                        <p>Lycan (Instinkt)</p>
+                    </div>
+                </div>
+                <div class="alchemy-footer">
+                    <p><strong>Upozornění:</strong> Pokud chcete schopnost změnit za jinou, je nutné použít <em>Svit přílivu výcviku</em>, který resetuje obě pasivní schopnosti najednou.</p>
+                </div>
+            </section>
+
+            <section id="offline-shop" class="presentation-section reveal">
+                <h2>Offline obchod</h2>
+                <p>
+                    Náš propracovaný systém offline obchodů vám umožňuje prodávat své zboží, i když právě nejste ve hře. Tento systém je navržen pro maximální pohodlí a efektivitu vašeho obchodování.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Obecné informace</h3>
+                        <p>
+                            Offline obchod můžete vytvořit a spravovat pomocí přehledného UI, které otevřete klávesou <strong>J</strong>. Obchod zůstane otevřený po dobu, kterou si sami zvolíte, což vám umožní prodávat předměty, i když jste offline nebo se pohybujete v úplně jiné mapě.
+                        </p>
+                        <p>
+                            Obchod také můžete spravovat a vybírat peníze odkudkoliv.
+                        </p>
+                    </div>
+                    <div class="section-image shop-render-wrapper">
+                        <img src="assets/private-shop/private-shop.png" alt="Private Shop Render" class="character-render">
+                    </div>
+                </div>
+                <div class="refinement-info">
+                    <h3>Vyhledávání obchodů (Okulář)</h3>
+                    <p>
+                        Zapomeňte na zdlouhavé obíhání náměstí. Pokud vlastníte předmět <strong>Okulár</strong>, můžete jej použít k okamžitému vyhledávání konkrétních předmětů v obchodech po celém světě.
+                    </p>
+                    <div class="shop-search-container">
+                        <img src="assets/private-shop/shop-search-ui.png" alt="Shop Search UI" class="dungeon-screenshot full-width-ui">
+                        <div class="set-bonus-box">
+                            <p><strong>Získávání:</strong> Okulář můžete získat jako vzácný drop z bossů nebo jej zakoupit u NPC Obchodnice. Vyhledávání funguje odkudkoliv a umožňuje vám provádět nákupy přímo z vyhledávacího rozhraní.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="target-info" class="presentation-section reveal">
+                <h2>Target Info System</h2>
+                <p>
+                    Chcete vědět, co přesně můžete získat z nepřítele, na kterého právě útočíte? Náš systém informací o cíli vám poskytne okamžitý přehled o možném dropu bez nutnosti otevírat jakákoliv menu.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Informace na dosah ruky</h3>
+                        <p>
+                            U každé nestvůry, bosse nebo metinu se po kliknutí zobrazí malé tlačítko s otazníkem vedle jeho jména. Kliknutím na toto tlačítko otevřete přehledné okno se seznamem všech předmětů, které daný cíl může po poražení zanechat.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Okamžitý přehled:</strong> Zjistěte šanci na drop přímo v boji.</li>
+                            <li><strong>Transparentnost:</strong> Uvidíte všechny dostupné předměty včetně těch vzácných.</li>
+                            <li><strong>Rychlost:</strong> Žádné zbytečné hledání – jeden klik a víte vše.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/target-info/target-info-system.gif" alt="Target Info System Preview" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Zobrazení dropu přímo u vybraného cíle</span>
+                </div>
+            </section>
+
+            <section id="wiki" class="presentation-section reveal">
+                <h2>Ingame Wikipedia</h2>
+                <p>
+                    Zapomeňte na neustálé přepínání mezi hrou a prohlížečem. S naší integrovanou herní wikipedií máte veškeré vědomosti světa Lorderonu dostupné okamžitě na jedno kliknutí.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Vše pod jednou střechou</h3>
+                        <p>
+                            Chcete vědět, co padá z konkrétního bosse? Jaké bonusy lze natočit do vašich dýk? Nebo kde přesně najít hledanou nestvůru? Naše Wikipedia vám odpoví na vše.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Drop info:</strong> Kompletní seznam předmětů, které můžete z nestvůr získat.</li>
+                            <li><strong>Bonusy:</strong> Detailní přehled všech dostupných bonusů pro každý typ výbavy.</li>
+                            <li><strong>Lokace:</strong> Přesné informace o výskytu mobů a bossů v jednotlivých mapách.</li>
+                            <li><strong>Vylepšování:</strong> Přehled materiálů potřebných pro upgrade vašich předmětů.</li>
+                        </ul>
+                        <div class="set-bonus-box">
+                            <p><strong>Tip:</strong> K Wikipedii se dostanete přes hlavní menu nebo klávesovou zkratku, což vám umožní bleskově plánovat váš další postup bez přerušení herního zážitku.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/wiki-system/ingame-wiki-preview.gif" alt="Ingame Wiki Preview" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Náhled herní Wikipedie v reálném čase</span>
+                </div>
+            </section>
+
+            <section id="daily-reward" class="presentation-section reveal">
+                <h2>Denní odměny</h2>
+                <p>
+                    Věrnost se na Lorderonu vyplácí. Náš systém denních odměn je navržen tak, aby byl maximálně jednoduchý a přímočarý – stačí být aktivní a odměna vás nemine.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Dárek za vaši aktivitu</h3>
+                        <p>
+                            Každý den, kdy se přihlásíte do hry, na vás čeká užitečný balíček. Žádné složité podmínky ani zdlouhavé plnění úkolů, prostě se přihlaste a vyzvedněte si svůj bonus.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Rychlost:</strong> Vyzvednutí odměny je otázkou okamžiku přímo v herním rozhraní.</li>
+                            <li><strong>Pravidelnost:</strong> Nová odměna je pro vás připravena každých 24 hodin.</li>
+                            <li><strong>Užitečnost:</strong> Odměny obsahují předměty, které skutečně využijete při svém každodenním dobrodružství.</li>
+                        </ul>
+                        <div class="set-bonus-box">
+                            <p><strong>Info:</strong> Systém automaticky sleduje váš čas a zpřístupní odměnu ihned, jakmile uplyne stanovená doba od posledního vyzvednutí.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/dayli-reward/preview.gif" alt="Daily Reward Preview" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Rozhraní denních odměn</span>
+                </div>
+            </section>
+
+            <section id="events" class="presentation-section reveal">
+                <h2>Automatické eventy</h2>
+                <p>
+                    Svět Lorderonu nikdy nespí. Náš systém automatických eventů je pečlivě navržen tak, aby pokryl různé časové úseky (time sloty) během celého dne. Bez ohledu na to, kdy hrajete, vždy narazíte na zajímavou akci, která ozvláštní váš herní zážitek.
+                </p>
+                <div class="events-grid">
+                    <div class="event-card-item">
+                        <h4>Zkušenosti & Bonusy</h4>
+                        <p>Pravidelné navýšení zisku <strong>BZK</strong> a speciální <strong>Bonus eventy</strong>, které vám pomohou s rychlejším postupem vaší postavy.</p>
+                    </div>
+                    <div class="event-card-item">
+                        <h4>Dvojitý Drop</h4>
+                        <p>Zvyšte své zisky díky eventům na <strong>Dvojitý drop z Bossů</strong> a <strong>Dvojitý drop z Metinů</strong>. Ideální čas na farmení vzácných předmětů.</p>
+                    </div>
+                    <div class="event-card-item">
+                        <h4>Ekonomika & Drop</h4>
+                        <p>Posilte svou peněženku během <strong>Yang eventů</strong> nebo hledejte vzácné poklady při plošném <strong>Item drop eventu</strong>.</p>
+                    </div>
+                    <div class="event-card-item">
+                        <h4>Speciální akce</h4>
+                        <p>Oblíbené <strong>Měsíční pokladnice</strong>, dvojité odměny z <strong>Knih misí</strong> a další unikátní aktivity, které se v pravidelných intervalech střídají.</p>
+                    </div>
+                </div>
+                <div class="wiki-preview-container">
+                    <img src="assets/automatic-events/event-calendar.png" alt="Event Calendar" class="dungeon-screenshot full-width-ui">
+                    <span class="img-caption">Přehledný kalendář automatických eventů</span>
+                </div>
+                <div class="set-bonus-box">
+                    <p><strong>Info:</strong> Veškeré eventy jsou plně automatizované a jejich začátek i konec je vždy ohlášen přímo v herním chatu, takže žádnou akci nepropásnete.</p>
+                </div>
+            </section>
+
+            <section id="qol" class="presentation-section reveal">
+                <h2>Quality of Life</h2>
+                <p>
+                    Herní zážitek na Lorderonu není jen o systémech, ale i o detailech, které dělají každodenní hraní plynulejším a příjemnějším. Zaměřili jsme se na odstranění zbytečných překážek a celkovou modernizaci herního enginu.
+                </p>
+                <div class="qol-grid">
+                    <div class="qol-column">
+                        <h3>Herní komfort</h3>
+                        <ul class="pet-features-list">
+                            <li><strong>Party Buff & Range:</strong> Buffování v rámci skupiny nyní funguje na velkou vzdálenost, což usnadňuje spolupráci v dungeonech.</li>
+                            <li><strong>Dungeon Rejoin:</strong> Možnost se vrátit do rozběhnutého dungeonu v případě nechtěného odpojení ze hry.</li>
+                            <li><strong>Ochranný štít:</strong> Po oživení získává hráč krátkodobý štít, který zabraňuje okamžitému "spawn killu".</li>
+                            <li><strong>Rozšířený sklad:</strong> Více prostoru pro vaše poklady díky rozšířenému systému Safeboxu.</li>
+                            <li><strong>CH Switcher:</strong> Přepínání mezi kanály je bleskové a dostupné přímo z herního rozhraní bez nutnosti odhlášení.</li>
+                        </ul>
+                    </div>
+                    <div class="qol-column">
+                        <h3>Balanc & Drop</h3>
+                        <p>
+                            Upravili jsme algoritmus pro získávání předmětů. Pokud postava zabíjí příšery nebo ničí kameny Metin s rozdílem úrovní do <strong>30 LVL</strong>, získává stále <strong>maximální možný drop</strong>. To umožňuje efektivně farmit i v pokročilejších fázích hry.
+                        </p>
+                        <div class="set-bonus-box">
+                            <p><strong>Mount System:</strong> Náš jezdecký systém je plně integrován pro okamžité použití bez zbytečných prodlev.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="refinement-info">
+                    <h3>Technická optimalizace & Engine</h3>
+                    <div class="alchemy-stones-grid">
+                        <div class="stone-item"><strong>Render Distance:</strong> Výrazně zvětšená dohledová vzdálenost bez ztráty FPS.</div>
+                        <div class="stone-item"><strong>Textury map:</strong> Vylepšené textury terénu a objektů pro modernější vizuální dojem.</div>
+                        <div class="stone-item"><strong>Vylepšený Engine:</strong> Implementace pokročilých stínů a světelných efektů pro hlubší atmosféru.</div>
+                        <div class="stone-item"><strong>Stabilita:</strong> Oprava mnoha starých chyb v jádru klienta pro plynulý chod bez pádů.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="itemshop" class="presentation-section reveal">
+                <h2>Itemshop & Podpora projektu</h2>
+                <p>
+                    Projekt Lorderon je rozsáhlý svět, který vyžaduje neustálý vývoj a údržbu. Z tohoto důvodu je ve hře přístupný <strong>Itemshop</strong>, který slouží k financování provozu serveru a týmu.
+                </p>
+                <div class="section-flex">
+                    <div class="section-text">
+                        <h3>Naše filozofie</h3>
+                        <p>
+                            Celá hra byla navržena jako kompletní zážitek bez nutnosti Itemshopu, který byl do systému přidán až jako úplně poslední krok. Pevně si stojíme za tím, že <strong>žádný hráč nebude nucen k nákupům</strong>, aby mohl plnohodnotně hrát a konkurovat ostatním.
+                        </p>
+                        <ul class="pet-features-list">
+                            <li><strong>Dostupnost:</strong> Veškeré předměty nabízené v Itemshopu jsou získatelné i přímo ve hře běžným hraním.</li>
+                            <li><strong>Férovost:</strong> Na Lorderonu nenajdete žádný prémiový (VIP) systém. Všichni hráči mají stejné podmínky.</li>
+                            <li><strong>Estetika:</strong> Během speciálních eventů budou k dispozici unikátní skiny, které však mají čistě estetický charakter a neovlivňují balanc hry.</li>
+                        </ul>
+                        <div class="set-bonus-box">
+                            <p><strong>Podpora:</strong> Nákup v Itemshopu je dobrovolným gestem hráčů, kteří chtějí podpořit další vývoj hry a vyjádřit tak spokojenost s naší prací. Děkujeme!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="presentation-section reveal">
+                <h2>Časté dotazy (FAQ)</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h4>Jaký je typ serveru a maximální úroveň?</h4>
+                        <p>Lorderon je <strong>Middleschool</strong> server s maximální úrovní <strong>120</strong>. Náš koncept vytváří vyvážené prostředí vhodné jak pro příležitostné, tak pro náročné hráče, kteří hledají výzvu.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Je ve hře dostupná postava Lycana?</h4>
+                        <p>Ano, Lycan je plně implementován včetně svých unikátních schopností. Je dostupný pouze pro mužské pohlaví.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Jak funguje systém Biologa?</h4>
+                        <p>V našem systému odevzdáváte pouze samotné předměty pro výzkum. Kameny duší nejsou pro dokončení vyžadovány, což proces výzkumu činí plynulejším.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Mohu hrát ve svém rodném jazyce?</h4>
+                        <p>Ano, podporujeme širokou škálu jazyků včetně češtiny, angličtiny, němčiny, polštiny a mnoha dalších. Jazyk lze snadno přepnout přímo v nastavení hry.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Jaký je rozdíl mezi mazlíčky?</h4>
+                        <p>Využíváme unikátní "Dual Pet" systém. Můžete mít současně vyvolaného jednoho trénovatelného mazlíčka (Levelable Pet) a jednoho klasického mazlíčka, přičemž těžíte z bonusů obou najednou.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Musím pro vyhledávání předmětů chodit na náměstí?</h4>
+                        <p>Vůbec ne. Díky předmětu Okulář můžete vyhledávat v obchodech a nakupovat předměty odkudkoliv na světě.</p>
+                    </div>
+                </div>
+                <div class="set-bonus-box">
+                    <p>Máte další dotazy? Neváhejte se obrátit na náš tým na Discordu nebo přímo ve hře. Těšíme se na vás ve světě Lorderonu!</p>
+                </div>
+            </section>
+
+            <section id="footer" class="presentation-section reveal">
+                <div class="footer-content">
+                    <h2>Dobrodružství teprve začíná</h2>
+                    <p>
+                        To, co jste viděli v této prezentaci, je pouze zlomek toho, co svět Lorderonu skutečně nabízí. Implementovali jsme stovky dalších vylepšení, úkolů a herních mechanik, které jsme zde záměrně neuvedli.
+                    </p>
+                    <p>
+                        Chceme, aby pro vás hraní bylo neustálým objevováním. Každý kout mapy, každé NPC a každý předmět může skrývat tajemství, které čeká právě na vás.
+                    </p>
+                    <div class="social-links-container">
+                        <h3>Sledujte nás a buďte v obraze</h3>
+                        <div class="social-grid">
+                            <a href="#" class="social-btn web-link">Hlavní web</a>
+                            <a href="#" class="social-btn discord-link">Discord</a>
+                            <a href="#" class="social-btn instagram-link">Instagram</a>
+                            <a href="#" class="social-btn facebook-link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
