@@ -57,7 +57,7 @@ window.addEventListener('click', (e) => {
     }
 })
 
-applyTranslations('cs')
+applyTranslations('en')
 
 const mobileToggle = document.querySelector('.mobile-toggle')
 const sidebar = document.querySelector('.sidebar')
