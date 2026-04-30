@@ -1,7 +1,7 @@
 const translations = {
     cs: {
-        "nav_uvod": "Úvod",
-        "nav_predstaveni": "Představení",
+        "nav_intro": "Úvod",
+        "nav_presentation": "Představení",
         "nav_start_game": "Začátek hry",
         "nav_multilanguage": "Podpora jazyků",
         "nav_characters": "Postavy",
@@ -354,8 +354,8 @@ const translations = {
         "loading_text": "Načítání dat..."
     },
     en: {
-        "nav_uvod": "Introduction",
-        "nav_predstaveni": "Presentation",
+        "nav_intro": "Introduction",
+        "nav_presentation": "Presentation",
         "nav_start_game": "Getting Started",
         "nav_multilanguage": "Language Support",
         "nav_characters": "Characters",
@@ -708,8 +708,8 @@ const translations = {
         "loading_text": "Loading Assets..."
     },
     de: {
-        "nav_uvod": "Einleitung",
-        "nav_predstaveni": "Präsentation",
+        "nav_intro": "Einleitung",
+        "nav_presentation": "Präsentation",
         "nav_start_game": "Erste Schritte",
         "nav_multilanguage": "Sprachunterstützung",
         "nav_characters": "Charaktere",
@@ -1062,8 +1062,8 @@ const translations = {
         "loading_text": "Lade Assets..."
     },
     pl: {
-        "nav_uvod": "Wstęp",
-        "nav_predstaveni": "Prezentacja",
+        "nav_intro": "Wstęp",
+        "nav_presentation": "Prezentacja",
         "nav_start_game": "Rozpoczęcie gry",
         "nav_multilanguage": "Wsparcie językowe",
         "nav_characters": "Postacie",
@@ -1416,8 +1416,8 @@ const translations = {
         "loading_text": "Ładowanie danych..."
     },
     ro: {
-        "nav_uvod": "Introducere",
-        "nav_predstaveni": "Prezentare",
+        "nav_intro": "Introducere",
+        "nav_presentation": "Prezentare",
         "nav_start_game": "Primii Pași",
         "nav_multilanguage": "Suport Lingvistic",
         "nav_characters": "Personaje",
@@ -1770,8 +1770,8 @@ const translations = {
         "loading_text": "Se încarcă activele..."
     },
     tr: {
-        "nav_uvod": "Giriş",
-        "nav_predstaveni": "Tanıtım",
+        "nav_intro": "Giriş",
+        "nav_presentation": "Tanıtım",
         "nav_start_game": "Başlangıç Rehberi",
         "nav_multilanguage": "Dil Desteği",
         "nav_characters": "Karakterler",
