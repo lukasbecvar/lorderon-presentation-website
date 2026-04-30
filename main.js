@@ -100,8 +100,14 @@ revealSections.forEach(section => {
 const sections = document.querySelectorAll('section, header')
 const navLinks = document.querySelectorAll('.sidebar ul li a')
 let lastActive = ''
+const backToTopBtn = document.getElementById('back-to-top')
 
 window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 500) {
+        backToTopBtn.classList.add('show')
+    } else {
+        backToTopBtn.classList.remove('show')
+    }
     let current = ''
     sections.forEach(section => {
         const sectionTop = section.offsetTop
@@ -205,3 +211,10 @@ function animate() {
 }
 
 init()
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
