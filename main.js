@@ -59,6 +59,13 @@ window.addEventListener('click', (e) => {
 
 applyTranslations('en')
 
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loading-screen')
+    setTimeout(() => {
+        loader.classList.add('fade-out')
+    }, 500)
+})
+
 const mobileToggle = document.querySelector('.mobile-toggle')
 const sidebar = document.querySelector('.sidebar')
 mobileToggle.addEventListener('click', () => {
