@@ -27,11 +27,19 @@ function applyTranslations(lang) {
     
     const flagMap = {
         'cs': 'assets/lang-flags/cz.png',
-        'en': 'assets/lang-flags/en.png'
+        'en': 'assets/lang-flags/en.png',
+        'de': 'assets/lang-flags/de.png',
+        'pl': 'assets/lang-flags/pl.png',
+        'ro': 'assets/lang-flags/ro.png',
+        'tr': 'assets/lang-flags/tr.png'
     }
     const nameMap = {
         'cs': 'Čeština',
-        'en': 'English'
+        'en': 'English',
+        'de': 'Deutsch',
+        'pl': 'Polski',
+        'ro': 'Română',
+        'tr': 'Türkçe'
     }
     
     if (flagMap[lang]) currentLangFlag.src = flagMap[lang]
