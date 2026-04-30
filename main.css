@@ -371,6 +371,7 @@ h1 {
     align-items: flex-start;
     gap: 35px;
     max-width: 100%;
+    margin-bottom: 40px;
 }
 
 .section-flex.reverse {
@@ -520,7 +521,8 @@ h1 {
 
 .img-caption {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 12px;
+    margin-bottom: 20px;
     padding: 8px 25px;
     font-family: 'Cinzel', serif;
     color: #fff;
