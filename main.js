@@ -85,10 +85,12 @@ const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active')
+            revealObserver.unobserve(entry.target)
         }
     })
 }, {
-    threshold: 0.15
+    threshold: 0.05,
+    rootMargin: '0px 0px -50px 0px'
 })
 
 revealSections.forEach(section => {
