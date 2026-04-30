@@ -350,7 +350,8 @@ const translations = {
         "social_web": "Hlavní web",
         "social_discord": "Discord",
         "social_instagram": "Instagram",
-        "social_facebook": "Facebook"
+        "social_facebook": "Facebook",
+        "loading_text": "Načítání dat..."
     },
     en: {
         "nav_uvod": "Introduction",
@@ -374,7 +375,7 @@ const translations = {
         "nav_events": "Automatic Events",
         "nav_qol": "Quality of Life",
         "nav_itemshop": "Itemshop",
-        "nav_faq": "Frequently Asked Questions (FAQ)",
+        "nav_faq": "Frequently Asked (FAQ)",
         "nav_footer": "Conclusion",
         "hero_title": "Lorderon",
         "hero_subtitle": "Step into a world where legends become reality.",
@@ -703,6 +704,7 @@ const translations = {
         "social_web": "Main Web",
         "social_discord": "Discord",
         "social_instagram": "Instagram",
-        "social_facebook": "Facebook"
+        "social_facebook": "Facebook",
+        "loading_text": "Loading Assets..."
     }
 };

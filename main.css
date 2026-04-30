@@ -32,6 +32,13 @@ body, html {
     visibility: hidden;
 }
 
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 .loader {
     position: relative;
     width: 100px;
@@ -60,6 +67,16 @@ body, html {
     animation: pulse 2s ease-in-out infinite;
 }
 
+.loader-text {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    animation: blink 1.5s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -68,6 +85,11 @@ body, html {
 @keyframes pulse {
     0%, 100% { opacity: 0.6; transform: scale(0.95); }
     50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
 }
 
 ::-webkit-scrollbar {
