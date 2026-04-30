@@ -507,6 +507,93 @@ h1 {
 
 .mobile-toggle {
     display: none;
+}
+
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 1001;
+    font-family: 'Cinzel', serif;
+}
+
+.lang-selected {
+    background: rgba(10, 10, 10, 0.9);
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 140px;
+}
+
+.lang-selected:hover {
+    border-color: #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.lang-selected img {
+    width: 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    min-width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.lang-dropdown.open {
+    display: flex;
+}
+
+.lang-option {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.lang-option:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+}
+
+.lang-option img {
+    width: 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+@media (max-width: 1100px) {
+    .language-selector {
+        right: 85px;
+    }
+}
+
+.mobile-toggle {
+    display: none;
     position: fixed;
     top: 20px;
     right: 20px;

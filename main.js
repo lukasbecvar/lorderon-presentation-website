@@ -1,3 +1,64 @@
+const langSelected = document.getElementById('lang-selected')
+const langDropdown = document.getElementById('lang-dropdown')
+const currentLangFlag = document.getElementById('current-lang-flag')
+const currentLangName = document.getElementById('current-lang-name')
+
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n')
+        if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key]
+        }
+    })
+    
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+        const key = el.getAttribute('data-i18n-alt')
+        if (translations[lang] && translations[lang][key]) {
+            el.setAttribute('alt', translations[lang][key])
+        }
+    })
+
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+        const key = el.getAttribute('data-i18n-title')
+        if (translations[lang] && translations[lang][key]) {
+            el.setAttribute('title', translations[lang][key])
+        }
+    })
+    
+    const flagMap = {
+        'cs': 'assets/lang-flags/cz.png',
+        'en': 'assets/lang-flags/en.png'
+    }
+    const nameMap = {
+        'cs': 'Čeština',
+        'en': 'English'
+    }
+    
+    if (flagMap[lang]) currentLangFlag.src = flagMap[lang]
+    if (nameMap[lang]) currentLangName.textContent = nameMap[lang]    
+    document.documentElement.lang = lang
+}
+
+langSelected.addEventListener('click', () => {
+    langDropdown.classList.toggle('open')
+})
+
+document.querySelectorAll('.lang-option').forEach(option => {
+    option.addEventListener('click', () => {
+        const lang = option.getAttribute('data-value')
+        applyTranslations(lang)
+        langDropdown.classList.remove('open')
+    })
+})
+
+window.addEventListener('click', (e) => {
+    if (!langSelected.contains(e.target) && !langDropdown.contains(e.target)) {
+        langDropdown.classList.remove('open')
+    }
+})
+
+applyTranslations('cs')
+
 const mobileToggle = document.querySelector('.mobile-toggle')
 const sidebar = document.querySelector('.sidebar')
 mobileToggle.addEventListener('click', () => {
