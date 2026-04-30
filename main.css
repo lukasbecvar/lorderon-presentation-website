@@ -823,6 +823,9 @@ h1 {
     .specialization { justify-content: center; }
     .aura-evolution-grid { grid-template-columns: repeat(2, 1fr); }
     .bio-ui-wrapper { flex: 1; width: 100%; max-width: 400px; }
+    .skills-info-grid { display: block !important; }
+    .skill-learning { width: 100% !important; margin-bottom: 20px; }
+    .skill-types { display: none !important; }
 }
 
 @media (max-width: 600px) {
@@ -841,7 +844,9 @@ h1 {
     .content-wrapper { padding: 0 15px; }
     .faq-container { grid-template-columns: 1fr; }
     .aura-evolution-grid { grid-template-columns: 1fr; }
-    .pet-skills-grid { grid-template-columns: 1fr; }
+    .pet-skills-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .skill-learning, .skill-types { padding: 15px; }
+    .skill-box { padding: 10px; }
     .alchemy-stones-grid { grid-template-columns: 1fr; }
     .stone-item { font-size: 0.85rem; }
     .pet-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
