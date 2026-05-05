@@ -95,6 +95,7 @@
             <li><a href="#wiki" data-i18n="nav_wiki">Ingame Wikipedia</a></li>
             <li><a href="#daily-reward" data-i18n="nav_daily_reward">Daily Rewards</a></li>
             <li><a href="#events" data-i18n="nav_events">Automatic Events</a></li>
+            <li><a href="#locations" data-i18n="nav_locations">Locations</a></li>
             <li><a href="#qol" data-i18n="nav_qol">Quality of Life</a></li>
             <li><a href="#itemshop" data-i18n="nav_itemshop">Itemshop</a></li>
             <li><a href="#faq" data-i18n="nav_faq">Frequently Asked Questions (FAQ)</a></li>
@@ -938,6 +939,243 @@
                 </div>
                 <div class="set-bonus-box">
                     <p data-i18n="section_events_info">Info: All events are fully automated and their start and end are always announced directly in the game chat, so you won't miss any action.</p>
+                </div>
+            </section>
+
+            <section id="locations" class="presentation-section reveal">
+                <h2 data-i18n="section_locations_title">Explore the World</h2>
+                <p data-i18n="section_locations_p1">The world of Lorderon is vast and diverse. From freezing mountains to scorching deserts, every corner tells a story. Discover mysterious dungeons and breathtaking maps that await your exploration.</p>
+                <div class="locations-tabs">
+                    <button class="tab-button active" onclick="showTab('dungeons-tab', this)" data-i18n="tab_dungeons">Dungeons</button>
+                    <button class="tab-button" onclick="showTab('maps-tab', this)" data-i18n="tab_maps">Maps</button>
+                </div>
+                <div id="dungeons-tab" class="tab-content locations-grid active">
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/tower.png" class="location-image" alt="Demon Tower">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_demon_tower">Demon Tower</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/spiderd.png" class="location-image" alt="Spider Baroness">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_spider_queen">Spider Baroness</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/dragon.png" class="location-image" alt="Dragon's Lair">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_dragon">Dragon's Lair</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/razador.png" class="location-image" alt="Razador">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_razador">Razador</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/nemere.png" class="location-image" alt="Nemere">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_nemere">Nemere</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/jotun.png" class="location-image" alt="Jotun Thrym">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_jotun">Jotun Thrym</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/meley.png" class="location-image" alt="Meley's Lair">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_meley">Meley's Lair</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/pyramid.png" class="location-image" alt="Ancient Pyramid">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_pyramid">Ancient Pyramid</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/dungeons/hydra.png" class="location-image" alt="Hydra">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_dungeon">Dungeon</span>
+                            <h4 class="location-name" data-i18n="loc_hydra">Hydra</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="maps-tab" class="tab-content locations-grid">
+                    <div class="location-card">
+                        <img src="assets/locations/maps/a1.png" class="location-image" alt="Yongan">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_yongan">Yongan (A1)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/a2.png" class="location-image" alt="Joan">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_joan">Joan (A2)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/a3.png" class="location-image" alt="Pyungmoo">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_pyu">Pyungmoo (A3)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/b1.png" class="location-image" alt="Yayang">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_yayang">Yayang (B1)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/b2.png" class="location-image" alt="Bokjung">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_bokjung">Bokjung (B2)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/b3.png" class="location-image" alt="Bakra">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_bakra">Bakra (B3)</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/orc.png" class="location-image" alt="Valley of Seungryong">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_valley">Valley of Seungryong</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/desert.png" class="location-image" alt="Yongbi Desert">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_desert">Yongbi Desert</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/sohan.png" class="location-image" alt="Mount Sohan">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_sohan">Mount Sohan</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/fireland.png" class="location-image" alt="Doyumhwan">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_fireland">Doyumhwan</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/green-forest.png" class="location-image" alt="Green Forest">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_green_forest">Green Forest</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/red-forest.png" class="location-image" alt="Red Forest">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_red_forest">Red Forest</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/exile-cave.png" class="location-image" alt="Grotto of Exile">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_exile">Grotto of Exile</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/spider.png" class="location-image" alt="Spider Dungeon">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_spider_map">Spider Dungeon</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/snake-desert.png" class="location-image" alt="Snake Desert">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_snake">Snake Desert</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/world-of-gigants.png" class="location-image" alt="Land of Giants">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_giants">Land of Giants</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/cape-of-dragon.png" class="location-image" alt="Cape of Dragon Fire">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_cape">Cape of Dragon Fire</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/nefrit.png" class="location-image" alt="Nephrite Bay">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_nefrit">Nephrite Bay</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/thunder-mountains.png" class="location-image" alt="Thunder Mountains">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_thunder">Thunder Mountains</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/guatama.png" class="location-image" alt="Guatama Mountains">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_guatama">Guatama Mountains</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/enchanted-forest.png" class="location-image" alt="Enchanted Forest">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_forest">Enchanted Forest</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/ochao.png" class="location-image" alt="Ochao Temple">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_ochao">Ochao Temple</h4>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <img src="assets/locations/maps/desert-of-suffering.png" class="location-image" alt="Desert of Suffering">
+                        <div class="location-overlay">
+                            <span class="location-type" data-i18n="type_map">Map</span>
+                            <h4 class="location-name" data-i18n="loc_suffering">Desert of Suffering</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
 

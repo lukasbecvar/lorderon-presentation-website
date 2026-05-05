@@ -226,3 +226,13 @@ backToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     })
 })
+
+function showTab(tabId, button) {
+    const contents = document.querySelectorAll('.tab-content')
+    contents.forEach(content => content.classList.remove('active'))
+    const buttons = document.querySelectorAll('.tab-button')
+    buttons.forEach(btn => btn.classList.remove('active'))
+
+    document.getElementById(tabId).classList.add('active')
+    button.classList.add('active')
+}
