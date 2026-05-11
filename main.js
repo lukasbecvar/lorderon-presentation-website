@@ -51,9 +51,13 @@ langSelected.addEventListener('click', () => {
     langDropdown.classList.toggle('open')
 })
 
+const savedLang = localStorage.getItem('lorderon_lang') || 'en'
+applyTranslations(savedLang)
+
 document.querySelectorAll('.lang-option').forEach(option => {
     option.addEventListener('click', () => {
         const lang = option.getAttribute('data-value')
+        localStorage.setItem('lorderon_lang', lang)
         applyTranslations(lang)
         langDropdown.classList.remove('open')
     })
@@ -65,13 +69,31 @@ window.addEventListener('click', (e) => {
     }
 })
 
-applyTranslations('en')
+function initImageLoaders() {
+    const images = document.querySelectorAll('img[loading="lazy"]')
+    
+    images.forEach(img => {
+        if (img.complete) {
+            img.classList.add('loaded')
+        }
+        
+        img.addEventListener('load', () => {
+            img.classList.add('loaded')
+        })
+        
+        img.addEventListener('error', () => {
+            img.style.opacity = '1'
+            img.style.background = 'rgba(255,0,0,0.1)'
+        })
+    })
+}
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    initImageLoaders()
     const loader = document.getElementById('loading-screen')
     setTimeout(() => {
         loader.classList.add('fade-out')
-    }, 500)
+    }, 300)
 })
 
 const mobileToggle = document.querySelector('.mobile-toggle')
