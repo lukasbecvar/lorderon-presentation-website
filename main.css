@@ -866,24 +866,48 @@ h1 {
     .mobile-toggle { width: 40px; height: 40px; top: 15px; left: 15px; }
 }
 
+.img-placeholder {
+    position: relative;
+    background: #111;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-placeholder::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.05),
+        transparent
+    );
+    animation: shimmer-effect 2s infinite;
+}
+
+@keyframes shimmer-effect {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 img[loading="lazy"] {
-    background: linear-gradient(110deg, rgba(20, 20, 20, 0.6) 8%, rgba(40, 40, 40, 0.7) 18%, rgba(20, 20, 20, 0.6) 33%);
-    background-size: 200% 100%;
-    animation: shimmer 1.5s linear infinite;
-    transition: opacity 0.5s ease, transform 0.4s ease;
     opacity: 0;
+    filter: blur(15px);
+    transition: opacity 0.8s ease-out, filter 0.8s ease-out, transform 0.8s ease-out;
+    transform: scale(1.02);
+    will-change: opacity, filter, transform;
 }
 
 img.loaded {
-    background: transparent !important;
-    animation: none !important;
     opacity: 1;
-}
-
-@keyframes shimmer {
-    to {
-        background-position-x: -200%;
-    }
+    filter: blur(0);
+    transform: scale(1);
 }
 
 .character-render, 

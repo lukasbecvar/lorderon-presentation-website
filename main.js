@@ -71,19 +71,22 @@ window.addEventListener('click', (e) => {
 
 function initImageLoaders() {
     const images = document.querySelectorAll('img[loading="lazy"]')
-    
     images.forEach(img => {
-        if (img.complete) {
+        const parent = img.parentElement
+        const handleLoad = () => {
             img.classList.add('loaded')
+            if (parent) parent.classList.remove('img-placeholder')
         }
-        
-        img.addEventListener('load', () => {
-            img.classList.add('loaded')
-        })
-        
+        if (img.complete) {
+            handleLoad()
+        } else {
+            if (parent) parent.classList.add('img-placeholder')
+            img.addEventListener('load', handleLoad)
+        }
         img.addEventListener('error', () => {
-            img.style.opacity = '1'
-            img.style.background = 'rgba(255,0,0,0.1)'
+            img.classList.add('loaded')
+            if (parent) parent.classList.remove('img-placeholder')
+            img.style.filter = 'none'
         })
     })
 }
