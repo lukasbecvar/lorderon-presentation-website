@@ -57,6 +57,11 @@ applyTranslations(savedLang)
 document.querySelectorAll('.lang-option').forEach(option => {
     option.addEventListener('click', () => {
         const lang = option.getAttribute('data-value')
+        if (lang === 'en') {
+            localStorage.setItem('lorderon_lang', 'en')
+            location.reload()
+            return
+        }
         localStorage.setItem('lorderon_lang', lang)
         applyTranslations(lang)
         langDropdown.classList.remove('open')
