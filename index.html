@@ -81,6 +81,7 @@
             <li><a href="#start-game" data-i18n="nav_start_game">Getting Started</a></li>
             <li><a href="#multilanguage" data-i18n="nav_multilanguage">Language Support</a></li>
             <li><a href="#characters" data-i18n="nav_characters">Characters</a></li>
+            <li><a href="#pvm-balancing" data-i18n="nav_pvm_balancing">PVM Balancing</a></li>
             <li><a href="#dungeons" data-i18n="nav_dungeons">Dungeon System</a></li>
             <li><a href="#alchemy" data-i18n="nav_alchemy">Dragon Soul Alchemy</a></li>
             <li><a href="#sash" data-i18n="nav_sash">Sash System</a></li>
@@ -236,6 +237,32 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            
+            <section id="pvm-balancing" class="presentation-section reveal">
+                <h2 data-i18n="section_pvm_title">PVM Balancing</h2>
+                <p data-i18n="section_pvm_p1">Some weaker classes receive a permanent character boost to PVM bonus damage against monsters. The bonuses vary by class and specialization, and their purpose is to balance PVM capabilities without completely erasing the differences between classes. Classes like the Body Warrior or Sura still have an advantage, but the gap is now significantly smaller. The goal is for every class to be viable in PVM while still retaining meaningful distinction.</p>
+                <p data-i18n="section_pvm_p2">The bonus scales with character level every 10 levels grants an additional +0.5% to the base bonus value. These are the base bonus values:</p>
+                <div class="table-responsive" style="margin-top: 20px;">
+                    <table class="bio-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="section_pvm_th_class">Class / Specialization</th>
+                                <th data-i18n="section_pvm_th_bonus">PVM Bonus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td data-i18n="section_pvm_warrior_mental">Warrior — Mental</td><td>8%</td></tr>
+                            <tr><td data-i18n="section_pvm_sura_black">Sura — Black Magic</td><td>10%</td></tr>
+                            <tr><td data-i18n="section_pvm_ninja_blade">Ninja — Blade Fight</td><td>8%</td></tr>
+                            <tr><td data-i18n="section_pvm_ninja_archery">Ninja — Archery</td><td>5%</td></tr>
+                            <tr><td data-i18n="section_pvm_shaman_healer">Shaman — Healer</td><td>5%</td></tr>
+                            <tr><td data-i18n="section_pvm_shaman_dragon">Shaman — Dragon</td><td>8%</td></tr>
+                            <tr><td data-i18n="section_pvm_lycan">Lycan</td><td>2%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p data-i18n="section_pvm_p3">The bonus works similarly to "damage against monsters," but the calculation formula differs slightly. The entire system is designed to reduce the gap between classes while preserving the identity of each weaker classes still have a disadvantage, but it is now much smaller.</p>
             </section>
 
             <section id="dungeons" class="presentation-section reveal">
