@@ -361,6 +361,14 @@ h1 {
     word-wrap: break-word;
 }
 
+.presentation-section h3 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Cinzel', serif;
+}
+
 .presentation-section p {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
