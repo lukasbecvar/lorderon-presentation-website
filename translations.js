@@ -895,7 +895,7 @@ const translations = {
         "faq_q3": "Wie funktioniert das Biologen-System?",
         "faq_a3": "In unserem System lieferst du nur die Forschungsgegenstände selbst ab. Seelensteine sind für den Abschluss nicht erforderlich, was den Forschungsprozess reibungsloser macht.",
         "faq_q4": "Kann ich in meiner Muttersprache spielen?",
-        "faq_a4": "Ja, wir unterstützen eine Vielzahl von Sprachen, darunter Deutsch, Englisch, Tschechisch, Polnisch und viele andere. Die Sprache kann einfach direkt in den Spieleinstellungen umgestellt werden.",
+        "faq_a4": "Ja, wir unterstützen eine Vielzahl von Sprachen, darunter German, Englisch, Tschechisch, Polnisch und viele andere. Die Sprache kann einfach direkt in den Spieleinstellungen umgestellt werden.",
         "faq_q5": "Was ist der Unterschied zwischen den Haustieren?",
         "faq_a5": "Wir verwenden ein einzigartiges \"Dual-Pet\"-System. Du kannst gleichzeitig ein trainierbares Haustier (levelbares Pet) und ein klassisches Haustier beschworen haben und so von den Boni beider gleichzeitig profitieren.",
         "faq_q6": "Muss ich zum Marktplatz gehen, um nach Gegenständen zu suchen?",

@@ -36,7 +36,7 @@ function applyTranslations(lang) {
     const nameMap = {
         'cs': 'Čeština',
         'en': 'English',
-        'de': 'Deutsch',
+        'de': 'German',
         'pl': 'Polski',
         'ro': 'Română',
         'tr': 'Türkçe'
