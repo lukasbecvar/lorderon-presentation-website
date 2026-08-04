@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loader = document.getElementById('loading-screen')
     setTimeout(() => {
         loader.classList.add('fade-out')
-    }, 300)
+    }, 100)
 })
 
 const mobileToggle = document.querySelector('.mobile-toggle')

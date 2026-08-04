@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lorderon.eu/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ninja.png</image:loc>
+      <image:title>Lorderon - Ninja</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/start-preview.png</image:loc>
+      <image:title>Lorderon - Start Preview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/characters/war.png</image:loc>
+      <image:title>Lorderon - War</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/characters/sura.png</image:loc>
+      <image:title>Lorderon - Sura</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/characters/ninja.png</image:loc>
+      <image:title>Lorderon - Ninja</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/characters/shaman.png</image:loc>
+      <image:title>Lorderon - Shaman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/characters/lycan.png</image:loc>
+      <image:title>Lorderon - Lycan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dungeon-info/dungeon-info.png</image:loc>
+      <image:title>Lorderon - Dungeon Info</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dungeon-info/dungeon-ranking.png</image:loc>
+      <image:title>Lorderon - Dungeon Ranking</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dragon-soul-alchemy/dragon-soul-window.png</image:loc>
+      <image:title>Lorderon - Dragon Soul Window</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dragon-soul-alchemy/class-refine.png</image:loc>
+      <image:title>Lorderon - Class Refine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dragon-soul-alchemy/level-refine.png</image:loc>
+      <image:title>Lorderon - Level Refine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dragon-soul-alchemy/bonus-switcher.png</image:loc>
+      <image:title>Lorderon - Bonus Switcher</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-absorbation.png</image:loc>
+      <image:title>Lorderon - Sash Absorbation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-combination.png</image:loc>
+      <image:title>Lorderon - Sash Combination</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Lord_Sash_(basic).png</image:loc>
+      <image:title>Lorderon - Ig Lord Sash Basic</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Lord_Sash_(fine).png</image:loc>
+      <image:title>Lorderon - Ig Lord Sash Fine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Lord_Sash_(noble).png</image:loc>
+      <image:title>Lorderon - Ig Lord Sash Noble</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Lord_Sash_(custom).png</image:loc>
+      <image:title>Lorderon - Ig Lord Sash Custom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Master_Sash_(basic).png</image:loc>
+      <image:title>Lorderon - Ig Master Sash Basic</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Master_Sash_(fine).png</image:loc>
+      <image:title>Lorderon - Ig Master Sash Fine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Master_Sash_(noble).png</image:loc>
+      <image:title>Lorderon - Ig Master Sash Noble</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Master_Sash_(custom).png</image:loc>
+      <image:title>Lorderon - Ig Master Sash Custom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Royal_Sash_(basic).png</image:loc>
+      <image:title>Lorderon - Ig Royal Sash Basic</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Royal_Sash_(fine).png</image:loc>
+      <image:title>Lorderon - Ig Royal Sash Fine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Royal_Sash_(noble).png</image:loc>
+      <image:title>Lorderon - Ig Royal Sash Noble</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Royal_Sash_(custom).png</image:loc>
+      <image:title>Lorderon - Ig Royal Sash Custom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Sovereign_Sash_(basic).png</image:loc>
+      <image:title>Lorderon - Ig Sovereign Sash Basic</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Sovereign_Sash_(fine).png</image:loc>
+      <image:title>Lorderon - Ig Sovereign Sash Fine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Sovereign_Sash_(noble).png</image:loc>
+      <image:title>Lorderon - Ig Sovereign Sash Noble</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/sash-system/sash-models/IG-Sovereign_Sash_(custom).png</image:loc>
+      <image:title>Lorderon - Ig Sovereign Sash Custom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/aura-bonus-absorbation.png</image:loc>
+      <image:title>Lorderon - Aura Bonus Absorbation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Ordinary_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Ordinary Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Simple_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Simple Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Noble_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Noble Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Magnificent_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Magnificent Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Sparkling_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Sparkling Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/aura-system/IG-Radiant_Aura_Outfit.gif</image:loc>
+      <image:title>Lorderon - Ig Radiant Aura Outfit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Fire_Talisman.png</image:loc>
+      <image:title>Lorderon - Fire Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Ice_Talisman.png</image:loc>
+      <image:title>Lorderon - Ice Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Earth_Talisman.png</image:loc>
+      <image:title>Lorderon - Earth Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Wind_Talisman.png</image:loc>
+      <image:title>Lorderon - Wind Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Dark_Talisman.png</image:loc>
+      <image:title>Lorderon - Dark Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/talisman-system/Lightning_Talisman.png</image:loc>
+      <image:title>Lorderon - Lightning Talisman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/bio-system/bio-ui.png</image:loc>
+      <image:title>Lorderon - Bio Ui</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/refine-system.png</image:loc>
+      <image:title>Lorderon - Refine System</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/petinfo-ui.png</image:loc>
+      <image:title>Lorderon - Petinfo Ui</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/Incubator_Screen.png</image:loc>
+      <image:title>Lorderon - Incubator Screen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/monkey.png</image:loc>
+      <image:title>Lorderon - Monkey</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/spider.png</image:loc>
+      <image:title>Lorderon - Spider</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/razador.png</image:loc>
+      <image:title>Lorderon - Razador</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/nemere.png</image:loc>
+      <image:title>Lorderon - Nemere</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/meley.png</image:loc>
+      <image:title>Lorderon - Meley</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/pets/minihydra.png</image:loc>
+      <image:title>Lorderon - Minihydra</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/Pet_EXP_Balls.jpg</image:loc>
+      <image:title>Lorderon - Pet Exp Balls</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/skills/Berserker.png</image:loc>
+      <image:title>Lorderon - Berserker</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/skills/resistance.png</image:loc>
+      <image:title>Lorderon - Resistance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/skills/Vampirism.png</image:loc>
+      <image:title>Lorderon - Vampirism</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/pet-system/skills/Immortality.png</image:loc>
+      <image:title>Lorderon - Immortality</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/mount-system-preview.gif</image:loc>
+      <image:title>Lorderon - Mount System Preview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Sword_Spin_Boost-P.png</image:loc>
+      <image:title>Lorderon - Sword Spin Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Ambush_Boost-P.png</image:loc>
+      <image:title>Lorderon - Ambush Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Finger_Strike_Boost-P.png</image:loc>
+      <image:title>Lorderon - Finger Strike Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Shooting_Dragon_Boost-P.png</image:loc>
+      <image:title>Lorderon - Shooting Dragon Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Spirit_Strike_Boost-P.png</image:loc>
+      <image:title>Lorderon - Spirit Strike Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Fire_Arrow_Boost-P.png</image:loc>
+      <image:title>Lorderon - Fire Arrow Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Dark_Strike_Boost-P.png</image:loc>
+      <image:title>Lorderon - Dark Strike Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Summon_Lightning_Boost-P.png</image:loc>
+      <image:title>Lorderon - Summon Lightning Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/ward-and-boost-skills/boost/Wolf's_Breath_Boost-P.png</image:loc>
+      <image:title>Lorderon - Wolf's Breath Boost P</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/private-shop/private-shop.png</image:loc>
+      <image:title>Lorderon - Private Shop</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/private-shop/shop-search-ui.png</image:loc>
+      <image:title>Lorderon - Shop Search Ui</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/target-info/target-info-system.gif</image:loc>
+      <image:title>Lorderon - Target Info System</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/wiki-system/ingame-wiki-preview.gif</image:loc>
+      <image:title>Lorderon - Ingame Wiki Preview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/dayli-reward/preview.gif</image:loc>
+      <image:title>Lorderon - Preview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/automatic-events/event-calendar.png</image:loc>
+      <image:title>Lorderon - Event Calendar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/tower.png</image:loc>
+      <image:title>Lorderon - Tower</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/spiderd.png</image:loc>
+      <image:title>Lorderon - Spiderd</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/dragon.png</image:loc>
+      <image:title>Lorderon - Dragon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/razador.png</image:loc>
+      <image:title>Lorderon - Razador</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/nemere.png</image:loc>
+      <image:title>Lorderon - Nemere</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/jotun.png</image:loc>
+      <image:title>Lorderon - Jotun</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/meley.png</image:loc>
+      <image:title>Lorderon - Meley</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/pyramid.png</image:loc>
+      <image:title>Lorderon - Pyramid</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/dungeons/hydra.png</image:loc>
+      <image:title>Lorderon - Hydra</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/a1.png</image:loc>
+      <image:title>Lorderon - A1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/a2.png</image:loc>
+      <image:title>Lorderon - A2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/a3.png</image:loc>
+      <image:title>Lorderon - A3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/b1.png</image:loc>
+      <image:title>Lorderon - B1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/b2.png</image:loc>
+      <image:title>Lorderon - B2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/b3.png</image:loc>
+      <image:title>Lorderon - B3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/orc.png</image:loc>
+      <image:title>Lorderon - Orc</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/desert.png</image:loc>
+      <image:title>Lorderon - Desert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/sohan.png</image:loc>
+      <image:title>Lorderon - Sohan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/fireland.png</image:loc>
+      <image:title>Lorderon - Fireland</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/green-forest.png</image:loc>
+      <image:title>Lorderon - Green Forest</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/red-forest.png</image:loc>
+      <image:title>Lorderon - Red Forest</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/exile-cave.png</image:loc>
+      <image:title>Lorderon - Exile Cave</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/spider.png</image:loc>
+      <image:title>Lorderon - Spider</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/snake-desert.png</image:loc>
+      <image:title>Lorderon - Snake Desert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/world-of-gigants.png</image:loc>
+      <image:title>Lorderon - World Of Gigants</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/cape-of-dragon.png</image:loc>
+      <image:title>Lorderon - Cape Of Dragon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/nefrit.png</image:loc>
+      <image:title>Lorderon - Nefrit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/thunder-mountains.png</image:loc>
+      <image:title>Lorderon - Thunder Mountains</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/guatama.png</image:loc>
+      <image:title>Lorderon - Guatama</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/enchanted-forest.png</image:loc>
+      <image:title>Lorderon - Enchanted Forest</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/ochao.png</image:loc>
+      <image:title>Lorderon - Ochao</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorderon.eu/assets/locations/maps/desert-of-suffering.png</image:loc>
+      <image:title>Lorderon - Desert Of Suffering</image:title>
+    </image:image>
+  </url>
+</urlset>
