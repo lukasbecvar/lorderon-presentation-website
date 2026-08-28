@@ -137,6 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         setTimeout(hide, 5000)
     }
+
+    if (window.location.hash) {
+        scrollIntoViewWithImages(window.location.hash, 20, 'auto')
+    }
 })
 
 const mobileToggle = document.querySelector('.mobile-toggle')
@@ -146,6 +150,47 @@ mobileToggle.addEventListener('click', () => {
     mobileToggle.classList.toggle('open')
 })
 
+function scrollIntoViewWithImages(targetId, offset = 20, behavior = 'smooth') {
+    const target = document.querySelector(targetId)
+    if (!target) return
+    let lastY = -1
+    const scrollToTarget = () => {
+        const y = target.getBoundingClientRect().top + window.pageYOffset - offset
+        if (Math.abs(y - lastY) > 1) {
+            lastY = y
+            window.scrollTo({ top: y, behavior })
+        }
+        return y
+    }
+    const pending = document.querySelectorAll('img[loading="lazy"]')
+    if (pending.length > 0) {
+        let done = 0
+        const check = () => {
+            done++
+            if (done >= pending.length) {
+                const first = scrollToTarget()
+                const stabilizer = setInterval(() => {
+                    const y = scrollToTarget()
+                    if (Math.abs(y - first) <= 2) {
+                        clearInterval(stabilizer)
+                    }
+                }, 200)
+                setTimeout(() => clearInterval(stabilizer), 5000)
+            }
+        }
+        pending.forEach(img => {
+            if (!img.complete) {
+                img.loading = 'eager'
+            }
+            if (img.complete) { check(); return }
+            img.addEventListener('load', check, { once: true })
+            img.addEventListener('error', check, { once: true })
+        })
+    } else {
+        scrollToTarget()
+    }
+}
+
 document.querySelectorAll('.sidebar ul li a').forEach(link => {
     link.addEventListener('click', (e) => {
         sidebar.classList.remove('open')
@@ -153,26 +198,7 @@ document.querySelectorAll('.sidebar ul li a').forEach(link => {
         const targetId = link.getAttribute('href')
         if (!targetId || !targetId.startsWith('#')) return
         e.preventDefault()
-        const target = document.querySelector(targetId)
-        if (!target) return
-        const scrollToTarget = () => {
-            const y = target.getBoundingClientRect().top + window.pageYOffset - 20
-            window.scrollTo({ top: y, behavior: 'smooth' })
-        }
-        scrollToTarget()
-        const pending = target.querySelectorAll('img[loading="lazy"]:not(.loaded)')
-        if (pending.length > 0) {
-            let done = 0
-            const check = () => {
-                done++
-                if (done >= pending.length) setTimeout(scrollToTarget, 250)
-            }
-            pending.forEach(img => {
-                if (img.complete) { check(); return }
-                img.addEventListener('load', check)
-                img.addEventListener('error', check)
-            })
-        }
+        scrollIntoViewWithImages(targetId)
     })
 })
 
