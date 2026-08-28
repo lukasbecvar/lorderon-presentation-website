@@ -457,7 +457,8 @@ const translations = {
         "social_discord": "Discord",
         "social_instagram": "Instagram",
         "social_facebook": "Facebook",
-        "loading_text": "Načítání dat..."
+        "loading_text": "Načítání dat...",
+        "assets_loading": "Probíhá načítání dat..."
     },
     de: {
         "nav_intro": "Einleitung",
@@ -917,7 +918,8 @@ const translations = {
         "social_discord": "Discord",
         "social_instagram": "Instagram",
         "social_facebook": "Facebook",
-        "loading_text": "Lade Assets..."
+        "loading_text": "Lade Assets...",
+        "assets_loading": "Assets werden geladen..."
     },
     pl: {
         "nav_intro": "Wstęp",
@@ -1377,7 +1379,8 @@ const translations = {
         "social_discord": "Discord",
         "social_instagram": "Instagram",
         "social_facebook": "Facebook",
-        "loading_text": "Načítání dat..."
+        "loading_text": "Načítání dat...",
+        "assets_loading": "Trwa ładowanie danych..."
     },
     ro: {
         "nav_intro": "Introducere",
@@ -1837,7 +1840,8 @@ const translations = {
         "social_discord": "Discord",
         "social_instagram": "Instagram",
         "social_facebook": "Facebook",
-        "loading_text": "Se încarcă activele..."
+        "loading_text": "Se încarcă activele...",
+        "assets_loading": "Se încarcă activele..."
     },
     tr: {
         "nav_intro": "Giriş",
@@ -2297,6 +2301,7 @@ const translations = {
         "social_discord": "Discord",
         "social_instagram": "Instagram",
         "social_facebook": "Facebook",
-        "loading_text": "Varlıklar Yükleniyor..."
+        "loading_text": "Varlıklar Yükleniyor...",
+        "assets_loading": "Varlıklar yükleniyor..."
     }
 };

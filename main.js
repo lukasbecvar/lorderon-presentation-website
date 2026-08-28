@@ -102,6 +102,29 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loader.classList.add('fade-out')
     }, 100)
+    const indicator = document.getElementById('loading-indicator')
+    if (indicator) {
+        const allImages = document.querySelectorAll('img')
+        let remaining = allImages.length
+        const hideIndicator = () => indicator.classList.add('hidden')
+        if (remaining === 0) {
+            hideIndicator()
+        } else {
+            const done = () => {
+                remaining--
+                if (remaining <= 0) setTimeout(hideIndicator, 600)
+            }
+            allImages.forEach(img => {
+                if (img.complete) {
+                    done()
+                } else {
+                    img.addEventListener('load', done)
+                    img.addEventListener('error', done)
+                }
+            })
+            window.addEventListener('load', () => setTimeout(hideIndicator, 100))
+        }
+    }
 })
 
 const mobileToggle = document.querySelector('.mobile-toggle')
