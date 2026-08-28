@@ -93,6 +93,7 @@ function initImageLoaders() {
             if (parent) parent.classList.remove('img-placeholder')
             img.style.filter = 'none'
         })
+        img.loading = 'eager'
     })
 }
 
@@ -104,25 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
     const indicator = document.getElementById('loading-indicator')
     if (indicator) {
-        const allImages = document.querySelectorAll('img')
-        let remaining = allImages.length
+        const imgs = document.querySelectorAll('img[loading="lazy"]')
         const hideIndicator = () => indicator.classList.add('hidden')
-        if (remaining === 0) {
+        if (imgs.length === 0) {
             hideIndicator()
         } else {
-            const done = () => {
-                remaining--
-                if (remaining <= 0) setTimeout(hideIndicator, 600)
-            }
-            allImages.forEach(img => {
-                if (img.complete) {
-                    done()
-                } else {
-                    img.addEventListener('load', done)
-                    img.addEventListener('error', done)
+            let pending = 0
+            imgs.forEach(img => {
+                if (img.classList.contains('loaded') || (img.complete && img.naturalWidth > 0)) {
+                    return
                 }
+                pending++
+                const check = () => {
+                    pending--
+                    if (pending <= 0) hideIndicator()
+                }
+                img.addEventListener('load', check)
+                img.addEventListener('error', check)
             })
-            window.addEventListener('load', () => setTimeout(hideIndicator, 100))
+            window.addEventListener('load', () => {
+                if (pending <= 0) hideIndicator()
+            })
+            if (pending <= 0) hideIndicator()
         }
     }
 })
