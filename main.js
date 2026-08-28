@@ -112,9 +112,32 @@ mobileToggle.addEventListener('click', () => {
 })
 
 document.querySelectorAll('.sidebar ul li a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
         sidebar.classList.remove('open')
         mobileToggle.classList.remove('open')
+        const targetId = link.getAttribute('href')
+        if (!targetId || !targetId.startsWith('#')) return
+        e.preventDefault()
+        const target = document.querySelector(targetId)
+        if (!target) return
+        const scrollToTarget = () => {
+            const y = target.getBoundingClientRect().top + window.pageYOffset - 20
+            window.scrollTo({ top: y, behavior: 'smooth' })
+        }
+        scrollToTarget()
+        const pending = target.querySelectorAll('img[loading="lazy"]:not(.loaded)')
+        if (pending.length > 0) {
+            let done = 0
+            const check = () => {
+                done++
+                if (done >= pending.length) setTimeout(scrollToTarget, 250)
+            }
+            pending.forEach(img => {
+                if (img.complete) { check(); return }
+                img.addEventListener('load', check)
+                img.addEventListener('error', check)
+            })
+        }
     })
 })
 
@@ -147,13 +170,20 @@ window.addEventListener('scroll', () => {
         backToTopBtn.classList.remove('show')
     }
     let current = ''
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop
-        const sectionHeight = section.clientHeight
-        if (pageYOffset >= (sectionTop - 250)) {
-            current = section.getAttribute('id')
-        }
-    })
+    const docHeight = document.documentElement.scrollHeight
+    const winHeight = window.innerHeight
+    const atBottom = Math.abs(window.pageYOffset + winHeight - docHeight) < 40
+    if (atBottom) {
+        const last = sections[sections.length - 1]
+        current = last ? last.getAttribute('id') : current
+    } else {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect()
+            if (rect.top <= winHeight * 0.6) {
+                current = section.getAttribute('id')
+            }
+        })
+    }
 
     if (current !== lastActive) {
         lastActive = current
@@ -161,10 +191,15 @@ window.addEventListener('scroll', () => {
             link.classList.remove('active')
             if (link.getAttribute('href').includes(current)) {
                 link.classList.add('active')
-                link.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'nearest'
-                })
+                const sb = link.parentElement?.parentElement?.parentElement
+                const linkTop = link.offsetTop
+                const sbHeight = sidebar.clientHeight
+                if (sb && linkTop < sidebar.scrollTop || linkTop + link.offsetHeight > sidebar.scrollTop + sbHeight) {
+                    sidebar.scrollTo({
+                        top: linkTop - sbHeight / 2 + link.offsetHeight / 2,
+                        behavior: 'smooth'
+                    })
+                }
             }
         })
     }
