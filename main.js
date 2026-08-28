@@ -74,6 +74,11 @@ window.addEventListener('click', (e) => {
     }
 })
 
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect()
+    return rect.bottom >= 0 && rect.top <= window.innerHeight
+}
+
 function initImageLoaders() {
     const images = document.querySelectorAll('img[loading="lazy"]')
     images.forEach(img => {
@@ -93,7 +98,6 @@ function initImageLoaders() {
             if (parent) parent.classList.remove('img-placeholder')
             img.style.filter = 'none'
         })
-        img.loading = 'eager'
     })
 }
 
@@ -105,29 +109,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
     const indicator = document.getElementById('loading-indicator')
     if (indicator) {
-        const imgs = document.querySelectorAll('img[loading="lazy"]')
-        const hideIndicator = () => indicator.classList.add('hidden')
-        if (imgs.length === 0) {
-            hideIndicator()
-        } else {
-            let pending = 0
-            imgs.forEach(img => {
-                if (img.classList.contains('loaded') || (img.complete && img.naturalWidth > 0)) {
-                    return
-                }
-                pending++
-                const check = () => {
-                    pending--
-                    if (pending <= 0) hideIndicator()
-                }
-                img.addEventListener('load', check)
-                img.addEventListener('error', check)
-            })
-            window.addEventListener('load', () => {
-                if (pending <= 0) hideIndicator()
-            })
-            if (pending <= 0) hideIndicator()
+        const allLoaded = () => {
+            const imgs = document.querySelectorAll('img[loading="lazy"]')
+            return Array.from(imgs).every(img =>
+                img.classList.contains('loaded') ||
+                (img.complete && img.naturalWidth > 0) ||
+                !isInViewport(img)
+            )
         }
+        const hide = () => {
+            if (!indicator.classList.contains('hidden')) {
+                indicator.classList.add('hidden')
+            }
+        }
+        const tryHide = () => {
+            if (allLoaded()) {
+                hide()
+                return true
+            }
+            return false
+        }
+        const interval = setInterval(() => {
+            if (tryHide()) clearInterval(interval)
+        }, 300)
+        window.addEventListener('scroll', () => {
+            if (tryHide()) clearInterval(interval)
+        })
+        setTimeout(hide, 5000)
     }
 })
 
