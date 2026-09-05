@@ -267,27 +267,27 @@ h1 {
 
 .sidebar-logo {
     flex-shrink: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #d4af37;
     width: 80px;
     height: 80px;
-    background: rgba(212, 175, 55, 0.05);
-    border: 2px solid rgba(212, 175, 55, 0.3);
-    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 50px auto;
-    font-weight: 900;
-    text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(212, 175, 55, 0.1);
+    font-weight: 700;
+    text-shadow: none;
+    box-shadow: none;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .sidebar-logo:hover {
     border-color: #d4af37;
     background: rgba(212, 175, 55, 0.1);
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
 }
 
 .sidebar ul {
