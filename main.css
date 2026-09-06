@@ -537,15 +537,11 @@ h1 {
     width: 100%;
     max-width: 100%;
     height: auto;
-    border: 1px solid rgba(212, 175, 55, 0.4);
-    border-radius: 6px;
-    filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.25));
+    filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.25)) saturate(1.08) brightness(1.04);
     animation: float 6s ease-in-out infinite;
 }
 
 #presentation .character-render {
-    border: none;
-    border-radius: 0;
     filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
 }
 
@@ -663,7 +659,8 @@ h1 {
     height: auto;
     border-radius: 6px;
     border: 1px solid rgba(212, 175, 55, 0.45);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 175, 55, 0.15), inset 0 0 10px rgba(212, 175, 55, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 175, 55, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(255, 255, 255, 0.06), inset 0 0 10px rgba(212, 175, 55, 0.05);
+    filter: saturate(1.08) brightness(1.04) contrast(1.02);
     transition: all 0.3s ease;
 }
 
@@ -1062,21 +1059,27 @@ img.loaded {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s ease;
 }
 
-.character-render:hover, 
-.dungeon-screenshot:hover, 
-.flag-item img:hover, 
-.char-image img:hover,
-.sash-renders img:hover {
-    transform: translateY(-8px) scale(1.02);
-    filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.3));
-    border-color: rgba(212, 175, 55, 0.8) !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 0 14px rgba(212, 175, 55, 0.08);
-}
-
 #presentation .character-render:hover {
     border: none;
     box-shadow: none;
     filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.3));
+}
+
+.character-render:hover,
+.char-image img:hover {
+    transform: translateY(-8px) scale(1.02);
+    border: none !important;
+    box-shadow: none;
+    filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.35)) saturate(1.08) brightness(1.04);
+}
+
+.dungeon-screenshot:hover, 
+.flag-item img:hover, 
+.sash-renders img:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.3));
+    border-color: rgba(212, 175, 55, 0.8) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .flag-item img:hover {
@@ -1581,7 +1584,8 @@ img.loaded {
 .full-width-ui {
     max-width: 900px;
     width: 100%;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 16px rgba(212, 175, 55, 0.18), inset 0 0 10px rgba(212, 175, 55, 0.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 16px rgba(212, 175, 55, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(255, 255, 255, 0.07), inset 0 0 10px rgba(212, 175, 55, 0.05);
+    filter: saturate(1.08) brightness(1.04) contrast(1.02);
     height: auto;
 }
 
