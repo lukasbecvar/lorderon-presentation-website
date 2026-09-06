@@ -202,6 +202,14 @@ document.querySelectorAll('.sidebar ul li a').forEach(link => {
     })
 })
 
+document.querySelectorAll('.sidebar-group-title').forEach(title => {
+    title.addEventListener('click', () => {
+        const group = title.closest('.sidebar-group')
+        if (!group) return
+        group.classList.toggle('open')
+    })
+})
+
 const revealSections = document.querySelectorAll('.reveal')
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -252,14 +260,21 @@ window.addEventListener('scroll', () => {
             link.classList.remove('active')
             if (link.getAttribute('href').includes(current)) {
                 link.classList.add('active')
-                const sb = link.parentElement?.parentElement?.parentElement
-                const linkTop = link.offsetTop
-                const sbHeight = sidebar.clientHeight
-                if (sb && linkTop < sidebar.scrollTop || linkTop + link.offsetHeight > sidebar.scrollTop + sbHeight) {
-                    sidebar.scrollTo({
-                        top: linkTop - sbHeight / 2 + link.offsetHeight / 2,
-                        behavior: 'smooth'
-                    })
+                const group = link.closest('.sidebar-group')
+                if (group && !group.classList.contains('open')) {
+                    group.classList.add('open')
+                }
+                const sb = document.querySelector('.sidebar-groups')
+                if (sb) {
+                    const linkTop = link.getBoundingClientRect().top - sb.getBoundingClientRect().top + sb.scrollTop
+                    const sbHeight = sb.clientHeight
+                    const scrollTop = sb.scrollTop
+                    if (linkTop < scrollTop || linkTop + link.offsetHeight > scrollTop + sbHeight) {
+                        sb.scrollTo({
+                            top: linkTop - sbHeight / 2 + link.offsetHeight / 2,
+                            behavior: 'smooth'
+                        })
+                    }
                 }
             }
         })
