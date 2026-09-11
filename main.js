@@ -377,3 +377,92 @@ function showTab(tabId, button) {
     document.getElementById(tabId).classList.add('active')
     button.classList.add('active')
 }
+
+const lightbox = document.getElementById('lightbox')
+if (lightbox) {
+    initLightbox()
+}
+
+function initLightbox() {
+    const lightboxImg = lightbox.querySelector('.lightbox-img')
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption')
+    let lightboxItems = []
+    let lightboxIndex = 0
+
+function collectLightboxItems() {
+    lightboxItems = []
+    document.querySelectorAll('.location-card').forEach(card => {
+        const img = card.querySelector('.location-image')
+        if (img) {
+            lightboxItems.push({
+                src: img.getAttribute('src'),
+                alt: img.getAttribute('alt') || '',
+                caption: (card.querySelector('.location-name') || {}).textContent || ''
+            })
+        }
+    })
+    document.querySelectorAll('.dungeon-img-wrapper').forEach(wrapper => {
+        const img = wrapper.querySelector('.dungeon-screenshot')
+        if (img) {
+            lightboxItems.push({
+                src: img.getAttribute('src'),
+                alt: img.getAttribute('alt') || '',
+                caption: (wrapper.querySelector('.img-caption') || {}).textContent || ''
+            })
+        }
+    })
+}
+
+function openLightbox(index) {
+    if (index < 0 || index >= lightboxItems.length) return
+    lightboxIndex = index
+    const item = lightboxItems[index]
+    lightboxImg.src = item.src
+    lightboxImg.alt = item.alt
+    lightboxCaption.textContent = item.caption
+    lightbox.classList.add('open')
+    document.body.style.overflow = 'hidden'
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('open')
+    document.body.style.overflow = ''
+}
+
+document.querySelector('.lightbox-close').addEventListener('click', closeLightbox)
+document.querySelector('.lightbox-prev').addEventListener('click', () => {
+    openLightbox((lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length)
+})
+
+document.querySelector('.lightbox-next').addEventListener('click', () => {
+    openLightbox((lightboxIndex + 1) % lightboxItems.length)
+})
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox()
+})
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return
+    if (e.key === 'Escape') closeLightbox()
+    if (e.key === 'ArrowLeft') openLightbox((lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length)
+    if (e.key === 'ArrowRight') openLightbox((lightboxIndex + 1) % lightboxItems.length)
+})
+
+document.addEventListener('click', (e) => {
+        const card = e.target.closest('.location-card')
+        if (card) {
+            const img = card.querySelector('.location-image')
+            if (!img) return
+            collectLightboxItems()
+            openLightbox(lightboxItems.findIndex(item => item.src === img.getAttribute('src')))
+            return
+        }
+        const clickable = e.target.closest('.dungeon-img-wrapper .dungeon-screenshot')
+        if (!clickable) return
+        collectLightboxItems()
+        openLightbox(lightboxItems.findIndex(item => item.src === clickable.getAttribute('src')))
+    })
+
+    collectLightboxItems()
+}
