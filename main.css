@@ -2057,16 +2057,6 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     filter: brightness(1.15);
 }
 
-.dungeon-img-wrapper img.dungeon-screenshot {
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.dungeon-img-wrapper img.dungeon-screenshot:hover {
-    transform: scale(1.02);
-    filter: brightness(1.1);
-}
-
 @media (max-width: 768px) {
     .lightbox-prev { left: 8px; }
     .lightbox-next { right: 8px; }
