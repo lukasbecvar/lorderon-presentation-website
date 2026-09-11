@@ -1087,7 +1087,11 @@ img.loaded {
 }
 
 .sash-renders img:hover {
-    transform: translateY(-5px) scale(1.15);
+    transform: scale(1.15) translateY(-5px);
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none;
+    filter: drop-shadow(0 15px 20px rgba(212, 175, 55, 0.35));
 }
 
 .aura-evolution-grid {
