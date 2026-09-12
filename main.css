@@ -409,7 +409,7 @@ h1 {
 }
 
 .sidebar-group.open .sidebar-submenu {
-    max-height: 900px;
+    max-height: 2000px;
 }
 
 .sidebar .sidebar-submenu li {
