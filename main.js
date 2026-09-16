@@ -258,7 +258,7 @@ window.addEventListener('scroll', () => {
         lastActive = current
         navLinks.forEach(link => {
             link.classList.remove('active')
-            if (link.getAttribute('href').includes(current)) {
+            if (link.getAttribute('href') === '#' + current) {
                 link.classList.add('active')
                 const group = link.closest('.sidebar-group')
                 if (group && !group.classList.contains('open')) {
@@ -328,7 +328,7 @@ class Particle {
         ctx.save()
         ctx.globalAlpha = this.alpha
         ctx.fillStyle = this.color
-        ctx.shadowBlur = 15
+        ctx.shadowBlur = 8
         ctx.shadowColor = this.color
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
