@@ -626,6 +626,11 @@ h1 {
     filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
 }
 
+#qol .character-render {
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    border-radius: 6px;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
