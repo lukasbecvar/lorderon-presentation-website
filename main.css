@@ -619,7 +619,6 @@ h1 {
     max-width: 100%;
     height: auto;
     filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.25)) saturate(1.08) brightness(1.04);
-    animation: float 6s ease-in-out infinite;
 }
 
 #presentation .character-render {
@@ -629,6 +628,17 @@ h1 {
 #qol .character-render {
     border: 1px solid rgba(212, 175, 55, 0.45);
     border-radius: 6px;
+}
+
+.section-image.settings-image {
+    flex: 0 0 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#qol .character-render.settings-preview {
+    width: 100%;
+    max-width: 100%;
 }
 
 @keyframes float {
@@ -1050,7 +1060,6 @@ h1 {
     .content-wrapper { margin-left: 0; padding-top: 60px; }
     .section-flex { flex-direction: column-reverse; align-items: center; }
     .section-flex.reverse { flex-direction: column; }
-    #predstaveni .section-image { display: none; }
     .section-image { flex: 0 0 auto; width: 100%; max-width: 300px; margin-bottom: 20px; }
     .mobile-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .mobile-toggle.open span:nth-child(2) { opacity: 0; }
