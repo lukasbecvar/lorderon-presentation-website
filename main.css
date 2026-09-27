@@ -636,7 +636,14 @@ h1 {
     justify-content: flex-end;
 }
 
-#qol .character-render.settings-preview {
+.section-image.equip-switcher-image {
+    flex: 0 0 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#qol .character-render.settings-preview,
+#qol .character-render.equip-switcher-preview {
     width: 100%;
     max-width: 100%;
 }
