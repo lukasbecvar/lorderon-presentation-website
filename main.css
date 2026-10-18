@@ -2679,12 +2679,12 @@ h1 {
     background: none;
     border: none;
     border-radius: 0;
-    color: rgba(244, 216, 135, 0.62);
-    font-size: 0.74rem;
+    color: var(--gold-bright);
+    font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 14px 8px 8px;
+    padding: 16px 8px 10px;
 }
 .sidebar-group-title::before {
     content: none;
@@ -2762,4 +2762,8 @@ h1 {
 #back-to-top {
     color: var(--gold);
     background: #0f0c08;
+}
+
+.sidebar-groups.instant .sidebar-submenu {
+    transition: none;
 }

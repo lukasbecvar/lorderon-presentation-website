@@ -373,7 +373,11 @@ function setActiveLink(current, smoothSidebar = true) {
             link.classList.add('active')
             const group = link.closest('.sidebar-group')
             if (group && !group.classList.contains('open')) {
+                const groups = document.querySelector('.sidebar-groups')
+                if (groups) groups.classList.add('instant')
+                document.querySelectorAll('.sidebar-group.open').forEach(other => other.classList.remove('open'))
                 group.classList.add('open')
+                if (groups) requestAnimationFrame(() => requestAnimationFrame(() => groups.classList.remove('instant')))
             }
             const sb = document.querySelector('.sidebar-groups')
             if (sb) {
