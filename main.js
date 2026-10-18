@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (window.location.hash) {
-        scrollIntoViewWithImages(window.location.hash, 20, 'auto')
+        scrollIntoViewWithImages(window.location.hash, 72, 'auto')
     }
 })
 
@@ -279,7 +279,7 @@ function layoutTop(el) {
     return y
 }
 
-function scrollIntoViewWithImages(targetId, offset = 20, behavior = 'smooth') {
+function scrollIntoViewWithImages(targetId, offset = 72, behavior = 'smooth') {
     const target = document.querySelector(targetId)
     if (!target) return
     holdVideoPreviews()
@@ -432,8 +432,8 @@ class Particle {
         this.x = Math.random() * width
         this.y = height + Math.random() * 100
         this.vx = (Math.random() - 0.5) * 1
-        this.vy = -(Math.random() * 1.5 + 0.5)
-        this.size = Math.random() * 2 + 1
+        this.vy = -(Math.random() * 1.1 + 0.35)
+        this.size = Math.random() * 1.8 + 0.8
         this.alpha = 1
         this.color = Math.random() > 0.5 ? '#ff4500' : '#ff8c00'
         this.maxLife = Math.random() * 250 + 200
@@ -450,9 +450,9 @@ class Particle {
     }
     draw() {
         ctx.save()
-        ctx.globalAlpha = this.alpha
+        ctx.globalAlpha = this.alpha * 0.85
         ctx.fillStyle = this.color
-        ctx.shadowBlur = 8
+        ctx.shadowBlur = 5
         ctx.shadowColor = this.color
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
@@ -463,7 +463,7 @@ class Particle {
 
 function createParticles() {
     particles = []
-    const count = Math.floor((width * height) / 8000) + 40;
+    const count = Math.floor((width * height) / 12000) + 30
     for (let i = 0; i < count; i++) {
         particles.push(new Particle())
     }
