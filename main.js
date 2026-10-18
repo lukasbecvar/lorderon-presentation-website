@@ -4,25 +4,33 @@ const currentLangFlag = document.getElementById('current-lang-flag')
 const currentLangName = document.getElementById('current-lang-name')
 
 function applyTranslations(lang) {
+    const dict = translations[lang] || {}
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n')
-        if (translations[lang] && translations[lang][key]) {
-            el.innerHTML = translations[lang][key]
+        if (el.dataset.i18nOriginal === undefined) {
+            if (!dict[key]) return
+            el.dataset.i18nOriginal = el.innerHTML
         }
+        el.innerHTML = dict[key] || el.dataset.i18nOriginal
     })
-    
+
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
         const key = el.getAttribute('data-i18n-alt')
-        if (translations[lang] && translations[lang][key]) {
-            el.setAttribute('alt', translations[lang][key])
+        if (el.dataset.i18nOriginalAlt === undefined) {
+            if (!dict[key]) return
+            el.dataset.i18nOriginalAlt = el.getAttribute('alt') || ''
         }
+        el.setAttribute('alt', dict[key] || el.dataset.i18nOriginalAlt)
     })
 
     document.querySelectorAll('[data-i18n-title]').forEach(el => {
         const key = el.getAttribute('data-i18n-title')
-        if (translations[lang] && translations[lang][key]) {
-            el.setAttribute('title', translations[lang][key])
+        if (el.dataset.i18nOriginalTitle === undefined) {
+            if (!dict[key]) return
+            el.dataset.i18nOriginalTitle = el.getAttribute('title') || ''
         }
+        el.setAttribute('title', dict[key] || el.dataset.i18nOriginalTitle)
     })
     
     const flagMap = {
@@ -36,7 +44,7 @@ function applyTranslations(lang) {
     const nameMap = {
         'cs': 'Čeština',
         'en': 'English',
-        'de': 'German',
+        'de': 'Deutsch',
         'pl': 'Polski',
         'ro': 'Română',
         'tr': 'Türkçe'
