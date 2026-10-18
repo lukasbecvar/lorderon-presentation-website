@@ -2242,25 +2242,30 @@ h1 {
 .divider::before { background: linear-gradient(90deg, transparent, var(--gold-soft), transparent); }
 .divider::after { content: none; }
 
-header p {
-    letter-spacing: 0.08em;
+.hero-subtitle {
+    font-size: clamp(1.15rem, 2.6vw, 1.85rem);
+    font-weight: 500;
+    color: #f6edd8;
+    letter-spacing: 0.1em;
+    line-height: 1.45;
+    margin-bottom: 44px;
 }
 
 .cta-button {
-    clip-path: none;
-    border-radius: 4px;
-    background: transparent;
-    color: var(--text);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    letter-spacing: 0.18em;
-    font-weight: 600;
-    padding: 15px 34px;
+    clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+    border-radius: 0;
+    background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+    color: #17120a;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding: 20px 52px 20px 44px;
 }
-.cta-button::after { content: none; }
+.cta-button::after { content: "\25B8"; margin-left: 18px; }
 .cta-button:hover {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: #14110c;
+    background: linear-gradient(180deg, #fbeab8 0%, var(--gold-bright) 100%);
+    color: #17120a;
     box-shadow: none;
 }
 
