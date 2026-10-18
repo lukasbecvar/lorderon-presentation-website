@@ -32,8 +32,13 @@ body, html {
     overflow-x: hidden;
 }
 
-img {
+img,
+video {
     border-radius: 8px;
+}
+
+:where(img[width][height]) {
+    height: auto;
 }
 
 #loading-screen {
@@ -234,6 +239,10 @@ img {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.nav-jump .reveal {
+    transition: none;
 }
 
 header {
@@ -698,7 +707,7 @@ h1 {
     width: 100%;
 }
 
-.character-card:hover {
+.character-card.is-hover {
     background: rgba(212, 175, 55, 0.05);
     border-color: rgba(212, 175, 55, 0.3);
     transform: translateX(8px);
@@ -1197,16 +1206,16 @@ img.loaded {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s ease;
 }
 
-#presentation .character-render:hover {
-    border: none;
+#presentation .character-render.is-hover {
+    border-color: transparent;
     box-shadow: none;
     filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.3));
 }
 
-.character-render:hover,
-.char-image img:hover {
+.character-render.is-hover,
+.char-image img.is-hover {
     transform: translateY(-8px) scale(1.02);
-    border: none;
+    border-color: transparent;
     box-shadow: none;
     filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.35)) saturate(1.08) brightness(1.04);
 }
@@ -1216,13 +1225,13 @@ img.loaded {
     border-color: var(--gold-soft);
 }
 
-.flag-item img:hover,
-.sash-renders img:hover {
+.flag-item img.is-hover,
+.sash-renders img.is-hover {
     transform: translateY(-5px) scale(1.05);
     filter: drop-shadow(0 12px 22px rgba(212, 175, 55, 0.28));
 }
 
-.sash-renders img:hover {
+.sash-renders img.is-hover {
     transform: scale(1.12) translateY(-4px);
     border: none;
     border-color: transparent;
@@ -1247,14 +1256,15 @@ img.loaded {
     transition: all 0.3s ease;
 }
 
-.aura-evo-card:hover {
+.aura-evo-card.is-hover {
     background: rgba(212, 175, 55, 0.05);
     border-color: rgba(212, 175, 55, 0.4);
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-.aura-evo-card img {
+.aura-evo-card img,
+.aura-evo-card video {
     width: 100%;
     height: 150px;
     object-fit: contain;
@@ -1326,7 +1336,7 @@ img.loaded {
     transition: all 0.3s ease;
 }
 
-.talisman-card:hover {
+.talisman-card.is-hover {
     background: rgba(212, 175, 55, 0.07);
     border-color: rgba(212, 175, 55, 0.4);
     transform: translateY(-5px);
@@ -1596,7 +1606,7 @@ img.loaded {
     font-weight: 700;
 }
 
-.skill-box:hover {
+.skill-box.is-hover {
     background: rgba(212, 175, 55, 0.1);
     border-color: rgba(212, 175, 55, 0.5);
     transform: translateY(-3px);
@@ -1641,7 +1651,7 @@ img.loaded {
     transition: all 0.3s ease;
 }
 
-.skill-item:hover {
+.skill-item.is-hover {
     background: rgba(212, 175, 55, 0.05);
     border-color: rgba(212, 175, 55, 0.3);
     transform: translateY(-5px);
@@ -1778,7 +1788,7 @@ img.loaded {
     border-left: 3px solid #d4af37;
 }
 
-.event-card-item:hover {
+.event-card-item.is-hover {
     background: rgba(212, 175, 55, 0.08);
     transform: translateY(-5px);
     border-color: rgba(212, 175, 55, 0.4);
@@ -1893,7 +1903,7 @@ img.loaded {
     text-align: center;
 }
 
-.social-btn:hover {
+.social-btn.is-hover {
     background: #d4af37;
     color: #050505;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
@@ -1932,7 +1942,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     bottom: 85px;
 }
 
-#back-to-top:hover {
+#back-to-top.is-hover {
     background: #d4af37;
     color: #050505;
     transform: translateY(-5px);
@@ -1944,7 +1954,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     transition: transform 0.3s ease;
 }
 
-#back-to-top:hover span {
+#back-to-top.is-hover span {
     transform: scale(1.2);
 }
 
@@ -1999,7 +2009,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 
-.location-card:hover {
+.location-card.is-hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.2);
     border-color: #d4af37;
@@ -2012,7 +2022,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     transition: transform 0.6s ease;
 }
 
-.location-card:hover .location-image {
+.location-card.is-hover .location-image {
     transform: scale(1.1);
 }
 
@@ -2027,7 +2037,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     transition: background 0.3s ease;
 }
 
-.location-card:hover .location-overlay {
+.location-card.is-hover .location-overlay {
     background: linear-gradient(to top, rgba(212, 175, 55, 0.4), transparent);
 }
 
@@ -2047,7 +2057,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     display: block;
 }
 
-.location-card:hover .location-type {
+.location-card.is-hover .location-type {
     color: #fff;
 }
 

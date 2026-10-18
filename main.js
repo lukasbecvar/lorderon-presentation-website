@@ -16,12 +16,13 @@ function applyTranslations(lang) {
     })
 
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+        const attr = el.tagName === 'VIDEO' ? 'aria-label' : 'alt'
         const key = el.getAttribute('data-i18n-alt')
         if (el.dataset.i18nOriginalAlt === undefined) {
             if (!dict[key]) return
-            el.dataset.i18nOriginalAlt = el.getAttribute('alt') || ''
+            el.dataset.i18nOriginalAlt = el.getAttribute(attr) || ''
         }
-        el.setAttribute('alt', dict[key] || el.dataset.i18nOriginalAlt)
+        el.setAttribute(attr, dict[key] || el.dataset.i18nOriginalAlt)
     })
 
     document.querySelectorAll('[data-i18n-title]').forEach(el => {
@@ -87,6 +88,118 @@ function isInViewport(el) {
     return rect.bottom >= 0 && rect.top <= window.innerHeight
 }
 
+let videoPreviews = []
+const visibleVideos = new Set()
+let navScrolling = false
+
+function syncVideoPreviews() {
+    if (navScrolling) return
+    videoPreviews.forEach(video => {
+        if (visibleVideos.has(video)) {
+            video.preload = 'auto'
+            const playing = video.play()
+            if (playing) playing.catch(() => {})
+        } else if (!video.paused) {
+            video.pause()
+        }
+    })
+}
+
+function initVideoPreviews() {
+    videoPreviews = Array.from(document.querySelectorAll('video[data-lazy]'))
+    if (!videoPreviews.length) return
+    if (!('IntersectionObserver' in window)) {
+        videoPreviews.forEach(video => video.play().catch(() => {}))
+        return
+    }
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) visibleVideos.add(entry.target)
+            else visibleVideos.delete(entry.target)
+        })
+        syncVideoPreviews()
+    }, { rootMargin: '100px 0px', threshold: 0.01 })
+    videoPreviews.forEach(video => observer.observe(video))
+}
+
+function holdVideoPreviews() {
+    navScrolling = true
+    videoPreviews.forEach(video => { if (!video.paused) video.pause() })
+    const startY = window.pageYOffset
+    const startedAt = Date.now()
+    let lastY = startY
+    let still = 0
+    let timer = null
+    let limit = null
+    const takeover = ['wheel', 'touchstart', 'keydown', 'mousedown']
+    const release = () => {
+        clearInterval(timer)
+        clearTimeout(limit)
+        takeover.forEach(type => window.removeEventListener(type, release))
+        navScrolling = false
+        document.documentElement.classList.remove('nav-jump')
+        syncVideoPreviews()
+        syncActiveSection()
+    }
+    takeover.forEach(type => window.addEventListener(type, release, { passive: true }))
+    timer = setInterval(() => {
+        const y = window.pageYOffset
+        if (Math.abs(y - startY) > 5 || Date.now() - startedAt > 4000) still = Math.abs(y - lastY) < 1 ? still + 1 : 0
+        lastY = y
+        if (still >= 3) release()
+    }, 100)
+    limit = setTimeout(release, 20000)
+}
+
+function initStableHover() {
+    const selector = '.aura-evo-card, .talisman-card, .skill-box, .skill-item, .event-card-item, .location-card, ' +
+        '.character-card, .social-btn, #back-to-top, .character-render, .char-image img, .flag-item img, .sash-renders img'
+    const active = new Map()
+    let pointerX = -1
+    let pointerY = -1
+    let frame = 0
+
+    const restBox = el => {
+        const r = el.getBoundingClientRect()
+        return { left: r.left + window.pageXOffset, right: r.right + window.pageXOffset, top: r.top + window.pageYOffset, bottom: r.bottom + window.pageYOffset }
+    }
+    const inside = (box, x, y) => x >= box.left && x <= box.right && y >= box.top && y <= box.bottom
+
+    const update = () => {
+        frame = 0
+        const under = pointerX < 0 ? null : document.elementFromPoint(pointerX, pointerY)
+        const target = under ? under.closest(selector) : null
+        const pageX = pointerX + window.pageXOffset
+        const pageY = pointerY + window.pageYOffset
+        active.forEach((rest, el) => {
+            if (el === target) return
+            const r = el.getBoundingClientRect()
+            const current = { left: r.left + window.pageXOffset, right: r.right + window.pageXOffset, top: r.top + window.pageYOffset, bottom: r.bottom + window.pageYOffset }
+            if (pointerX >= 0 && (inside(rest, pageX, pageY) || inside(current, pageX, pageY))) return
+            el.classList.remove('is-hover')
+            active.delete(el)
+        })
+        if (target && !active.has(target)) {
+            active.set(target, restBox(target))
+            target.classList.add('is-hover')
+        }
+    }
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update) }
+
+    document.addEventListener('pointermove', e => {
+        if (e.pointerType !== 'mouse') return
+        pointerX = e.clientX
+        pointerY = e.clientY
+        schedule()
+    }, { passive: true })
+    window.addEventListener('scroll', schedule, { passive: true })
+    document.documentElement.addEventListener('mouseleave', () => {
+        pointerX = -1
+        pointerY = -1
+        schedule()
+    })
+}
+
 function initImageLoaders() {
     const images = document.querySelectorAll('img[loading="lazy"]')
     images.forEach(img => {
@@ -111,6 +224,8 @@ function initImageLoaders() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initImageLoaders()
+    initVideoPreviews()
+    initStableHover()
     const loader = document.getElementById('loading-screen')
     setTimeout(() => {
         loader.classList.add('fade-out')
@@ -158,45 +273,34 @@ mobileToggle.addEventListener('click', () => {
     mobileToggle.classList.toggle('open')
 })
 
+function layoutTop(el) {
+    let y = 0
+    for (let node = el; node; node = node.offsetParent) y += node.offsetTop
+    return y
+}
+
 function scrollIntoViewWithImages(targetId, offset = 20, behavior = 'smooth') {
     const target = document.querySelector(targetId)
     if (!target) return
+    holdVideoPreviews()
+    document.documentElement.classList.add('nav-jump')
+    if (target.classList.contains('reveal')) target.classList.add('active')
     let lastY = -1
     const scrollToTarget = () => {
-        const y = target.getBoundingClientRect().top + window.pageYOffset - offset
+        const y = layoutTop(target) - offset
         if (Math.abs(y - lastY) > 1) {
             lastY = y
             window.scrollTo({ top: y, behavior })
         }
-        return y
     }
-    const pending = document.querySelectorAll('img[loading="lazy"]')
-    if (pending.length > 0) {
-        let done = 0
-        const check = () => {
-            done++
-            if (done >= pending.length) {
-                const first = scrollToTarget()
-                const stabilizer = setInterval(() => {
-                    const y = scrollToTarget()
-                    if (Math.abs(y - first) <= 2) {
-                        clearInterval(stabilizer)
-                    }
-                }, 200)
-                setTimeout(() => clearInterval(stabilizer), 5000)
-            }
-        }
-        pending.forEach(img => {
-            if (!img.complete) {
-                img.loading = 'eager'
-            }
-            if (img.complete) { check(); return }
-            img.addEventListener('load', check, { once: true })
-            img.addEventListener('error', check, { once: true })
-        })
-    } else {
+    scrollToTarget()
+    let ticks = 0
+    const stabilizer = setInterval(() => {
         scrollToTarget()
-    }
+        if (++ticks >= 15) clearInterval(stabilizer)
+    }, 200)
+    window.addEventListener('wheel', () => clearInterval(stabilizer), { once: true, passive: true })
+    window.addEventListener('touchstart', () => clearInterval(stabilizer), { once: true, passive: true })
 }
 
 document.querySelectorAll('.sidebar ul li a').forEach(link => {
@@ -207,6 +311,7 @@ document.querySelectorAll('.sidebar ul li a').forEach(link => {
         if (!targetId || !targetId.startsWith('#')) return
         e.preventDefault()
         scrollIntoViewWithImages(targetId)
+        setActiveLink(targetId.slice(1))
     })
 })
 
@@ -240,16 +345,11 @@ const navLinks = document.querySelectorAll('.sidebar ul li a')
 let lastActive = ''
 const backToTopBtn = document.getElementById('back-to-top')
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
-        backToTopBtn.classList.add('show')
-    } else {
-        backToTopBtn.classList.remove('show')
-    }
-    let current = ''
+function currentSectionId() {
     const docHeight = document.documentElement.scrollHeight
     const winHeight = window.innerHeight
     const atBottom = Math.abs(window.pageYOffset + winHeight - docHeight) < 40
+    let current = ''
     if (atBottom) {
         const last = sections[sections.length - 1]
         current = last ? last.getAttribute('id') : current
@@ -261,32 +361,48 @@ window.addEventListener('scroll', () => {
             }
         })
     }
+    return current
+}
 
-    if (current !== lastActive) {
-        lastActive = current
-        navLinks.forEach(link => {
-            link.classList.remove('active')
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active')
-                const group = link.closest('.sidebar-group')
-                if (group && !group.classList.contains('open')) {
-                    group.classList.add('open')
-                }
-                const sb = document.querySelector('.sidebar-groups')
-                if (sb) {
-                    const linkTop = link.getBoundingClientRect().top - sb.getBoundingClientRect().top + sb.scrollTop
-                    const sbHeight = sb.clientHeight
-                    const scrollTop = sb.scrollTop
-                    if (linkTop < scrollTop || linkTop + link.offsetHeight > scrollTop + sbHeight) {
-                        sb.scrollTo({
-                            top: linkTop - sbHeight / 2 + link.offsetHeight / 2,
-                            behavior: 'smooth'
-                        })
-                    }
+function setActiveLink(current, smoothSidebar = true) {
+    if (current === lastActive) return
+    lastActive = current
+    navLinks.forEach(link => {
+        link.classList.remove('active')
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active')
+            const group = link.closest('.sidebar-group')
+            if (group && !group.classList.contains('open')) {
+                group.classList.add('open')
+            }
+            const sb = document.querySelector('.sidebar-groups')
+            if (sb) {
+                const linkTop = link.getBoundingClientRect().top - sb.getBoundingClientRect().top + sb.scrollTop
+                const sbHeight = sb.clientHeight
+                const scrollTop = sb.scrollTop
+                if (linkTop < scrollTop || linkTop + link.offsetHeight > scrollTop + sbHeight) {
+                    sb.scrollTo({
+                        top: linkTop - sbHeight / 2 + link.offsetHeight / 2,
+                        behavior: smoothSidebar ? 'smooth' : 'auto'
+                    })
                 }
             }
-        })
+        }
+    })
+}
+
+function syncActiveSection() {
+    setActiveLink(currentSectionId())
+}
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 500) {
+        backToTopBtn.classList.add('show')
+    } else {
+        backToTopBtn.classList.remove('show')
     }
+    if (navScrolling) return
+    setActiveLink(currentSectionId())
 })
 
 const canvas = document.getElementById('bg-canvas')
