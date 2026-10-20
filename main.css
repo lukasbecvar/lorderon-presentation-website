@@ -899,6 +899,7 @@ h1 {
 .img-caption::before {
     left: -20px;
 }
+
 .img-caption::after {
     right: -20px;
 }
@@ -2486,11 +2487,6 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     }
 }
 
-/* ==========================================================================
-   Refinement layer (flat panels, no glow). Loaded last, so it overrides the
-   rules above; keep it at the end of the file.
-   ========================================================================== */
-
 :root {
     --bg: #050505;
     --text: #e8e2d4;
@@ -2505,8 +2501,6 @@ body,
 html {
     background-color: var(--bg);
 }
-
-/* hero */
 
 h1 {
     font-size: clamp(2rem, 9vw, 4rem);
@@ -2526,6 +2520,7 @@ h1 {
         transparent
     );
 }
+
 .divider::after {
     content: none;
 }
@@ -2558,17 +2553,17 @@ h1 {
     letter-spacing: 0.2em;
     padding: 20px 52px 20px 44px;
 }
+
 .cta-button::after {
     content: "\25B8";
     margin-left: 18px;
 }
+
 .cta-button:hover {
     background: linear-gradient(180deg, #a2802f 0%, #80622a 100%);
     color: #ffffff;
     box-shadow: none;
 }
-
-/* section panels and headings */
 
 .presentation-section {
     background: linear-gradient(
@@ -2580,6 +2575,7 @@ h1 {
     box-shadow: var(--shadow-panel);
     border-radius: var(--radius);
 }
+
 .presentation-section::before {
     content: none;
 }
@@ -2593,9 +2589,11 @@ h1 {
     padding-bottom: 20px;
     margin-bottom: 26px;
 }
+
 .presentation-section h2::before {
     content: none;
 }
+
 .presentation-section h2::after {
     width: 44px;
     height: 2px;
@@ -2615,8 +2613,6 @@ h1 {
     color: var(--text-dim);
 }
 
-/* screenshots and renders: neutral frame, no coloured glow */
-
 .dungeon-screenshot,
 .full-width-ui,
 #qol .character-render {
@@ -2624,12 +2620,11 @@ h1 {
     border-radius: 6px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
+
 .dungeon-screenshot.is-hover,
 .dungeon-screenshot:hover {
     border-color: rgba(212, 175, 55, 0.6);
 }
-
-/* hover: small lift, no glow (the .is-hover class is set from main.js) */
 
 .character-render.is-hover,
 .char-image img.is-hover {
@@ -2643,21 +2638,22 @@ h1 {
     transform: translateY(-2px);
     box-shadow: none;
 }
+
 .skill-box.is-hover {
     transform: translateY(-2px);
     box-shadow: none;
 }
+
 .location-card {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
 }
+
 .location-card.is-hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
-
-/* sidebar: plain section labels instead of boxed buttons */
 
 .sidebar {
     background: linear-gradient(
@@ -2667,11 +2663,13 @@ h1 {
     );
     border-right: 1px solid rgba(212, 175, 55, 0.14);
 }
+
 .sidebar-logo {
     border-radius: 8px;
     border-color: rgba(212, 175, 55, 0.4);
     color: var(--gold);
 }
+
 .sidebar-group-title {
     background: none;
     border: none;
@@ -2683,24 +2681,30 @@ h1 {
     text-transform: uppercase;
     padding: 16px 8px 10px;
 }
+
 .sidebar-group-title::before {
     content: none;
 }
+
 .sidebar-group-title:hover {
     background: none;
     border: none;
     box-shadow: none;
     color: var(--gold-bright);
 }
+
 .sidebar-group-title-chevron {
     color: rgba(212, 175, 55, 0.85);
 }
+
 .sidebar-group + .sidebar-group {
     border-top: 1px solid var(--border);
 }
+
 .sidebar-groups::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.18);
 }
+
 .sidebar::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.18);
     box-shadow: none;
@@ -2712,12 +2716,14 @@ h1 {
     font-weight: 500;
     letter-spacing: 0.3px;
 }
+
 .sidebar .sidebar-submenu li a:hover {
     background: rgba(212, 175, 55, 0.08);
     color: var(--gold-bright);
     border-left-color: transparent;
     padding-left: 20px;
 }
+
 .sidebar .sidebar-submenu li a.active {
     background: linear-gradient(
         90deg,
@@ -2734,8 +2740,6 @@ h1 {
     border-radius: 6px;
 }
 
-/* small details */
-
 .pet-features-list li::before {
     content: "";
     top: 0.78em;
@@ -2744,6 +2748,7 @@ h1 {
     background: var(--gold);
     border-radius: 50%;
 }
+
 .pet-features-list li {
     padding-left: 22px;
     color: var(--text-dim);
@@ -2759,6 +2764,7 @@ h1 {
 #back-to-top {
     border-color: rgba(212, 175, 55, 0.32);
 }
+
 #back-to-top {
     color: var(--gold);
     background: #0f0c08;
@@ -2771,6 +2777,7 @@ h1 {
 #presentation .section-image {
     flex-basis: 420px;
 }
+
 @media (max-width: 1100px) {
     #presentation .section-image {
         flex-basis: auto;
@@ -2783,11 +2790,13 @@ h1 {
     justify-items: center;
     padding-bottom: 24px;
 }
+
 :has(> .img-caption) > img,
 :has(> .img-caption) > video {
     grid-area: 1 / 1;
     justify-self: center;
 }
+
 .img-caption {
     grid-area: 1 / 1;
     align-self: end;
@@ -2806,12 +2815,11 @@ h1 {
     pointer-events: none;
     z-index: 1;
 }
+
 .img-caption::before,
 .img-caption::after {
     content: none;
 }
-
-/* body text: brighter and slightly larger for readability */
 
 .presentation-section p {
     font-size: 1.08rem;
@@ -2819,17 +2827,17 @@ h1 {
     color: #d6d0c2;
     line-height: 1.85;
 }
+
 .presentation-section li {
     color: #d6d0c2;
 }
-
-/* biologist table: item icons */
 
 .bio-item {
     display: inline-flex;
     align-items: center;
     gap: 12px;
 }
+
 .bio-item img {
     width: 32px;
     height: 32px;
@@ -2840,14 +2848,10 @@ h1 {
     border: 1px solid rgba(212, 175, 55, 0.25);
 }
 
-/* info boxes: no extra top margin above the heading inside the box */
-
 .presentation-section .set-bonus-box h3,
 .presentation-section .pet-dual-info h3 {
     margin-top: 0;
 }
-
-/* alchemy stone boxes: more readable text */
 
 .stone-item {
     font-family: "Lora", serif;
@@ -2858,8 +2862,6 @@ h1 {
     padding: 12px 16px;
 }
 
-/* aura rune boxes: more readable text */
-
 .rune-item {
     font-family: "Lora", serif;
     font-size: 1rem;
@@ -2867,11 +2869,10 @@ h1 {
     line-height: 1.55;
     color: #e6e0d0;
 }
+
 .runes-info {
     padding: 16px 18px;
 }
-
-/* qol previews: full width on tablet and mobile */
 
 @media (max-width: 1100px) {
     .section-image.settings-image,
