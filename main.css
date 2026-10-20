@@ -2810,3 +2810,15 @@ h1 {
 .img-caption::after {
     content: none;
 }
+
+/* body text: brighter and slightly larger for readability */
+
+.presentation-section p {
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #d6d0c2;
+    line-height: 1.85;
+}
+.presentation-section li {
+    color: #d6d0c2;
+}
