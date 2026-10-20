@@ -2767,3 +2767,46 @@ h1 {
 .sidebar-groups.instant .sidebar-submenu {
     transition: none;
 }
+
+#presentation .section-image {
+    flex-basis: 420px;
+}
+@media (max-width: 1100px) {
+    #presentation .section-image {
+        flex-basis: auto;
+        max-width: 380px;
+    }
+}
+
+:has(> .img-caption) {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 24px;
+}
+:has(> .img-caption) > img,
+:has(> .img-caption) > video {
+    grid-area: 1 / 1;
+    justify-self: center;
+}
+.img-caption {
+    grid-area: 1 / 1;
+    align-self: end;
+    justify-self: center;
+    margin: 0 12px;
+    transform: translateY(50%);
+    max-width: calc(100% - 24px);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    background: rgba(8, 7, 6, 0.78);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: none;
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+    z-index: 1;
+}
+.img-caption::before,
+.img-caption::after {
+    content: none;
+}
