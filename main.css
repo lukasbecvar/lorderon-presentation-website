@@ -2846,3 +2846,14 @@ h1 {
 .presentation-section .pet-dual-info h3 {
     margin-top: 0;
 }
+
+/* alchemy stone boxes: more readable text */
+
+.stone-item {
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #e6e0d0;
+    padding: 12px 16px;
+}
