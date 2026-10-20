@@ -2677,8 +2677,8 @@ h1 {
     border: none;
     border-radius: 0;
     color: var(--gold-bright);
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 16px 8px 10px;
@@ -2693,7 +2693,7 @@ h1 {
     color: var(--gold-bright);
 }
 .sidebar-group-title-chevron {
-    color: rgba(212, 175, 55, 0.6);
+    color: rgba(212, 175, 55, 0.85);
 }
 .sidebar-group + .sidebar-group {
     border-top: 1px solid var(--border);
@@ -2707,7 +2707,10 @@ h1 {
 }
 
 .sidebar .sidebar-submenu li a {
-    color: rgba(240, 232, 214, 0.78);
+    color: rgba(246, 239, 222, 0.92);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 .sidebar .sidebar-submenu li a:hover {
     background: rgba(212, 175, 55, 0.08);
