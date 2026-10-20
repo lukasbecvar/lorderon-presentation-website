@@ -2857,3 +2857,16 @@ h1 {
     color: #e6e0d0;
     padding: 12px 16px;
 }
+
+/* aura rune boxes: more readable text */
+
+.rune-item {
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #e6e0d0;
+}
+.runes-info {
+    padding: 16px 18px;
+}
