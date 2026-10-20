@@ -2822,3 +2822,20 @@ h1 {
 .presentation-section li {
     color: #d6d0c2;
 }
+
+/* biologist table: item icons */
+
+.bio-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.bio-item img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    image-rendering: pixelated;
+    border-radius: 3px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+}
