@@ -2839,3 +2839,10 @@ h1 {
     background: rgba(212, 175, 55, 0.08);
     border: 1px solid rgba(212, 175, 55, 0.25);
 }
+
+/* info boxes: no extra top margin above the heading inside the box */
+
+.presentation-section .set-bonus-box h3,
+.presentation-section .pet-dual-info h3 {
+    margin-top: 0;
+}
