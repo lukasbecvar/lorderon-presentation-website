@@ -2549,9 +2549,9 @@ h1 {
         0 16px
     );
     border-radius: 0;
-    background: linear-gradient(180deg, #c9a74f 0%, #ae8d3a 100%);
-    color: #080604;
-    text-shadow: 0 1px 0 rgba(255, 236, 180, 0.35);
+    background: linear-gradient(180deg, #8f6f2a 0%, #6e5420 100%);
+    color: #fff6dc;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
     border: none;
     font-size: 1.05rem;
     font-weight: 700;
@@ -2563,8 +2563,8 @@ h1 {
     margin-left: 18px;
 }
 .cta-button:hover {
-    background: linear-gradient(180deg, #d6b862 0%, #bb9942 100%);
-    color: #080604;
+    background: linear-gradient(180deg, #a2802f 0%, #80622a 100%);
+    color: #ffffff;
     box-shadow: none;
 }
 
