@@ -180,6 +180,7 @@
                     <li><a href="#sash" data-i18n="nav_sash">Sash System</a></li>
                     <li><a href="#aura" data-i18n="nav_aura">Aura System</a></li>
                     <li><a href="#talismans" data-i18n="nav_talismans">Talismans</a></li>
+                    <li><a href="#energy-crystal" data-i18n="nav_energy_crystal">Energy Crystal</a></li>
                     <li><a href="#buff-items" data-i18n="nav_buff_items">Buff Items</a></li>
                     <li><a href="#emotes" data-i18n="nav_emotes">New Emotes</a></li>
                 </ul>
@@ -1504,6 +1505,68 @@
             </div>
             <div class="alchemy-footer">
                 <p data-i18n="section_talismans_footer">Obtaining: Talismans cannot be purchased from any NPC. They can only be obtained from powerful bosses or as a reward in challenging dungeons.</p>
+            </div>
+        </section>
+
+        <section id="energy-crystal" class="presentation-section reveal">
+            <h2 data-i18n="section_energy_crystal_title">Energy Crystal</h2>
+            <p data-i18n="section_energy_crystal_p1">The Energy Crystal is a powerful item that grants your character extra bonuses for as long as it is active. It can be upgraded from +0 all the way to +25 and becomes stronger with every level.</p>
+            <div class="section-flex">
+                <div class="section-text">
+                    <h3 data-i18n="section_energy_crystal_subtitle1">How It Works</h3>
+                    <p data-i18n="section_energy_crystal_how_p1">Click the crystal in your inventory to activate or deactivate it. While active, it glows in your inventory and taskbar and gives you all of its bonuses. Only one crystal can be active at a time and it cannot be combined with the classic Energy Crystal.</p>
+                    <p data-i18n="section_energy_crystal_how_p2">An active crystal uses up its time, but only while you are online. A crystal can hold at most 24 hours. When the time runs out, the crystal deactivates itself and you can recharge it with an Elixir of Energy.</p>
+                    <p data-i18n="section_energy_crystal_how_p3">The crystal is bound to its owner. It cannot be traded, dropped or sold, it can only be stored in your safebox.</p>
+                    <h3 data-i18n="section_energy_crystal_subtitle2">Bonuses</h3>
+                    <ul class="pet-features-list">
+                        <li data-i18n="energy_crystal_bonus_monster">Strength against monsters: grows with every level up to +10%</li>
+                        <li data-i18n="energy_crystal_bonus_hp">Max. HP: +80 per level, up to +2000</li>
+                        <li data-i18n="energy_crystal_bonus_boss">Strong against Bosses: from +10, +1% every second level, up to +8%</li>
+                        <li data-i18n="energy_crystal_bonus_meteor">Strong against Meteor Stones: from +10, +1% every second level, up to +8%</li>
+                    </ul>
+                </div>
+                <div class="section-image">
+                    <img loading="lazy" src="assets/energy-crystal/energy-crystal-preview.png" alt="Energy Crystal +25" class="dungeon-screenshot" data-i18n-alt="section_energy_crystal_img_alt" width="343" height="436">
+                    <span class="img-caption" data-i18n="section_energy_crystal_img_caption">Active Energy Crystal +25</span>
+                </div>
+            </div>
+            <div class="talisman-list-container">
+                <h3 data-i18n="section_energy_crystal_items_title">Items of the Energy System</h3>
+                <div class="talisman-grid">
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/energy-crystal/energy-fragment.webp" alt="Energy Fragment" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="energy_item_fragment_name">Energy Fragment</h4>
+                            <p data-i18n="energy_item_fragment_desc">Obtained by dismantling equipment at the Alchemist. It is the basic material for the crystal, its upgrades and the exchange.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/energy-crystal/energy-crystal.webp" alt="Energy Crystal" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="energy_item_crystal_name">Energy Crystal</h4>
+                            <p data-i18n="energy_item_crystal_desc">Crafted by the Alchemist from 500 Energy Fragments. The first attempt always succeeds, later ones can fail. A new crystal starts at +0 with 12 hours of time.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/energy-crystal/energy-scroll.webp" alt="Energy Scroll" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="energy_item_scroll_name">Energy Scroll</h4>
+                            <p data-i18n="energy_item_scroll_desc">Drag it onto the crystal to upgrade it by one level, from +0 up to +25.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/energy-crystal/elixir-of-energy.webp" alt="Elixir of Energy" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="energy_item_elixir_name">Elixir of Energy</h4>
+                            <p data-i18n="energy_item_elixir_desc">Drag it onto the crystal to recharge it by 2 hours. It also works on an active crystal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 data-i18n="section_energy_crystal_subtitle3">Upgrading</h3>
+            <p data-i18n="section_energy_crystal_refine_p1">Each upgrade costs an Energy Scroll, Energy Fragments and Yang. The fragment cost rises from 100 at +1 up to 1000 at +25 and the success chance drops with higher levels. If the upgrade fails, the crystal drops by one level. The crystal must be deactivated before upgrading.</p>
+            <div class="alchemy-footer">
+                <p data-i18n="section_energy_crystal_footer">Obtaining: The Alchemist dismantles your equipment into Energy Fragments, crafts the crystal and exchanges fragments for Energy Scrolls and Elixirs of Energy. Scrolls and elixirs also drop from the chests of Beran-Setaou, Razador, Nemere, Jotun Thrym and the Hydra.</p>
             </div>
         </section>
 
