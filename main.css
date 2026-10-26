@@ -2092,6 +2092,94 @@ img.loaded {
     margin: 0;
 }
 
+.legendary-class {
+    color: #d4af37;
+    margin: 28px 0 0;
+    font-size: 1.05rem;
+}
+
+.legendary-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 22px 0 10px;
+    padding: 22px 8px;
+    background: radial-gradient(ellipse at center, rgba(40, 90, 200, 0.18), rgba(0, 0, 0, 0) 70%);
+    border: 1px solid rgba(80, 130, 230, 0.25);
+    border-radius: 10px;
+}
+
+.legendary-showcase-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 92px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+.legendary-showcase-item img {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 8px rgba(70, 130, 255, 0.7));
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.legendary-showcase-item:hover img {
+    transform: translateY(-4px) scale(1.12);
+    filter: drop-shadow(0 0 14px rgba(110, 165, 255, 0.95));
+}
+
+.legendary-all {
+    margin-top: 14px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 8px;
+    padding: 0 18px;
+}
+
+.legendary-all summary {
+    cursor: pointer;
+    padding: 14px 0;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.legendary-all[open] summary {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    margin-bottom: 6px;
+}
+
+.legendary-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 14px;
+}
+
+.legendary-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px 4px 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    font-size: 0.82rem;
+}
+
+.legendary-chip img {
+    width: 24px;
+    height: 24px;
+    image-rendering: pixelated;
+}
+
 .upgrade-steps {
     display: flex;
     flex-wrap: wrap;

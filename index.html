@@ -183,6 +183,7 @@
                     <li><a href="#energy-crystal" data-i18n="nav_energy_crystal">Energy Crystal</a></li>
                     <li><a href="#skill-tree" data-i18n="nav_skill_tree">Skill Tree</a></li>
                     <li><a href="#skill-color" data-i18n="nav_skill_color">Skill Colors</a></li>
+                    <li><a href="#legendary-skills" data-i18n="nav_legendary_skills">Legendary Skills</a></li>
                     <li><a href="#buff-items" data-i18n="nav_buff_items">Buff Items</a></li>
                     <li><a href="#emotes" data-i18n="nav_emotes">New Emotes</a></li>
                 </ul>
@@ -2071,6 +2072,193 @@
                 <img loading="lazy" src="assets/skill-color-system-preview.gif" alt="Skill Color System Preview" class="dungeon-screenshot full-width-ui" data-i18n-alt="section_skill_color_img_alt" width="1407" height="797">
                 <span class="img-caption" data-i18n="section_skill_color_img_caption">Changing the color of a P skill</span>
             </div>
+        </section>
+
+        <section id="legendary-skills" class="presentation-section reveal">
+            <h2 data-i18n="section_legendary_title">Legendary Skills (L)</h2>
+            <p data-i18n="section_legendary_p1">Perfect Master (P) is no longer the end of the road. Your active skills can be trained further, from P1 up to the legendary L level, the highest skill level in the game.</p>
+            <div class="set-bonus-box">
+                <p data-i18n="section_legendary_only">Only for active skills 1-6: Legendary training is available for the six active skills of every skill tree. The Ward and Boost skills, the support skills and the riding skills stay at P.</p>
+            </div>
+            <h3 data-i18n="section_legendary_subtitle1">How It Works</h3>
+            <p data-i18n="section_legendary_how_p1">Use the Legendary Soul Stone and the skill training window opens with all your active skills that reached the P level. Select a skill and start the training. Every stone is one attempt and every successful attempt raises the skill by one step: P1, P2 and so on up to P10 and finally L.</p>
+            <ul class="pet-features-list">
+                <li data-i18n="legendary_feature_level">Requirement: Your character must be at least level 115 to train a skill with the Legendary Soul Stone.</li>
+                <li data-i18n="legendary_feature_chance">Chances: Every step has its own chance per stone. With bad luck the training is guaranteed to succeed after a certain number of attempts, see the table below.</li>
+                <li data-i18n="legendary_feature_cooldown">Cooldown: After every attempt the skill can be trained again after 8 to 12 hours. An Exorcism Scroll removes the waiting time.</li>
+                <li data-i18n="legendary_feature_rank">Rank points: Every attempt costs rank points, more with every step, and a failed attempt costs only a part of them. Zen Beans can restore your rank during the training.</li>
+                <li data-i18n="legendary_feature_concentration">Concentration: The Scroll of Concentration doubles the chance of the next attempt.</li>
+                <li data-i18n="legendary_feature_power">Skill power: Every step adds 10 % to the power of the skill. P1 has 125 % and L reaches 225 % of the base power.</li>
+                <li data-i18n="legendary_feature_color">Skill colors: Legendary skills can be colored with the Skill Color System, too.</li>
+            </ul>
+            <h3 data-i18n="section_legendary_subtitle2">Training Chances</h3>
+            <p data-i18n="section_legendary_table_p">The first attempts of a step cannot succeed yet. After the guaranteed attempt the step always succeeds, so a skill needs at most 180 stones from P1 to L.</p>
+            <div class="table-responsive mt-20">
+                <table class="bio-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="legendary_th_step">Step</th>
+                            <th data-i18n="legendary_th_chance">Chance per Stone</th>
+                            <th data-i18n="legendary_th_first">First Possible Attempt</th>
+                            <th data-i18n="legendary_th_guaranteed">Guaranteed Attempt</th>
+                            <th data-i18n="legendary_th_power">Skill Power</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>P1 → P2</td><td>33 %</td><td>1</td><td>6</td><td>135 %</td></tr>
+                        <tr><td>P2 → P3</td><td>33 %</td><td>1</td><td>8</td><td>145 %</td></tr>
+                        <tr><td>P3 → P4</td><td>20 %</td><td>1</td><td>10</td><td>155 %</td></tr>
+                        <tr><td>P4 → P5</td><td>20 %</td><td>2</td><td>12</td><td>165 %</td></tr>
+                        <tr><td>P5 → P6</td><td>14 %</td><td>2</td><td>14</td><td>175 %</td></tr>
+                        <tr><td>P6 → P7</td><td>14 %</td><td>3</td><td>16</td><td>185 %</td></tr>
+                        <tr><td>P7 → P8</td><td>10 %</td><td>3</td><td>21</td><td>195 %</td></tr>
+                        <tr><td>P8 → P9</td><td>10 %</td><td>4</td><td>26</td><td>205 %</td></tr>
+                        <tr><td>P9 → P10</td><td>10 %</td><td>5</td><td>31</td><td>215 %</td></tr>
+                        <tr><td>P10 → L</td><td>5 %</td><td>6</td><td>36</td><td>225 %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="talisman-list-container">
+                <h3 data-i18n="section_legendary_subtitle3">Legendary Soul Stone</h3>
+                <div class="talisman-grid">
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/legendary-soul-stone/legendary-soul-stone.webp" alt="Legendary Soul Stone" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="legendary_item_name">Legendary Soul Stone</h4>
+                            <p data-i18n="legendary_item_desc">Trains the active skills from P1 up to L. Requires character level 115 and disappears after use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 data-i18n="section_legendary_subtitle4">How to Get the Stone</h3>
+            <ul class="pet-features-list">
+                <li data-i18n="legendary_get_quest">Seon-Hae quest: Seon-Hae, who waits in every town, gives players of level 115 a hunting task in the maps of level 90 and above: defeat a specific monster or boss, or destroy a specific meteor. The reward is one Legendary Soul Stone and the quest can be repeated every 48 hours.</li>
+                <li data-i18n="legendary_get_drop">Drops: The stone also drops from the bosses of the Desert of Suffering (Desert creature, Brutal ancient naga, Shade of Anubis), the Chou and Wu statues, the bosses of the Flame Wasteland (Flame Knight, Dragon Guardian, Hell Beast) and the Red Dragon.</li>
+            </ul>
+            <h3 data-i18n="section_legendary_subtitle5">Skills That Can Reach L</h3>
+            <p data-i18n="section_legendary_skills_note">Legendary skills have a dark blue icon, so you recognize them at first sight.</p>
+            <div class="legendary-showcase">
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/1.webp" alt="Three-Way Cut" width="32" height="32">
+                    <span data-i18n="class_war_body">Warrior (Body)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/16.webp" alt="Spirit Strike (W)" width="32" height="32">
+                    <span data-i18n="class_war_mental">Warrior (Mental)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/31.webp" alt="Ambush" width="32" height="32">
+                    <span data-i18n="class_ninja_close">Ninja (Dagger)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/46.webp" alt="Repetitive Shot" width="32" height="32">
+                    <span data-i18n="class_ninja_far">Ninja (Archery)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/61.webp" alt="Finger Strike" width="32" height="32">
+                    <span data-i18n="class_sura_weapon">Sura (Weaponry)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/76.webp" alt="Dark Strike" width="32" height="32">
+                    <span data-i18n="class_sura_black">Sura (Black Magic)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/91.webp" alt="Flying Talisman" width="32" height="32">
+                    <span data-i18n="class_shaman_dragon">Shaman (Dragon)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/106.webp" alt="Lightning Throw" width="32" height="32">
+                    <span data-i18n="class_shaman_heal">Shaman (Healing)</span>
+                </div>
+                <div class="legendary-showcase-item">
+                    <img loading="lazy" src="assets/legendary-skills/170.webp" alt="Shred" width="32" height="32">
+                    <span data-i18n="class_lycan_instinct">Lycan (Instinct)</span>
+                </div>
+            </div>
+            <details class="legendary-all">
+                <summary data-i18n="legendary_show_all">Show all skills</summary>
+                <h4 class="legendary-class" data-i18n="class_war_body">Warrior (Body)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/1.webp" alt="Three-Way Cut" width="24" height="24"><span data-i18n="legendary_skill_1">Three-Way Cut</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/2.webp" alt="Sword Spin" width="24" height="24"><span data-i18n="legendary_skill_2">Sword Spin</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/3.webp" alt="Berserk" width="24" height="24"><span data-i18n="legendary_skill_3">Berserk</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/4.webp" alt="Aura of the Sword" width="24" height="24"><span data-i18n="legendary_skill_4">Aura of the Sword</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/5.webp" alt="Dash" width="24" height="24"><span data-i18n="legendary_skill_5">Dash</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/6.webp" alt="Life Force" width="24" height="24"><span data-i18n="legendary_skill_6">Life Force</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_war_mental">Warrior (Mental)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/16.webp" alt="Spirit Strike (W)" width="24" height="24"><span data-i18n="legendary_skill_16">Spirit Strike (W)</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/17.webp" alt="Bash" width="24" height="24"><span data-i18n="legendary_skill_17">Bash</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/18.webp" alt="Stump" width="24" height="24"><span data-i18n="legendary_skill_18">Stump</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/19.webp" alt="Strong Body" width="24" height="24"><span data-i18n="legendary_skill_19">Strong Body</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/20.webp" alt="Sword Strike" width="24" height="24"><span data-i18n="legendary_skill_20">Sword Strike</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/21.webp" alt="Sword Orb" width="24" height="24"><span data-i18n="legendary_skill_21">Sword Orb</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_ninja_close">Ninja (Dagger)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/31.webp" alt="Ambush" width="24" height="24"><span data-i18n="legendary_skill_31">Ambush</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/32.webp" alt="Fast Attack" width="24" height="24"><span data-i18n="legendary_skill_32">Fast Attack</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/33.webp" alt="Rolling Dagger" width="24" height="24"><span data-i18n="legendary_skill_33">Rolling Dagger</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/34.webp" alt="Stealth" width="24" height="24"><span data-i18n="legendary_skill_34">Stealth</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/35.webp" alt="Poisonous Cloud" width="24" height="24"><span data-i18n="legendary_skill_35">Poisonous Cloud</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/36.webp" alt="Insidious Poison" width="24" height="24"><span data-i18n="legendary_skill_36">Insidious Poison</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_ninja_far">Ninja (Archery)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/46.webp" alt="Repetitive Shot" width="24" height="24"><span data-i18n="legendary_skill_46">Repetitive Shot</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/47.webp" alt="Arrow Shower" width="24" height="24"><span data-i18n="legendary_skill_47">Arrow Shower</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/48.webp" alt="Fire Arrow" width="24" height="24"><span data-i18n="legendary_skill_48">Fire Arrow</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/49.webp" alt="Feather Walk" width="24" height="24"><span data-i18n="legendary_skill_49">Feather Walk</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/50.webp" alt="Poison Arrow" width="24" height="24"><span data-i18n="legendary_skill_50">Poison Arrow</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/51.webp" alt="Spark" width="24" height="24"><span data-i18n="legendary_skill_51">Spark</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_sura_weapon">Sura (Weaponry)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/61.webp" alt="Finger Strike" width="24" height="24"><span data-i18n="legendary_skill_61">Finger Strike</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/62.webp" alt="Dragon Swirl" width="24" height="24"><span data-i18n="legendary_skill_62">Dragon Swirl</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/63.webp" alt="Enchanted Blade" width="24" height="24"><span data-i18n="legendary_skill_63">Enchanted Blade</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/64.webp" alt="Fear" width="24" height="24"><span data-i18n="legendary_skill_64">Fear</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/65.webp" alt="Enchanted Armour" width="24" height="24"><span data-i18n="legendary_skill_65">Enchanted Armour</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/66.webp" alt="Dispel" width="24" height="24"><span data-i18n="legendary_skill_66">Dispel</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_sura_black">Sura (Black Magic)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/76.webp" alt="Dark Strike" width="24" height="24"><span data-i18n="legendary_skill_76">Dark Strike</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/77.webp" alt="Flame Strike" width="24" height="24"><span data-i18n="legendary_skill_77">Flame Strike</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/78.webp" alt="Flame Spirit" width="24" height="24"><span data-i18n="legendary_skill_78">Flame Spirit</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/79.webp" alt="Dark Protection" width="24" height="24"><span data-i18n="legendary_skill_79">Dark Protection</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/80.webp" alt="Spirit Strike (S)" width="24" height="24"><span data-i18n="legendary_skill_80">Spirit Strike (S)</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/81.webp" alt="Dark Orb" width="24" height="24"><span data-i18n="legendary_skill_81">Dark Orb</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_shaman_dragon">Shaman (Dragon)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/91.webp" alt="Flying Talisman" width="24" height="24"><span data-i18n="legendary_skill_91">Flying Talisman</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/92.webp" alt="Shooting Dragon" width="24" height="24"><span data-i18n="legendary_skill_92">Shooting Dragon</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/93.webp" alt="Dragon's Roar" width="24" height="24"><span data-i18n="legendary_skill_93">Dragon's Roar</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/94.webp" alt="Blessing" width="24" height="24"><span data-i18n="legendary_skill_94">Blessing</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/95.webp" alt="Reflect" width="24" height="24"><span data-i18n="legendary_skill_95">Reflect</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/96.webp" alt="Dragon's Aid" width="24" height="24"><span data-i18n="legendary_skill_96">Dragon's Aid</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_shaman_heal">Shaman (Healing)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/106.webp" alt="Lightning Throw" width="24" height="24"><span data-i18n="legendary_skill_106">Lightning Throw</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/107.webp" alt="Summon Lightning" width="24" height="24"><span data-i18n="legendary_skill_107">Summon Lightning</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/108.webp" alt="Lightning Claw" width="24" height="24"><span data-i18n="legendary_skill_108">Lightning Claw</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/109.webp" alt="Cure" width="24" height="24"><span data-i18n="legendary_skill_109">Cure</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/110.webp" alt="Swiftness" width="24" height="24"><span data-i18n="legendary_skill_110">Swiftness</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/111.webp" alt="Attack Up" width="24" height="24"><span data-i18n="legendary_skill_111">Attack Up</span></span>
+                </div>
+                <h4 class="legendary-class" data-i18n="class_lycan_instinct">Lycan (Instinct)</h4>
+                <div class="legendary-chips">
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/170.webp" alt="Shred" width="24" height="24"><span data-i18n="legendary_skill_170">Shred</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/171.webp" alt="Wolf's Breath" width="24" height="24"><span data-i18n="legendary_skill_171">Wolf's Breath</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/172.webp" alt="Wolf Pounce" width="24" height="24"><span data-i18n="legendary_skill_172">Wolf Pounce</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/173.webp" alt="Wolf's Claw" width="24" height="24"><span data-i18n="legendary_skill_173">Wolf's Claw</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/174.webp" alt="Crimson Wolf Soul" width="24" height="24"><span data-i18n="legendary_skill_174">Crimson Wolf Soul</span></span>
+                    <span class="legendary-chip"><img loading="lazy" src="assets/legendary-skills/175.webp" alt="Indigo Wolf Soul" width="24" height="24"><span data-i18n="legendary_skill_175">Indigo Wolf Soul</span></span>
+                </div>
+            </details>
         </section>
 
         <section id="buff-items" class="presentation-section reveal">
