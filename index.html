@@ -181,6 +181,7 @@
                     <li><a href="#aura" data-i18n="nav_aura">Aura System</a></li>
                     <li><a href="#talismans" data-i18n="nav_talismans">Talismans</a></li>
                     <li><a href="#energy-crystal" data-i18n="nav_energy_crystal">Energy Crystal</a></li>
+                    <li><a href="#skill-tree" data-i18n="nav_skill_tree">Skill Tree</a></li>
                     <li><a href="#buff-items" data-i18n="nav_buff_items">Buff Items</a></li>
                     <li><a href="#emotes" data-i18n="nav_emotes">New Emotes</a></li>
                 </ul>
@@ -1567,6 +1568,480 @@
             <p data-i18n="section_energy_crystal_refine_p1">Each upgrade costs an Energy Scroll, Energy Fragments and Gold. The fragment cost rises from 100 at +1 up to 1000 at +25 and the success chance drops with higher levels. If the upgrade fails, the crystal drops by one level. The crystal must be deactivated before upgrading.</p>
             <div class="alchemy-footer">
                 <p data-i18n="section_energy_crystal_footer">Obtaining: The Alchemist dismantles your equipment into Energy Fragments, crafts the crystal and exchanges fragments for Energy Scrolls and Elixirs of Energy. Scrolls and elixirs also drop from the chests of Beran-Setaou, Razador, Nemere, Jotun Thrym and the Hydra.</p>
+            </div>
+        </section>
+
+        <section id="skill-tree" class="presentation-section reveal">
+            <h2 data-i18n="section_skill_tree_title">Skill Tree</h2>
+            <p data-i18n="section_skill_tree_p1">The Skill Tree is an additional progression system for characters from level 90. It contains 33 nodes and each of them can be upgraded up to level 5. Every node gives its own bonus and all upgraded nodes work together, so a fully upgraded tree gives your character a large set of extra bonuses for PvM and PvP.</p>
+            <h3 data-i18n="section_skill_tree_subtitle1">How It Works</h3>
+            <p data-i18n="section_skill_tree_how_p1">The tree starts with a single Max. HP node and splits into three branches: PvP bonuses against the individual classes, character attributes together with Gold and item drop bonuses, and PvM bonuses against monsters. The next node unlocks only after the node before it reaches level 5, so you work your way along each branch step by step.</p>
+            <p data-i18n="section_skill_tree_how_p2">The bonuses only work while the Skill Tree is active. An active tree uses up its time, but only while you are online. You can deactivate it at any moment and the remaining time is saved for later. Nodes can only be upgraded while the tree is deactivated.</p>
+            <p data-i18n="section_skill_tree_how_p3">Time is added with the Skill Tree Refill (24h). Each refill adds 24 hours, also to an active tree, and the tree can store up to 30 days of time. To use it, at least one node must already be upgraded.</p>
+            <h3 data-i18n="section_skill_tree_subtitle2">Bonuses</h3>
+            <p data-i18n="section_skill_tree_map_hint">Hover over a node, or tap it on mobile, to see its bonus and the value on every level.</p>
+            <div class="skill-tree-map-wrap">
+                <div class="skill-tree-map">
+                    <button type="button" class="st-node" style="left:49.06%;top:72.56%">
+                        <img src="assets/skill-tree/nodes/0.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/0-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_hp">Max. HP</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_start">Start</span>
+                            <span class="st-tip-levels"><span><b>1</b>+200</span><span><b>2</b>+400</span><span><b>3</b>+600</span><span><b>4</b>+800</span><span><b>5</b>+1000</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node" style="left:35.21%;top:79.23%">
+                        <img src="assets/skill-tree/nodes/0.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/0-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_hp">Max. HP</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+200</span><span><b>2</b>+400</span><span><b>3</b>+600</span><span><b>4</b>+800</span><span><b>5</b>+1000</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node" style="left:25.11%;top:79.23%">
+                        <img src="assets/skill-tree/nodes/2.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/2-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_att_warrior">Strong against Warriors</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node" style="left:29.44%;top:57.18%">
+                        <img src="assets/skill-tree/nodes/3.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/3-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_res_warrior">Defence against Warrior attacks</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right" style="left:16.88%;top:67.95%">
+                        <img src="assets/skill-tree/nodes/4.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/4-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_att_sura">Strong against Sura</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right" style="left:21.50%;top:45.90%">
+                        <img src="assets/skill-tree/nodes/5.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/5-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_res_sura">Defence against Sura attacks</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right" style="left:8.95%;top:55.90%">
+                        <img src="assets/skill-tree/nodes/6.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/6-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_att_ninja">Strong against Ninjas</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right st-tip-below" style="left:13.56%;top:34.10%">
+                        <img src="assets/skill-tree/nodes/7.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/7-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_res_ninja">Defence against Ninja attacks</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right st-tip-below" style="left:1.01%;top:43.59%">
+                        <img src="assets/skill-tree/nodes/8.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/8-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_att_shaman">Strong against Shamans and Lycans</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right st-tip-below" style="left:5.34%;top:22.56%">
+                        <img src="assets/skill-tree/nodes/9.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/9-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_res_shaman">Defence against Shaman and Lycan attacks</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvp">PvP Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:62.48%;top:77.95%">
+                        <img src="assets/skill-tree/nodes/10.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/10-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_gold">Chance to drop double Gold</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:70.56%;top:70.77%">
+                        <img src="assets/skill-tree/nodes/11.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/11-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_vit">Vitality</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2</span><span><b>2</b>+4</span><span><b>3</b>+6</span><span><b>4</b>+8</span><span><b>5</b>+10</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:75.18%;top:86.92%">
+                        <img src="assets/skill-tree/nodes/12.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/12-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_dex">Dexterity</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2</span><span><b>2</b>+4</span><span><b>3</b>+6</span><span><b>4</b>+8</span><span><b>5</b>+10</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:79.80%;top:61.54%">
+                        <img src="assets/skill-tree/nodes/13.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/13-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_str">Strength</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2</span><span><b>2</b>+4</span><span><b>3</b>+6</span><span><b>4</b>+8</span><span><b>5</b>+10</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:88.60%;top:52.56%">
+                        <img src="assets/skill-tree/nodes/14.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/14-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_drop">Chance to drop double Items</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:93.22%;top:74.10%">
+                        <img src="assets/skill-tree/nodes/15.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/15-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_anti_crit">Resistance against critical hits</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left" style="left:66.38%;top:54.36%">
+                        <img src="assets/skill-tree/nodes/16.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/16-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_int">Intelligence</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2</span><span><b>2</b>+4</span><span><b>3</b>+6</span><span><b>4</b>+8</span><span><b>5</b>+10</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:76.77%;top:42.05%">
+                        <img src="assets/skill-tree/nodes/17.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/17-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_anti_pierce">Resistance against piercing hits</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:82.97%;top:33.85%">
+                        <img src="assets/skill-tree/nodes/18.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/18-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_ice">Ice resistance</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:49.06%;top:38.97%">
+                        <img src="assets/skill-tree/nodes/19.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/19-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_devil">Strong against Devils</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node" style="left:35.06%;top:45.90%">
+                        <img src="assets/skill-tree/nodes/20.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/20-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_orc">Strong against Orcs</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:61.33%;top:43.08%">
+                        <img src="assets/skill-tree/nodes/21.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/21-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_undead">Strong against Undead</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:69.70%;top:30.77%">
+                        <img src="assets/skill-tree/nodes/22.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/22-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_monster">Strength against monsters</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:58.59%;top:14.87%">
+                        <img src="assets/skill-tree/nodes/23.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/23-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_crit">Chance of critical hit</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:49.06%;top:20.51%">
+                        <img src="assets/skill-tree/nodes/24.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/24-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_pierce">Chance for piercing hits</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:33.48%;top:27.69%">
+                        <img src="assets/skill-tree/nodes/25.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/25-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_boss">Strong against Bosses</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:39.25%;top:12.82%">
+                        <img src="assets/skill-tree/nodes/26.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/26-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_speed">Movement speed</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right st-tip-below" style="left:24.68%;top:19.23%">
+                        <img src="assets/skill-tree/nodes/27.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/27-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_exp">Chance for EXP bonus</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:48.77%;top:2.56%">
+                        <img src="assets/skill-tree/nodes/28.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/28-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_mystic">Strong against Mystics</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-below" style="left:25.11%;top:2.56%">
+                        <img src="assets/skill-tree/nodes/29.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/29-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_magic">Magic resistance</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-right st-tip-below" style="left:12.27%;top:2.56%">
+                        <img src="assets/skill-tree/nodes/30.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/30-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_arrow">Arrow defence</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+1%</span><span><b>2</b>+2%</span><span><b>3</b>+3%</span><span><b>4</b>+4%</span><span><b>5</b>+5%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:68.83%;top:8.21%">
+                        <img src="assets/skill-tree/nodes/31.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/31-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_animal">Strong against Animals</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                    <button type="button" class="st-node st-tip-left st-tip-below" style="left:77.63%;top:17.95%">
+                        <img src="assets/skill-tree/nodes/32.webp" alt="" width="36" height="36">
+                        <img class="st-node-hover" src="assets/skill-tree/nodes/32-hover.webp" alt="" width="36" height="36">
+                        <span class="st-badge">5</span>
+                        <span class="st-tip">
+                            <span class="st-tip-name" data-i18n="skill_tree_bonus_meteor">Strong against Meteor Stones</span>
+                            <span class="st-tip-branch" data-i18n="section_skill_tree_branch_pvm">PvM Branch</span>
+                            <span class="st-tip-levels"><span><b>1</b>+2%</span><span><b>2</b>+4%</span><span><b>3</b>+6%</span><span><b>4</b>+8%</span><span><b>5</b>+10%</span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="bio-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="section_skill_tree_th_bonus">Bonus</th>
+                            <th data-i18n="section_skill_tree_th_per_level">Per Level</th>
+                            <th data-i18n="section_skill_tree_th_max">Level 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="special-row"><td colspan="3" data-i18n="section_skill_tree_branch_start">Start</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/0.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_hp">Max. HP</span></td><td>+200</td><td>+1000</td></tr>
+                        <tr class="special-row"><td colspan="3" data-i18n="section_skill_tree_branch_pvp">PvP Branch</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/0.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_hp">Max. HP</span></td><td>+200</td><td>+1000</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/2.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_att_warrior">Strong against Warriors</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/3.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_res_warrior">Defence against Warrior attacks</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/4.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_att_sura">Strong against Sura</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/5.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_res_sura">Defence against Sura attacks</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/6.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_att_ninja">Strong against Ninjas</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/7.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_res_ninja">Defence against Ninja attacks</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/8.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_att_shaman">Strong against Shamans and Lycans</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/9.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_res_shaman">Defence against Shaman and Lycan attacks</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr class="special-row"><td colspan="3" data-i18n="section_skill_tree_branch_attributes">Attributes Branch</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/10.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_gold">Chance to drop double Gold</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/11.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_vit">Vitality</span></td><td>+2</td><td>+10</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/12.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_dex">Dexterity</span></td><td>+2</td><td>+10</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/13.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_str">Strength</span></td><td>+2</td><td>+10</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/16.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_int">Intelligence</span></td><td>+2</td><td>+10</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/14.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_drop">Chance to drop double Items</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/15.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_anti_crit">Resistance against critical hits</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/17.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_anti_pierce">Resistance against piercing hits</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/18.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_ice">Ice resistance</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr class="special-row"><td colspan="3" data-i18n="section_skill_tree_branch_pvm">PvM Branch</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/19.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_devil">Strong against Devils</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/20.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_orc">Strong against Orcs</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/21.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_undead">Strong against Undead</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/22.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_monster">Strength against monsters</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/23.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_crit">Chance of critical hit</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/24.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_pierce">Chance for piercing hits</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/25.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_boss">Strong against Bosses</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/26.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_speed">Movement speed</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/27.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_exp">Chance for EXP bonus</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/28.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_mystic">Strong against Mystics</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/29.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_magic">Magic resistance</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/30.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_arrow">Arrow defence</span></td><td>+1%</td><td>+5%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/31.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_animal">Strong against Animals</span></td><td>+2%</td><td>+10%</td></tr>
+                        <tr><td class="st-bonus-cell"><img src="assets/skill-tree/nodes/32.webp" alt="" width="24" height="24"><span data-i18n="skill_tree_bonus_meteor">Strong against Meteor Stones</span></td><td>+2%</td><td>+10%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 data-i18n="section_skill_tree_subtitle3">Upgrading</h3>
+            <p data-i18n="section_skill_tree_refine_p1">Every upgrade always succeeds. It costs Gold and all five upgrade materials at once, the amount depends on the level you are upgrading to. In the upgrade window you can also use a Skill Tree Booster, which halves the materials needed for that upgrade. The Gold cost stays the same.</p>
+            <div class="table-responsive mt-20">
+                <table class="bio-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="section_skill_tree_th_level">Level</th>
+                            <th data-i18n="section_skill_tree_th_gold">Gold</th>
+                            <th data-i18n="section_skill_tree_th_materials">Each Material</th>
+                            <th data-i18n="section_skill_tree_th_booster">With Booster</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>50 000 000</td><td>20x</td><td>10x</td></tr>
+                        <tr><td>2</td><td>100 000 000</td><td>25x</td><td>13x</td></tr>
+                        <tr><td>3</td><td>150 000 000</td><td>30x</td><td>15x</td></tr>
+                        <tr><td>4</td><td>200 000 000</td><td>35x</td><td>18x</td></tr>
+                        <tr><td>5</td><td>250 000 000</td><td>40x</td><td>20x</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p data-i18n="section_skill_tree_refine_p2">Upgrading one node all the way to level 5 costs 750 000 000 Gold and 150 pieces of each material, or only 76 pieces with a Booster on every level.</p>
+            <div class="talisman-list-container">
+                <h3 data-i18n="section_skill_tree_items_title">Items of the Skill Tree</h3>
+                <div class="talisman-grid">
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/skill-tree-booster.webp" alt="Skill Tree Booster" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_booster_name">Skill Tree Booster</h4>
+                            <p data-i18n="skill_tree_item_booster_desc">Put it into the upgrade window to halve the materials needed for one upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/skill-tree-refill.webp" alt="Skill Tree Refill (24h)" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_refill_name">Skill Tree Refill (24h)</h4>
+                            <p data-i18n="skill_tree_item_refill_desc">Adds 24 hours of time to the Skill Tree, also while it is active. The tree can store up to 30 days.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/elixir-of-the-gods.webp" alt="Elixir of the Gods" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_elixir_name">Elixir of the Gods</h4>
+                            <p data-i18n="skill_tree_item_material_desc">Upgrade material, needed for every Skill Tree upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/padparadscha.webp" alt="Padparadscha" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_padparadscha_name">Padparadscha</h4>
+                            <p data-i18n="skill_tree_item_material_desc">Upgrade material, needed for every Skill Tree upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/kyanite.webp" alt="Kyanite" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_kyanite_name">Kyanite</h4>
+                            <p data-i18n="skill_tree_item_material_desc">Upgrade material, needed for every Skill Tree upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/tough-straps.webp" alt="Tough Straps" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_straps_name">Tough Straps</h4>
+                            <p data-i18n="skill_tree_item_material_desc">Upgrade material, needed for every Skill Tree upgrade.</p>
+                        </div>
+                    </div>
+                    <div class="talisman-card">
+                        <img loading="lazy" src="assets/skill-tree/sturdy-cords.webp" alt="Sturdy Cords" width="32" height="32">
+                        <div class="talisman-info">
+                            <h4 data-i18n="skill_tree_item_cords_name">Sturdy Cords</h4>
+                            <p data-i18n="skill_tree_item_material_desc">Upgrade material, needed for every Skill Tree upgrade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alchemy-footer">
+                <p data-i18n="section_skill_tree_footer">Obtaining: The Skill Tree Booster and the Skill Tree Refill (24h) drop from the chests of the Red Dragon, Beran-Setaou, Razador, Nemere, Jotun Thrym and the Hydra.</p>
             </div>
         </section>
 

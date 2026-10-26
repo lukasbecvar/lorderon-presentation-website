@@ -222,9 +222,26 @@ function initImageLoaders() {
     })
 }
 
+function initSkillTreeMap() {
+    const nodes = document.querySelectorAll('.st-node')
+    if (!nodes.length) return
+    nodes.forEach(node => {
+        node.addEventListener('click', (e) => {
+            e.stopPropagation()
+            const open = node.classList.contains('is-open')
+            nodes.forEach(n => n.classList.remove('is-open'))
+            if (!open) node.classList.add('is-open')
+        })
+    })
+    document.addEventListener('click', () => {
+        nodes.forEach(n => n.classList.remove('is-open'))
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initImageLoaders()
     initVideoPreviews()
+    initSkillTreeMap()
     initStableHover()
     const loader = document.getElementById('loading-screen')
     setTimeout(() => {
