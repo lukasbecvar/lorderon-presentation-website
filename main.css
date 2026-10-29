@@ -3152,3 +3152,22 @@ h1 {
         justify-content: center;
     }
 }
+
+.dungeon-img-wrapper:has(> .img-caption) {
+    display: block;
+    padding-bottom: 0;
+}
+
+.dungeon-img-wrapper > .img-caption {
+    transform: none;
+    margin: 14px 0 0;
+    max-width: 100%;
+    backdrop-filter: none;
+    background: rgba(10, 10, 10, 0.85);
+    border-color: rgba(212, 175, 55, 0.6);
+}
+
+.dungeon-img-wrapper > .dungeon-screenshot {
+    display: block;
+    margin: 0 auto;
+}
