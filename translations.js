@@ -364,7 +364,7 @@ const translations = {
         "legendary_feature_rank": "Body hodnosti: Každý pokus stojí body hodnosti, s každým stupněm více, a neúspěšný pokus jen jejich část. Zen fazole dokážou hodnost během tréninku obnovit.",
         "legendary_feature_concentration": "Koncentrace: Svitek koncentrace zdvojnásobí šanci dalšího pokusu.",
         "legendary_feature_power": "Síla dovednosti: Každý stupeň přidá dovednosti 10 % síly. P1 má 125 % a L dosáhne 225 % základní síly.",
-        "legendary_feature_color": "Barvy dovedností: Legendární dovednosti lze obarvit také systémem barev dovedností.",
+        "legendary_feature_color": "Barvy schopností: Legendární dovednosti lze obarvit také systémem barev dovedností.",
         "section_legendary_subtitle2": "Šance tréninku",
         "section_legendary_table_p": "První pokusy daného stupně ještě nemohou uspět. Po zaručeném pokusu stupeň uspěje vždy, takže dovednost potřebuje od P1 po L nejvýše 180 kamenů.",
         "legendary_th_step": "Stupeň",
