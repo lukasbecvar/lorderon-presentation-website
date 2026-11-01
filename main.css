@@ -2509,14 +2509,14 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
 
 .location-card {
     position: relative;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
+    background: var(--panel);
     border: 1px solid rgba(212, 175, 55, 0.2);
-    transition:
-        transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-        box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 
 .location-card.is-hover {
@@ -2525,7 +2525,15 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     border-color: #d4af37;
 }
 
+.location-media {
+    position: relative;
+    height: 180px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
 .location-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2569,6 +2577,16 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
 
 .location-card.is-hover .location-type {
     color: #fff;
+}
+
+.location-card .location-desc {
+    margin: 0;
+    padding: 14px 18px 18px;
+    font-family: "Lora", serif;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
 }
 
 .tab-content {
