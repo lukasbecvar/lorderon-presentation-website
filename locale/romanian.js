@@ -3,7 +3,6 @@ translations.ro = {
     "nav_intro": "Introducere",
     "nav_group_home": "Primii pași",
     "nav_group_characters": "Personaje și lume",
-    "nav_group_systems": "Sisteme de joc",
     "nav_group_equipment": "Echipament și upgrade-uri",
     "nav_group_about": "Server și comunitate",
     "nav_group_progression": "Progresia personajului",

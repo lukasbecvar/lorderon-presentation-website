@@ -438,7 +438,7 @@ translations.es = {
     "bonus_res_sura": "Resistencia a sura",
     "bonus_res_shaman": "Resistencia a chamán",
     "bonus_res_lycan": "Resistencia a licántropo",
-    "bonus_note": "",
+    "bonus_note": "Los valores indicados representan la bonificación máxima posible. Al cambiar las bonificaciones también puedes obtener valores más bajos.",
     "section_enchant_item_plus_title": "Encantar objeto Plus",
     "section_enchant_item_plus_p1": "El sistema Encantar objeto Plus permite a los jugadores cambiar las bonificaciones de un objeto sin ningún riesgo de empeorarlo. Cada reroll te da a elegir entre conservar tus bonificaciones actuales o aceptar las nuevas, de modo que tu equipo, tan duramente conseguido, solo puede mejorar y nunca degradarse.",
     "section_enchant_item_plus_img_alt": "Vista previa de Encantar objeto Plus",
@@ -853,5 +853,4 @@ translations.es = {
     "social_facebook": "Facebook",
     "social_discord": "Discord",
     "assets_loading": "Cargando datos...",
-    "nav_group_systems": "Sistemas de juego"
 }

@@ -3,7 +3,6 @@ translations.pl = {
     "nav_intro": "Wstęp",
     "nav_group_home": "Pierwsze kroki",
     "nav_group_characters": "Postacie i świat",
-    "nav_group_systems": "Systemy gry",
     "nav_group_equipment": "Ekwipunek i ulepszenia",
     "nav_group_about": "Serwer i społeczność",
     "nav_group_progression": "Rozwój postaci",

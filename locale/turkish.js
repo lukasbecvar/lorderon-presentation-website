@@ -3,7 +3,6 @@ translations.tr = {
     "nav_intro": "Giriş",
     "nav_group_home": "Başlangıç",
     "nav_group_characters": "Karakterler ve Dünya",
-    "nav_group_systems": "Oyun Sistemleri",
     "nav_group_equipment": "Ekipman ve Geliştirme",
     "nav_group_about": "Sunucu ve Topluluk",
     "nav_group_progression": "Karakter Gelişimi",

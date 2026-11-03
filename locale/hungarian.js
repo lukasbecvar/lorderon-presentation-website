@@ -438,7 +438,7 @@ translations.hu = {
     "bonus_res_sura": "Sura elleni ellenállás",
     "bonus_res_shaman": "Sámán elleni ellenállás",
     "bonus_res_lycan": "Lycan elleni ellenállás",
-    "bonus_note": "",
+    "bonus_note": "A feltüntetett értékek a lehetséges legmagasabb bónuszt jelentik. A bónuszok cseréjekor alacsonyabb értékeket is kaphatsz.",
     "section_enchant_item_plus_title": "Tárgy megbűvölése Plus",
     "section_enchant_item_plus_p1": "A Tárgy megbűvölése Plus rendszer lehetővé teszi a játékosoknak, hogy egy tárgy bónuszait a romlás kockázata nélkül megváltoztassák. Minden újradobás lehetőséget ad, hogy megtartsd a jelenlegi bónuszaidat vagy elfogadd az újakat – így a nehezen megszerzett felszerelésed csak javulhat, soha nem romolhat.",
     "section_enchant_item_plus_img_alt": "Tárgy megbűvölése Plus előnézet",
@@ -853,5 +853,4 @@ translations.hu = {
     "social_facebook": "Facebook",
     "social_discord": "Discord",
     "assets_loading": "Adatok betöltése...",
-    "nav_group_systems": "Játékrendszerek"
 }

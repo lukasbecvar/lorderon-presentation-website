@@ -3,7 +3,6 @@ translations.de = {
     "nav_intro": "Einleitung",
     "nav_group_home": "Erste Schritte",
     "nav_group_characters": "Charaktere & Welt",
-    "nav_group_systems": "Spielsysteme",
     "nav_group_equipment": "Ausrüstung & Upgrades",
     "nav_group_about": "Server & Community",
     "nav_group_progression": "Charakterentwicklung",

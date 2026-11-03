@@ -438,7 +438,7 @@ translations.fr = {
     "bonus_res_sura": "Résistance aux suras",
     "bonus_res_shaman": "Résistance aux chamans",
     "bonus_res_lycan": "Résistance aux lycans",
-    "bonus_note": "",
+    "bonus_note": "Les valeurs indiquées représentent le bonus maximal possible. En changeant les bonus, vous pouvez aussi obtenir des valeurs plus faibles.",
     "section_enchant_item_plus_title": "Enchanter un objet Plus",
     "section_enchant_item_plus_p1": "Le système Enchanter un objet Plus permet aux joueurs de modifier les bonus d'un objet sans aucun risque de l'empirer. Chaque nouveau tirage vous laisse le choix entre conserver vos bonus actuels ou accepter les nouveaux — votre équipement durement gagné ne peut donc que s'améliorer, jamais se dégrader.",
     "section_enchant_item_plus_img_alt": "Aperçu de Enchanter un objet Plus",
@@ -853,5 +853,4 @@ translations.fr = {
     "social_facebook": "Facebook",
     "social_discord": "Discord",
     "assets_loading": "Chargement des données...",
-    "nav_group_systems": "Systèmes de jeu"
 }

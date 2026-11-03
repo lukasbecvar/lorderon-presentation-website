@@ -3,7 +3,6 @@ translations.cs = {
     "nav_intro": "Úvod",
     "nav_group_home": "Začínáme",
     "nav_group_characters": "Postavy a svět",
-    "nav_group_systems": "Herní systémy",
     "nav_group_equipment": "Výbava a vylepšování",
     "nav_group_about": "Server a komunita",
     "nav_group_progression": "Postup postavy",

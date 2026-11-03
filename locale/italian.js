@@ -438,7 +438,7 @@ translations.it = {
     "bonus_res_sura": "Resistenza ai sura",
     "bonus_res_shaman": "Resistenza agli sciamani",
     "bonus_res_lycan": "Resistenza ai lycan",
-    "bonus_note": "",
+    "bonus_note": "I valori indicati rappresentano il bonus massimo possibile. Cambiando i bonus puoi ottenere anche valori più bassi.",
     "section_enchant_item_plus_title": "Incanta oggetto Plus",
     "section_enchant_item_plus_p1": "Il sistema Incanta oggetto Plus permette ai giocatori di cambiare i bonus di un oggetto senza alcun rischio di peggiorarlo. Ogni nuovo tiro ti dà la scelta tra mantenere i bonus attuali o accettare quelli nuovi, così il tuo equipaggiamento faticosamente ottenuto può solo migliorare, mai peggiorare.",
     "section_enchant_item_plus_img_alt": "Anteprima di Incanta oggetto Plus",
@@ -853,5 +853,4 @@ translations.it = {
     "social_facebook": "Facebook",
     "social_discord": "Discord",
     "assets_loading": "Caricamento dei dati...",
-    "nav_group_systems": "Sistemi di gioco"
 }
