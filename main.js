@@ -40,7 +40,12 @@ function applyTranslations(lang) {
         'de': 'assets/lang-flags/de.png',
         'pl': 'assets/lang-flags/pl.png',
         'ro': 'assets/lang-flags/ro.png',
-        'tr': 'assets/lang-flags/tr.png'
+        'tr': 'assets/lang-flags/tr.png',
+        'es': 'assets/lang-flags/es.png',
+        'fr': 'assets/lang-flags/fr.png',
+        'it': 'assets/lang-flags/it.png',
+        'hu': 'assets/lang-flags/hu.png',
+        'ru': 'assets/lang-flags/ru.png'
     }
     const nameMap = {
         'cs': 'Čeština',
@@ -48,7 +53,12 @@ function applyTranslations(lang) {
         'de': 'Deutsch',
         'pl': 'Polski',
         'ro': 'Română',
-        'tr': 'Türkçe'
+        'tr': 'Türkçe',
+        'es': 'Español',
+        'fr': 'Français',
+        'it': 'Italiano',
+        'hu': 'Magyar',
+        'ru': 'Русский'
     }
     
     if (flagMap[lang]) currentLangFlag.src = flagMap[lang]
