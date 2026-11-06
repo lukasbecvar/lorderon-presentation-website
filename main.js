@@ -70,6 +70,27 @@ langSelected.addEventListener('click', () => {
     langDropdown.classList.toggle('open')
 })
 
+function initSectionEyebrows() {
+    document.querySelectorAll('.sidebar-group').forEach(group => {
+        const title = group.querySelector('.sidebar-group-title-text')
+        if (!title) return
+        let first = true
+        group.querySelectorAll('.sidebar-submenu a[href^="#"]').forEach(link => {
+            const section = document.querySelector('section' + link.getAttribute('href'))
+            if (!section || section.querySelector('.section-eyebrow')) return
+            const eyebrow = document.createElement('span')
+            eyebrow.className = 'section-eyebrow'
+            eyebrow.setAttribute('data-i18n', title.getAttribute('data-i18n'))
+            eyebrow.innerHTML = title.innerHTML
+            section.prepend(eyebrow)
+            if (first) section.classList.add('chapter-start')
+            first = false
+        })
+    })
+}
+
+initSectionEyebrows()
+
 const savedLang = localStorage.getItem('lorderon_lang') || 'en'
 applyTranslations(savedLang)
 
@@ -426,7 +447,19 @@ function syncActiveSection() {
     setActiveLink(currentSectionId())
 }
 
+const progressBar = document.querySelector('.scroll-progress span')
+let progressFrame = 0
+
+function updateScrollProgress() {
+    progressFrame = 0
+    if (!progressBar) return
+    const max = document.documentElement.scrollHeight - window.innerHeight
+    const ratio = max > 0 ? Math.min(1, Math.max(0, window.pageYOffset / max)) : 0
+    progressBar.style.transform = 'scaleX(' + ratio + ')'
+}
+
 window.addEventListener('scroll', () => {
+    if (!progressFrame) progressFrame = requestAnimationFrame(updateScrollProgress)
     if (window.pageYOffset > 500) {
         backToTopBtn.classList.add('show')
     } else {
@@ -441,16 +474,39 @@ const ctx = canvas.getContext('2d')
 let width, height
 let particles = []
 
+let animFrame = 0
+
 function init() {
     resize()
     createParticles()
-    animate()
+    startAnimation()
 }
+
+function startAnimation() {
+    if (animFrame) return
+    if (document.hidden) {
+        drawFrame(false)
+        return
+    }
+    animFrame = requestAnimationFrame(animate)
+}
+
+function stopAnimation() {
+    if (animFrame) cancelAnimationFrame(animFrame)
+    animFrame = 0
+}
+
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopAnimation()
+    else startAnimation()
+})
+
 
 function resize() {
     width = canvas.width = window.innerWidth
     height = canvas.height = window.innerHeight
     createParticles()
+    if (!animFrame) drawFrame(false)
 }
 
 window.addEventListener('resize', resize)
@@ -496,11 +552,15 @@ function createParticles() {
     particles = []
     const count = Math.floor((width * height) / 12000) + 30
     for (let i = 0; i < count; i++) {
-        particles.push(new Particle())
+        const p = new Particle()
+        p.y = Math.random() * height
+        p.life = Math.floor(Math.random() * p.maxLife * 0.6)
+        p.alpha = 1 - p.life / p.maxLife
+        particles.push(p)
     }
 }
 
-function animate() {
+function drawFrame(move) {
     ctx.clearRect(0, 0, width, height)
     const grad = ctx.createLinearGradient(0, 0, 0, height)
     grad.addColorStop(0, '#050505')
@@ -508,10 +568,14 @@ function animate() {
     ctx.fillStyle = grad
     ctx.fillRect(0, 0, width, height)
     particles.forEach(p => {
-        p.update()
+        if (move) p.update()
         p.draw()
     })
-    requestAnimationFrame(animate)
+}
+
+function animate() {
+    drawFrame(true)
+    animFrame = requestAnimationFrame(animate)
 }
 
 init()

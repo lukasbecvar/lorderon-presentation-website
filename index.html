@@ -68,6 +68,7 @@
         </div>
     </div>
     <canvas id="bg-canvas"></canvas>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     
     <div class="language-selector">
         <div class="lang-selected" id="lang-selected">
@@ -244,15 +245,29 @@
                 </ul>
             </div>
         </div>
+        <div class="sidebar-cta">
+            <a href="https://lorderon.eu/download" class="btn btn-primary" data-i18n="cta_download">Download the game</a>
+        </div>
     </nav>
 
     <div class="content-wrapper">
         <header id="intro" class="hero-section">
+            <div class="hero-bg" aria-hidden="true"></div>
             <div class="hero-content">
+                <span class="hero-eyebrow" data-i18n="hero_eyebrow">Middleschool MMORPG</span>
                 <h1 data-i18n="hero_title">Lorderon</h1>
                 <p class="hero-subtitle" data-i18n="hero_subtitle">Step into a world where legends become reality.</p>
-                <a href="#presentation" class="cta-button" data-i18n="hero_cta">Find out more</a>
+                <div class="hero-actions">
+                    <a href="https://lorderon.eu/download" class="btn btn-primary" data-i18n="cta_download">Download the game</a>
+                    <a href="https://lorderon.eu/users/register" class="btn btn-secondary" data-i18n="cta_register">Create account</a>
+                </div>
+                <ul class="hero-stats">
+                    <li><strong>120</strong><span data-i18n="hero_stat_level">Max level</span></li>
+                    <li><strong>5</strong><span data-i18n="hero_stat_classes">Characters</span></li>
+                    <li><strong>11</strong><span data-i18n="hero_stat_languages">Languages</span></li>
+                </ul>
             </div>
+            <a href="#presentation" class="hero-scroll" data-i18n="hero_cta">Find out more</a>
         </header>
         <main>
 
@@ -1405,42 +1420,32 @@
         <section id="bonuses" class="presentation-section reveal">
             <h2 data-i18n="section_bonuses_title">Special 6/7 Bonuses</h2>
             <p data-i18n="section_bonuses_p1">In the world of Lorderon, legendary items reach their true potential through special 6th and 7th bonuses. These enhancements are difficult to obtain and even harder to roll, making gear with the perfect combination of these stats incredibly rare and highly valuable.</p>
-            <div class="bio-table-container">
-                <div class="table-responsive">
-                <table class="bio-table">
-                    <thead>
-                        <tr>
-                            <th data-i18n="bonus_table_bonus">Bonus</th>
-                            <th data-i18n="bonus_table_value">Value</th>
-                            <th data-i18n="bonus_table_items">Items</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td data-i18n="bonus_max_hp">Max HP</td><td>+150</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_max_sp">Max SP</td><td>+50</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_constitution">Constitution</td><td>+5</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_intelligence">Intelligence</td><td>+5</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_strength">Strength</td><td>+5</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_dexterity">Dexterity</td><td>+5</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_critical">Critical Chance</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_piercing">Piercing Chance</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_attack">Attack Value</td><td>+50</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_attack_speed">Attack Speed</td><td>+2%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_movement">Movement Speed</td><td>+8%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_monster">Strong Against Monsters</td><td>+10%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_warrior">Strong Against Warrior</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_ninja">Strong Against Ninja</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_sura">Strong Against Sura</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_shaman">Strong Against Shaman</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_lycan">Strong Against Lycan</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_res_warrior">Resistance Warrior</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_res_ninja">Resistance Ninja</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_res_sura">Resistance Sura</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_res_shaman">Resistance Shaman</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                        <tr><td data-i18n="bonus_res_lycan">Resistance Lycan</td><td>+5%</td><td data-i18n="bonus_items_all">All Equipment</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="bonus-grid-wrap">
+                <div class="bonus-grid-head"><span data-i18n="bonus_table_items">Items</span><span class="bonus-badge" data-i18n="bonus_items_all">All Equipment</span></div>
+                <ul class="bonus-grid">
+                    <li><span class="bonus-name" data-i18n="bonus_max_hp">Max HP</span><span class="bonus-value">+150</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_max_sp">Max SP</span><span class="bonus-value">+50</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_constitution">Constitution</span><span class="bonus-value">+5</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_intelligence">Intelligence</span><span class="bonus-value">+5</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_strength">Strength</span><span class="bonus-value">+5</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_dexterity">Dexterity</span><span class="bonus-value">+5</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_critical">Critical Chance</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_piercing">Piercing Chance</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_attack">Attack Value</span><span class="bonus-value">+50</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_attack_speed">Attack Speed</span><span class="bonus-value">+2%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_movement">Movement Speed</span><span class="bonus-value">+8%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_monster">Strong Against Monsters</span><span class="bonus-value">+10%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_warrior">Strong Against Warrior</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_ninja">Strong Against Ninja</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_sura">Strong Against Sura</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_shaman">Strong Against Shaman</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_lycan">Strong Against Lycan</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_res_warrior">Resistance Warrior</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_res_ninja">Resistance Ninja</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_res_sura">Resistance Sura</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_res_shaman">Resistance Shaman</span><span class="bonus-value">+5%</span></li>
+                    <li><span class="bonus-name" data-i18n="bonus_res_lycan">Resistance Lycan</span><span class="bonus-value">+5%</span></li>
+                </ul>
             </div>
             <p class="bonus-note" data-i18n="bonus_note">The listed values represent the maximum possible bonus. You can also get lower values when switching bonuses.</p>
         </section>
@@ -2757,10 +2762,17 @@
                 <h2 data-i18n="section_footer_title">The adventure is just beginning</h2>
                 <p data-i18n="section_footer_p1">What you have seen in this presentation is only a fraction of what the world of Lorderon truly offers. We have implemented hundreds of other improvements, quests, and game mechanics that we have intentionally not listed here.</p>
                 <p data-i18n="section_footer_p2">We want playing to be a constant discovery for you. Every corner of the map, every NPC, and every item can hide a secret waiting just for you.</p>
+                <div class="final-cta">
+                    <h3 data-i18n="final_cta_title">Ready to write your own legend?</h3>
+                    <div class="hero-actions">
+                        <a href="https://lorderon.eu/download" class="btn btn-primary" data-i18n="cta_download">Download the game</a>
+                        <a href="https://lorderon.eu/users/register" class="btn btn-secondary" data-i18n="cta_register">Create account</a>
+                    </div>
+                </div>
                 <div class="social-links-container">
                     <h3 data-i18n="section_footer_social_title">Follow us and stay informed</h3>
                     <div class="social-grid">
-                        <a href="http://lorderon.eu/" class="social-btn web-link" data-i18n="social_web">Main Web</a>
+                        <a href="https://lorderon.eu/" class="social-btn web-link" data-i18n="social_web">Main Web</a>
                         <a href="https://www.instagram.com/gamelorderon/" class="social-btn instagram-link" data-i18n="social_instagram">Instagram</a>
                         <a href="https://www.facebook.com/profile.php?id=61589153636593" class="social-btn facebook-link" data-i18n="social_facebook">Facebook</a>
                         <a href="https://discord.gg/g4MknW4fNn" class="social-btn discord-link" data-i18n="social_discord">Discord</a>
@@ -2769,16 +2781,21 @@
             </div>
         </section>
         </main>
+        <footer class="site-footer">
+            <span>&copy; 2026 Lorderon</span>
+            <nav class="site-footer-links">
+                <a href="https://lorderon.eu/" data-i18n="social_web">Main Web</a>
+                <a href="https://lorderon.eu/download" data-i18n="cta_download">Download the game</a>
+                <a href="https://lorderon.eu/tos" data-i18n="footer_tos">Terms of Service</a>
+                <a href="https://lorderon.eu/privacy" data-i18n="footer_privacy">Privacy Policy</a>
+                <a href="https://discord.gg/g4MknW4fNn" data-i18n="social_discord">Discord</a>
+            </nav>
+        </footer>
     </div>
 
     <button id="back-to-top" aria-label="Back to Top">
         <span>↑</span>
     </button>
-
-    <div id="loading-indicator" class="loading-indicator">
-        <span class="loading-dot"></span>
-        <span data-i18n="assets_loading">Assets still loading...</span>
-    </div>
 
     <div id="lightbox" class="lightbox">
         <button class="lightbox-close" aria-label="Close">&times;</button>
