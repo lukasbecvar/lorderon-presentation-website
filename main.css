@@ -10,6 +10,8 @@
     --text: #ece7dc;
     --text-dim: #a8a399;
     --border: rgba(212, 175, 55, 0.16);
+    --font-display: "Cinzel", serif;
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     --radius: 2px;
     --radius-sm: 4px;
     --radius-md: 8px;
@@ -27,7 +29,7 @@ html {
     width: 100%;
     min-height: 100%;
     background-color: var(--bg);
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     color: var(--text);
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -36,6 +38,33 @@ html {
 img,
 video {
     border-radius: 8px;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv11", "ss01";
+}
+
+h1,
+h2,
+h3,
+.cta-button,
+.hero-subtitle,
+.sidebar-logo {
+    font-family: var(--font-display);
+}
+
+h4,
+h5,
+h6,
+summary {
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 :where(img[width][height]) {
@@ -91,14 +120,14 @@ video {
 
 .loader-logo {
     position: absolute;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     font-size: 2.5rem;
     color: #d4af37;
     animation: pulse 2s ease-in-out infinite;
 }
 
 .loader-text {
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     color: #d4af37;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -211,7 +240,7 @@ video {
     color: #e0e0e0;
     margin-bottom: 40px;
     letter-spacing: 2px;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
 }
 
 .cta-button {
@@ -417,7 +446,7 @@ h1 {
     padding: 12px 15px;
     color: rgba(224, 224, 224, 0.65);
     text-decoration: none;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     letter-spacing: 1px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -473,7 +502,7 @@ h1 {
     );
     border: 1px solid rgba(212, 175, 55, 0.28);
     color: #f4d887;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     font-size: 0.95rem;
     font-weight: 600;
     text-transform: none;
@@ -657,13 +686,13 @@ h1 {
     font-size: 1.3rem;
     margin-top: 30px;
     margin-bottom: 14px;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
 .presentation-section p {
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     font-size: 1.04rem;
     color: var(--text-dim);
     margin-bottom: 18px;
@@ -812,7 +841,7 @@ h1 {
     border-radius: 6px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
     text-align: left;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -845,7 +874,7 @@ h1 {
 .st-tip-name {
     display: block;
     color: #d4af37;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 700;
 }
@@ -1051,7 +1080,7 @@ h1 {
     margin-top: 12px;
     margin-bottom: 20px;
     padding: 8px 25px;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     color: #fff;
     background: rgba(10, 10, 10, 0.85);
     border: 1px solid rgba(212, 175, 55, 0.6);
@@ -1219,7 +1248,7 @@ h1 {
     top: 20px;
     right: 25px;
     z-index: 1001;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
 }
 
 .lang-selected {
@@ -1695,7 +1724,7 @@ img.loaded {
 .aura-evo-card span {
     font-size: 0.8rem;
     color: #aaa;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
 }
 
 .runes-info {
@@ -1826,7 +1855,7 @@ img.loaded {
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     color: #e0e0e0;
 }
 
@@ -1836,7 +1865,7 @@ img.loaded {
     text-align: left;
     padding: 15px;
     text-transform: uppercase;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     font-size: 0.9rem;
     letter-spacing: 1px;
     border-bottom: 2px solid rgba(212, 175, 55, 0.3);
@@ -1859,7 +1888,7 @@ img.loaded {
 .special-row td {
     background: rgba(212, 175, 55, 0.08);
     color: #d4af37;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     text-align: left;
     font-weight: 700;
     text-transform: uppercase;
@@ -1888,7 +1917,7 @@ img.loaded {
     position: relative;
     padding-left: 25px;
     margin-bottom: 12px;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     color: #e0e0e0;
 }
 
@@ -2017,7 +2046,7 @@ img.loaded {
     color: #d4af37;
     font-size: 0.8rem;
     text-transform: uppercase;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     font-weight: 700;
 }
 
@@ -2366,7 +2395,7 @@ img.loaded {
     color: #d4af37;
     margin: 0 0 10px 0;
     font-size: 1.1rem;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
 }
 
 .faq-item p {
@@ -2407,7 +2436,7 @@ img.loaded {
     border: 1px solid rgba(212, 175, 55, 0.4);
     color: #fff;
     text-decoration: none;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -2493,7 +2522,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
     border: 1px solid rgba(212, 175, 55, 0.3);
     color: #fff;
     padding: 12px 30px;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -2566,7 +2595,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
 }
 
 .location-name {
-    font-family: "Cinzel", serif;
+    font-family: var(--font-display);
     font-size: 1.1rem;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -2588,7 +2617,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
 .location-card .location-desc {
     margin: 0;
     padding: 14px 18px 18px;
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     font-size: 0.9rem;
     line-height: 1.55;
     color: var(--text-dim);
@@ -2697,7 +2726,7 @@ body:has(.loading-indicator:not(.hidden)) #back-to-top {
 .lightbox-caption {
     margin-top: 15px;
     padding: 8px 25px;
-    font-family: "Cinzel", serif;
+    font-family: var(--font-body);
     color: #d4af37;
     font-size: 1.1rem;
     text-align: center;
@@ -2895,9 +2924,9 @@ h1 {
 
 .presentation-section h3 {
     color: var(--gold);
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-top: 34px;
 }
@@ -3005,9 +3034,9 @@ h1 {
 
 .sidebar .sidebar-submenu li a {
     color: rgba(246, 239, 222, 0.92);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    letter-spacing: 0.3px;
+    letter-spacing: 0;
 }
 
 .sidebar .sidebar-submenu li a:hover {
@@ -3098,8 +3127,9 @@ h1 {
     transform: translateY(50%);
     max-width: calc(100% - 24px);
     padding: 6px 16px;
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-align: center;
     background: rgba(8, 7, 6, 0.78);
     border-color: rgba(212, 175, 55, 0.45);
@@ -3115,10 +3145,10 @@ h1 {
 }
 
 .presentation-section p {
-    font-size: 1.08rem;
-    font-weight: 500;
-    color: #d6d0c2;
-    line-height: 1.85;
+    font-size: 1.0625rem;
+    font-weight: 450;
+    color: #ddd7c9;
+    line-height: 1.75;
 }
 
 .presentation-section li {
@@ -3147,7 +3177,7 @@ h1 {
 }
 
 .stone-item {
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.55;
@@ -3156,7 +3186,7 @@ h1 {
 }
 
 .rune-item {
-    font-family: "Lora", serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.55;
