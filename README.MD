@@ -1,4 +1,4 @@
-# Lorderon presentation website
+# Lorderon presentation
 This is a simple website built with pure HTML5, CSS3, and JavaScript, serving as a presentation page for the Lorderon game.
 
 ## License
