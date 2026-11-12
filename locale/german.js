@@ -882,6 +882,9 @@ translations.de = {
     "section_qol_equip_switch_p2": "Sie können mehrere Ausrüstungsprofile definieren, jedes mit eigenen Waffen, Rüstungen, Accessoires und Kostümen. Der Wechsel erfolgt augenblicklich und lässt sich auf beliebige Hotkeys legen, sodass Sie sich jeder Situation anpassen können, ob Dungeon, Gildenkrieg oder Boss-Farming, ohne manuelles Ausrüstungswechseln.",
     "section_qol_equip_switch_p3": "Das System speichert Ihre Setups pro Charakter, was das Pflegen verschiedener Builds für unterschiedliche Aktivitäten und Spielstile mühelos macht.",
     "section_qol_equip_switch_img_alt": "Schneller Ausrüstungswechsel",
+    "section_qol_ai_title": "Bessere künstliche Intelligenz",
+    "section_qol_ai_p1": "Monster nutzen Wegfindung (Pathfinding), sodass sie nicht mehr an Mauern, Felsen oder Gebäuden hängen bleiben. Sie umgehen Hindernisse und verfolgen dich über das tatsächlich begehbare Gelände statt in gerader Linie.",
+    "section_qol_ai_p2": "Dadurch wirken Kämpfe und Dungeons natürlicher und fairer, und billige Tricks wie das Verstecken hinter einem Hindernis, damit ein Monster stehen bleibt, entfallen.",
     "loading_text": "Lade Assets...",
     "assets_loading": "Assets werden geladen..."
 }

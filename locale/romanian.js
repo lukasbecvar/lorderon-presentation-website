@@ -882,6 +882,9 @@ translations.ro = {
     "section_qol_equip_switch_p2": "Puteți defini mai multe profile de echipament, fiecare având propriile arme, armuri, accesorii și costume. Comutarea este instantanee și poate fi atribuită oricărei taste de scurtătură, astfel încât să vă puteți adapta la orice situație, fie că intrați într-un dungeon, participați la un război de gildii sau farmați bossi, fără a vă pierde timpul schimbând manual obiectele.",
     "section_qol_equip_switch_p3": "Sistemul salvează setările dvs. per caracter, ceea ce face ușor întreținerea diferitelor build-uri pentru diferite activități și stiluri de joc.",
     "section_qol_equip_switch_img_alt": "Schimbator Rapid de Echipament",
+    "section_qol_ai_title": "Inteligență artificială mai bună",
+    "section_qol_ai_p1": "Monștrii folosesc pathfinding, așa că nu se mai blochează în ziduri, stânci sau clădiri. Ocolesc obstacolele și te urmăresc pe terenul real pe care se poate merge, nu în linie dreaptă.",
+    "section_qol_ai_p2": "Luptele și dungeon-urile par astfel mai naturale și mai corecte, iar trucurile ieftine, precum ascunderea în spatele unui obstacol pentru ca un monstru să rămână pe loc, dispar.",
     "loading_text": "Se încarcă activele...",
     "assets_loading": "Se încarcă activele..."
 }

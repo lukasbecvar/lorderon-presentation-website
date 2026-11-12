@@ -882,6 +882,9 @@ translations.tr = {
     "section_qol_equip_switch_p2": "Her biri kendi silahları, zırhları, aksesuarları ve kostümlerine sahip birden fazla ekipman profili tanımlayabilirsiniz. Değiştirme anlık olup herhangi bir kısayol tuşuna atanabilir, böylece bir zindana girerken, bir lonca savaşına katılırken veya boss farm yaparken, manuel olarak eşya değiştirmekle zaman kaybetmeden, her duruma uyum sağlayabilirsiniz.",
     "section_qol_equip_switch_p3": "Sistem kurulumlarınızı karakter başına kaydeder, bu da farklı aktiviteler ve oyun stilleri için farklı build'leri sürdürmeyi kolaylaştırır.",
     "section_qol_equip_switch_img_alt": "Hızlı Ekipman Değiştirici",
+    "section_qol_ai_title": "Daha İyi Yapay Zeka",
+    "section_qol_ai_p1": "Canavarlar yol bulma (pathfinding) kullanır, bu yüzden artık duvarlara, kayalara veya binalara takılıp kalmazlar. Engellerin etrafından dolaşır ve seni düz bir çizgi yerine gerçekten yürünebilir arazi üzerinden kovalarlar.",
+    "section_qol_ai_p2": "Bu sayede savaşlar ve zindanlar daha doğal ve adil hissettirir; canavarı yerinde tutmak için bir engelin arkasına saklanmak gibi ucuz hileler ortadan kalkar.",
     "loading_text": "Varlıklar Yükleniyor...",
     "assets_loading": "Varlıklar yükleniyor..."
 }

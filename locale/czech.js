@@ -882,6 +882,9 @@ translations.cs = {
     "section_qol_equip_switch_p2": "Můžete definovat více profilů výbavy, z nichž každý má své vlastní zbraně, zbroje, doplňky a kostýmy. Přepínání je okamžité a lze ho navázat na libovolnou klávesovou zkratku, takže se můžete přizpůsobit jakékoliv situaci, ať už vstupujete do dungeonu, připojujete se k guild war, nebo farmíte bossy, aniž byste ztráceli čas ruční výměnou předmětů.",
     "section_qol_equip_switch_p3": "Systém ukládá vaše nastavení pro každou postavu odděleně, takže je snadné udržovat různé buildy pro různé aktivity a herní styly.",
     "section_qol_equip_switch_img_alt": "Rychlé přepínání výbavy",
+    "section_qol_ai_title": "Lepší umělá inteligence",
+    "section_qol_ai_p1": "Monstra používají hledání cesty (pathfinding), takže se již nezasekávají o zdi, kameny či budovy. Překážky obcházejí a pronásledují vás po skutečném průchozím terénu, ne jen v přímé čáře.",
+    "section_qol_ai_p2": "Souboje a dungeony tak působí přirozeněji a férověji a odpadají laciné triky, kdy se hráč schová za překážku, aby monstrum zůstalo stát.",
     "loading_text": "Načítání dat...",
     "assets_loading": "Probíhá načítání dat..."
 }

@@ -882,6 +882,9 @@ translations.pl = {
     "section_qol_equip_switch_p2": "Można zdefiniować wiele profili ekwipunku, z których każdy posiada własne bronie, zbroje, akcesoria i kostiumy. Przełączanie jest natychmiastowe i można je przypisać do dowolnego klawisza skrótu, co pozwala dostosować się do każdej sytuacji, czy to wejście do lochu, wojna gildyjna, czy farmienie bossów, bez ręcznej wymiany przedmiotów.",
     "section_qol_equip_switch_p3": "System zapisuje ustawienia dla każdej postaci oddzielnie, co ułatwia utrzymywanie różnych buildów pod różne akcje i style gry.",
     "section_qol_equip_switch_img_alt": "Szybki zmieniak ekwipunku",
+    "section_qol_ai_title": "Lepsza sztuczna inteligencja",
+    "section_qol_ai_p1": "Potwory korzystają z wyszukiwania ścieżek (pathfinding), dzięki czemu nie zacinają się już na murach, skałach ani budynkach. Omijają przeszkody i ścigają cię po rzeczywistym, przejezdnym terenie, a nie po linii prostej.",
+    "section_qol_ai_p2": "Walki i dungeony wyglądają dzięki temu naturalniej i uczciwiej, a znikają tanie sztuczki, jak chowanie się za przeszkodą, by potwór stał w miejscu.",
     "loading_text": "Ładowanie zasobów...",
     "assets_loading": "Trwa ładowanie danych..."
 }
