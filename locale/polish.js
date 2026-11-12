@@ -540,7 +540,7 @@ translations.pl = {
     "section_pets_exp_p1": "Twój zwierzak może osiągnąć nawet 120 poziom. Zdobywa doświadczenie automatycznie podczas zabijania potworów, jeśli jest przywołany. Poziomy rosną płynnie bez konieczności przeprowadzania złożonych ewolucji czy etapów rozwojowych.",
     "section_pets_exp_p2": "Oprócz czerwonych kul doświadczenia dostępna jest również niebieska kula, którą możesz napełnić, \"poświęcając\" niepotrzebne elementy ekwipunku, co przyspieszy wzrost Twojego towarzysza.",
     "section_pets_skills_title": "Umiejętności Zwierzaka",
-    "section_pets_skills_p1": "Każdy zwierzak może nauczyć się do 3 unikalnych umiejętności (pasywnych i aktywnych).",
+    "section_pets_skills_p1": "Każdy zwierzak po wykluciu otrzymuje losowo od 1 do 3 slotów na umiejętności, które określają też jego stopień (1–3). Ten limit jest ostateczny i nie można go później w żaden sposób zwiększyć. W każdym odblokowanym slocie może nauczyć się jednej unikalnej umiejętności (pasywnej lub aktywnej).",
     "pet_skill_training": "Trening",
     "pet_skill_training_desc": "Umiejętności są nauczane i ulepszane za pomocą odpowiednich książek. Trening trwa do poziomu 20.",
     "pet_skill_examples": "Przykłady Umiejętności",

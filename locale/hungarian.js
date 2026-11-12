@@ -339,7 +339,7 @@ translations.hu = {
     "section_pets_exp_p1": "A háziállatod elérheti a 120. szintet. Ha elő van hívva, a szörnyek ölése közben automatikusan tapasztalatot szerez. A szintek zökkenőmentesen emelkednek, bonyolult evolúciók vagy fejlődési szakaszok nélkül.",
     "section_pets_exp_p2": "A piros tapasztalatgömbök mellett van egy kék gömb is, amelyet a felesleges felszerelési tárgyak „feláldozásával” tölthetsz fel, ami felgyorsítja a társad növekedését.",
     "section_pets_skills_title": "Háziállat képességek",
-    "section_pets_skills_p1": "Minden háziállat legfeljebb 3 egyedi képességet (passzív és aktív) tanulhat meg.",
+    "section_pets_skills_p1": "Kikeléskor minden háziállat véletlenszerűen 1–3 képességhelyet kap, amely a fokozatát (1–3) is meghatározza. Ez a korlát végleges, később semmilyen módon nem bővíthető. Minden feloldott helyre egy egyedi képességet (passzív vagy aktív) tanulhat meg.",
     "pet_skill_training": "Edzés",
     "pet_skill_training_desc": "A képességeket a megfelelő könyvekkel lehet megtanulni és fejleszteni. Az edzés a 20. szintig tart.",
     "pet_skill_examples": "Képességpéldák",

@@ -540,7 +540,7 @@ translations.tr = {
     "section_pets_exp_p1": "Evcil hayvanınız 120. seviyeye kadar ulaşabilir. Çağrılmış durumdaysa canavarları öldürürken otomatik olarak deneyim kazanır. Seviyeler, karmaşık evrimlere veya gelişim aşamalarına gerek kalmadan sorunsuz bir şekilde artar.",
     "section_pets_exp_p2": "Kırmızı deneyim kürelerine ek olarak, ihtiyaç duyulmayan ekipman eşyalarını \"feda ederek\" doldurabileceğiniz ve yoldaşınızın büyümesini hızlandıracak mavi bir küre de vardır.",
     "section_pets_skills_title": "Evcil Hayvan Becerileri",
-    "section_pets_skills_p1": "Her evcil hayvan 3 adede kadar benzersiz beceri (pasif ve aktif) öğrenebilir.",
+    "section_pets_skills_p1": "Her evcil hayvan yumurtadan çıktığında rastgele 1 ile 3 arasında beceri yuvası alır ve bu, derecesini (1–3) de belirler. Bu sınır kalıcıdır ve daha sonra hiçbir şekilde artırılamaz. Açık olan her yuvaya benzersiz bir beceri (pasif veya aktif) öğrenebilir.",
     "pet_skill_training": "Eğitim",
     "pet_skill_training_desc": "Beceriler uygun kitaplar kullanılarak öğrenilir ve geliştirilir. Eğitim 20. seviyeye kadar devam eder.",
     "pet_skill_examples": "Beceri Örnekleri",

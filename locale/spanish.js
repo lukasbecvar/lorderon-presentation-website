@@ -339,7 +339,7 @@ translations.es = {
     "section_pets_exp_p1": "Tu mascota puede alcanzar el nivel 120. Gana experiencia automáticamente mientras matas monstruos si está invocada. Los niveles aumentan de forma fluida, sin necesidad de evoluciones complejas ni etapas de desarrollo.",
     "section_pets_exp_p2": "Además de las esferas de experiencia rojas, hay una esfera azul que puedes llenar «sacrificando» objetos de equipo que no necesites, lo que acelerará el crecimiento de tu compañero.",
     "section_pets_skills_title": "Habilidades de mascota",
-    "section_pets_skills_p1": "Cada mascota puede aprender hasta 3 habilidades únicas (pasivas y activas).",
+    "section_pets_skills_p1": "Al nacer, cada mascota recibe al azar de 1 a 3 ranuras de habilidad, que también determinan su grado (1–3). Este límite es definitivo y no se puede ampliar más adelante. En cada ranura desbloqueada puede aprender una habilidad única (pasiva o activa).",
     "pet_skill_training": "Entrenamiento",
     "pet_skill_training_desc": "Las habilidades se aprenden y mejoran con los libros correspondientes. El entrenamiento llega hasta el nivel 20.",
     "pet_skill_examples": "Ejemplos de habilidades",

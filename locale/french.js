@@ -339,7 +339,7 @@ translations.fr = {
     "section_pets_exp_p1": "Votre familier peut atteindre le niveau 120. Il gagne de l'expérience automatiquement en tuant des monstres lorsqu'il est invoqué. Les niveaux augmentent en douceur, sans évolutions complexes ni étapes de développement.",
     "section_pets_exp_p2": "En plus des orbes d'expérience rouges, il existe un orbe bleu que vous pouvez remplir en « sacrifiant » des pièces d'équipement inutiles, ce qui accélérera la croissance de votre compagnon.",
     "section_pets_skills_title": "Compétences de familier",
-    "section_pets_skills_p1": "Chaque familier peut apprendre jusqu'à 3 compétences uniques (passives et actives).",
+    "section_pets_skills_p1": "À l'éclosion, chaque familier reçoit aléatoirement de 1 à 3 emplacements de compétence, qui déterminent aussi son rang (1–3). Cette limite est définitive et ne peut pas être augmentée par la suite. Dans chaque emplacement débloqué, il peut apprendre une compétence unique (passive ou active).",
     "pet_skill_training": "Entraînement",
     "pet_skill_training_desc": "Les compétences s'apprennent et s'améliorent à l'aide des livres correspondants. L'entraînement va jusqu'au niveau 20.",
     "pet_skill_examples": "Exemples de compétences",

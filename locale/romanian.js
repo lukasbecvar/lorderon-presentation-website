@@ -540,7 +540,7 @@ translations.ro = {
     "section_pets_exp_p1": "Animalul tău de companie poate atinge nivelul 120. Acesta câștigă experiență automat în timp ce ucizi monștri, dacă este invocat. Nivelurile cresc lin fără a fi nevoie de evoluții complexe sau etape de dezvoltare.",
     "section_pets_exp_p2": "În plus față de orbele de experiență roșii, există și o orbă albastră pe care o poți umple prin „sacrificarea” obiectelor de echipament inutile, ceea ce va accelera creșterea companionului tău.",
     "section_pets_skills_title": "Abilități Animal de Companie",
-    "section_pets_skills_p1": "Fiecare animal de companie poate învăța până la 3 abilități unice (pasive și active).",
+    "section_pets_skills_p1": "La eclozare, fiecare animal de companie primește aleatoriu între 1 și 3 sloturi de abilități, care îi stabilesc și gradul (1–3). Această limită este definitivă și nu poate fi extinsă ulterior. În fiecare slot deblocat poate învăța o abilitate unică (pasivă sau activă).",
     "pet_skill_training": "Antrenament",
     "pet_skill_training_desc": "Abilitățile sunt învățate și îmbunătățite folosind cărțile corespunzătoare. Antrenamentul continuă până la nivelul 20.",
     "pet_skill_examples": "Exemple de Abilități",

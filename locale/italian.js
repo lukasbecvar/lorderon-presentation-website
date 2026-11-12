@@ -339,7 +339,7 @@ translations.it = {
     "section_pets_exp_p1": "Il tuo animale può raggiungere il livello 120. Guadagna esperienza automaticamente mentre uccidi mostri, se è evocato. I livelli aumentano in modo graduale, senza bisogno di evoluzioni complesse o fasi di sviluppo.",
     "section_pets_exp_p2": "Oltre alle sfere di esperienza rosse, esiste anche una sfera blu che puoi riempire «sacrificando» oggetti dell'equipaggiamento che non ti servono, accelerando la crescita del tuo compagno.",
     "section_pets_skills_title": "Abilità degli animali",
-    "section_pets_skills_p1": "Ogni animale può imparare fino a 3 abilità uniche (passive e attive).",
+    "section_pets_skills_p1": "Alla schiusa, ogni animale riceve casualmente da 1 a 3 slot abilità, che ne determinano anche il grado (1–3). Questo limite è definitivo e non può essere ampliato in seguito. In ogni slot sbloccato può imparare un'abilità unica (passiva o attiva).",
     "pet_skill_training": "Allenamento",
     "pet_skill_training_desc": "Le abilità si imparano e si migliorano con i libri appropriati. L'allenamento procede fino al livello 20.",
     "pet_skill_examples": "Esempi di abilità",

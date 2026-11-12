@@ -540,7 +540,7 @@ translations.cs = {
     "section_pets_exp_p1": "Váš mazlíček může dosáhnout až 120. úrovně. Zkušenosti získává automaticky při zabíjení příšer, pokud je vyvolán. Úrovně se zvyšují plynule bez nutnosti provádět složité evoluce nebo vývojové stupně.",
     "section_pets_exp_p2": "Kromě červených zkušenostních koulí existuje i modrá koule, kterou můžete zaplnit \"obětováním\" nepotřebných předmětů z výzbroje, což urychlí růst vašeho společníka.",
     "section_pets_skills_title": "Schopnosti mazlíčka",
-    "section_pets_skills_p1": "Každý mazlíček se může naučit až 3 unikátní schopnosti (pasivní i aktivní).",
+    "section_pets_skills_p1": "Každý mazlíček dostane při vylíhnutí náhodně 1 až 3 sloty pro schopnosti, podle kterých má i svůj stupeň (1–3). Tento limit je konečný a nelze ho později nijak rozšířit. Do každého odemčeného slotu se naučí jednu unikátní schopnost (pasivní nebo aktivní).",
     "pet_skill_training": "Trénink",
     "pet_skill_training_desc": "Schopnosti se učí a vylepšují pomocí příslušných knih. Trénink probíhá až do úrovně 20",
     "pet_skill_examples": "Příklady schopností",

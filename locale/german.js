@@ -540,7 +540,7 @@ translations.de = {
     "section_pets_exp_p1": "Dein Haustier kann bis zu Stufe 120 erreichen. Es sammelt automatisch Erfahrung beim Töten von Monstern, wenn es beschworen ist. Die Stufen steigen fließend an, ohne dass komplexe Evolutionen oder Entwicklungsstufen erforderlich sind.",
     "section_pets_exp_p2": "Zusätzlich zu den roten Erfahrungskugeln gibt es auch eine blaue Kugel, die du durch das \"Opfern\" unnötiger Ausrüstungsgegenstände füllen kannst, was das Wachstum deines Begleiters beschleunigt.",
     "section_pets_skills_title": "Haustier-Fertigkeiten",
-    "section_pets_skills_p1": "Jedes Haustier kann bis zu 3 einzigartige Fertigkeiten erlernen (passiv und aktiv).",
+    "section_pets_skills_p1": "Jedes Haustier erhält beim Schlüpfen zufällig 1 bis 3 Fertigkeitsplätze, die auch seine Stufe (1–3) bestimmen. Dieses Limit ist endgültig und kann später nicht erweitert werden. In jedem freigeschalteten Platz kann es eine einzigartige Fertigkeit erlernen (passiv oder aktiv).",
     "pet_skill_training": "Training",
     "pet_skill_training_desc": "Fertigkeiten werden mit den entsprechenden Büchern erlernt und verbessert. Das Training erfolgt bis Stufe 20.",
     "pet_skill_examples": "Beispiele für Fertigkeiten",
