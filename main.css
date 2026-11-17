@@ -4007,3 +4007,17 @@ h1 {
         gap: 10px;
     }
 }
+
+.sash-model-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+@media (max-width: 768px) {
+    .talisman-card img,
+    .skill-item img,
+    .legendary-showcase-item img {
+        width: 32px;
+        height: 32px;
+        image-rendering: pixelated;
+    }
+}
