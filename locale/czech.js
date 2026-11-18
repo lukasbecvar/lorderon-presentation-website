@@ -494,8 +494,6 @@ translations.cs = {
     "section_refine_img_caption": "Vylepšování výbavy se zvýšenou šancí na úspěch",
     "section_bonuses_title": "Speciální bonusy 6/7",
     "section_bonuses_p1": "Ve světě Lorderonu dosahují legendární předměty svého skutečného potenciálu díky speciálním 6. a 7. bonusům. Tato vylepšení je velmi náročné získat a ještě těžší je správně „natočit“, díky čemuž má výbava s perfektní kombinací těchto statistik extrémní hodnotu a vzácnost.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Hodnota",
     "bonus_table_items": "Předměty",
     "bonus_items_all": "Všechna výbava",
     "bonus_max_hp": "Max. ZB",
@@ -885,6 +883,5 @@ translations.cs = {
     "section_qol_ai_title": "Lepší umělá inteligence",
     "section_qol_ai_p1": "Monstra používají hledání cesty (pathfinding), takže se již nezasekávají o zdi, kameny či budovy. Překážky obcházejí a pronásledují vás po skutečném průchozím terénu, ne jen v přímé čáře.",
     "section_qol_ai_p2": "Souboje a dungeony tak působí přirozeněji a férověji a odpadají laciné triky, kdy se hráč schová za překážku, aby monstrum zůstalo stát.",
-    "loading_text": "Načítání dat...",
-    "assets_loading": "Probíhá načítání dat..."
+    "loading_text": "Načítání dat..."
 }

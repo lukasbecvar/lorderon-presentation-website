@@ -494,8 +494,6 @@ translations.tr = {
     "section_refine_img_caption": "Artırılmış başarı oranlarıyla ekipmanınızı yükseltme",
     "section_bonuses_title": "Özel 6/7 Bonusları",
     "section_bonuses_p1": "Lorderon dünyasında efsanevi eşyalar, özel 6. ve 7. bonuslarla gerçek potansiyellerine ulaşırlar. Bu geliştirmelerin elde edilmesi zordur ve doğru değerleri „çevirmek“ daha da zordur, bu da bu istatistiklerin mükemmel kombinasyonuna sahip ekipmanları inanılmaz derecede nadir ve değerli kılar.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Değer",
     "bonus_table_items": "Eşyalar",
     "bonus_items_all": "Tüm Ekipman",
     "bonus_max_hp": "Max HP",
@@ -885,6 +883,5 @@ translations.tr = {
     "section_qol_ai_title": "Daha İyi Yapay Zeka",
     "section_qol_ai_p1": "Canavarlar yol bulma (pathfinding) kullanır, bu yüzden artık duvarlara, kayalara veya binalara takılıp kalmazlar. Engellerin etrafından dolaşır ve seni düz bir çizgi yerine gerçekten yürünebilir arazi üzerinden kovalarlar.",
     "section_qol_ai_p2": "Bu sayede savaşlar ve zindanlar daha doğal ve adil hissettirir; canavarı yerinde tutmak için bir engelin arkasına saklanmak gibi ucuz hileler ortadan kalkar.",
-    "loading_text": "Varlıklar Yükleniyor...",
-    "assets_loading": "Varlıklar yükleniyor..."
+    "loading_text": "Varlıklar Yükleniyor..."
 }

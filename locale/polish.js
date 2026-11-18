@@ -494,8 +494,6 @@ translations.pl = {
     "section_refine_img_caption": "Ulepszanie ekwipunku ze zwiększonou szansą na sukces",
     "section_bonuses_title": "Specjalne bonusy 6/7",
     "section_bonuses_p1": "W świecie Lorderonu legendarne przedmioty osiągają swój prawdziwy potencjał dzięki specjalnym 6. i 7. bonusom. Te ulepszenia są trudne do zdobycia, a jeszcze trudniejsze do „wylosowania”, co sprawia, że ekwipunek z idealną kombinacją tych statystyk jest niezwykle rzadki i cenny.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Wartość",
     "bonus_table_items": "Przedmioty",
     "bonus_items_all": "Całe wyposażenie",
     "bonus_max_hp": "Max PŻ",
@@ -885,6 +883,5 @@ translations.pl = {
     "section_qol_ai_title": "Lepsza sztuczna inteligencja",
     "section_qol_ai_p1": "Potwory korzystają z wyszukiwania ścieżek (pathfinding), dzięki czemu nie zacinają się już na murach, skałach ani budynkach. Omijają przeszkody i ścigają cię po rzeczywistym, przejezdnym terenie, a nie po linii prostej.",
     "section_qol_ai_p2": "Walki i dungeony wyglądają dzięki temu naturalniej i uczciwiej, a znikają tanie sztuczki, jak chowanie się za przeszkodą, by potwór stał w miejscu.",
-    "loading_text": "Ładowanie zasobów...",
-    "assets_loading": "Trwa ładowanie danych..."
+    "loading_text": "Ładowanie zasobów..."
 }

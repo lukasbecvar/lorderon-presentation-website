@@ -494,8 +494,6 @@ translations.ro = {
     "section_refine_img_caption": "Rafinarea echipamentului cu rate de succes crescute",
     "section_bonuses_title": "Bonusuri Speciale 6/7",
     "section_bonuses_p1": "În lumea Lorderon, obiectele legendare își ating adevăratul potențial prin bonusurile speciale de 6 și 7. Aceste îmbunătățiri sunt greu de obținut și și mai greu de „învârtit”, ceea ce face ca echipamentul cu combinația perfectă de statistici să fie extrem de rar și valoros.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Valoare",
     "bonus_table_items": "Obiecte",
     "bonus_items_all": "Tot echipamentul",
     "bonus_max_hp": "Max PV",
@@ -885,6 +883,5 @@ translations.ro = {
     "section_qol_ai_title": "Inteligență artificială mai bună",
     "section_qol_ai_p1": "Monștrii folosesc pathfinding, așa că nu se mai blochează în ziduri, stânci sau clădiri. Ocolesc obstacolele și te urmăresc pe terenul real pe care se poate merge, nu în linie dreaptă.",
     "section_qol_ai_p2": "Luptele și dungeon-urile par astfel mai naturale și mai corecte, iar trucurile ieftine, precum ascunderea în spatele unui obstacol pentru ca un monstru să rămână pe loc, dispar.",
-    "loading_text": "Se încarcă activele...",
-    "assets_loading": "Se încarcă activele..."
+    "loading_text": "Se încarcă activele..."
 }

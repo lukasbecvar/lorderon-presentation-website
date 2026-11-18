@@ -494,8 +494,6 @@ translations.de = {
     "section_refine_img_caption": "Veredelung Ihrer Ausrüstung mit erhöhten Erfolgsquoten",
     "section_bonuses_title": "Spezielle 6/7 Boni",
     "section_bonuses_p1": "In der Welt von Lorderon erreichen legendäre Gegenstände ihr wahres Potenzial durch spezielle 6. und 7. Boni. Diese Verbesserungen sind schwer zu bekommen und noch schwerer zu rollen, was Ausrüstung mit der perfekten Kombination dieser Werte unglaublich selten und wertvoll macht.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Wert",
     "bonus_table_items": "Gegenstände",
     "bonus_items_all": "Alle Ausrüstung",
     "bonus_max_hp": "Max. LP",
@@ -885,6 +883,5 @@ translations.de = {
     "section_qol_ai_title": "Bessere künstliche Intelligenz",
     "section_qol_ai_p1": "Monster nutzen Wegfindung (Pathfinding), sodass sie nicht mehr an Mauern, Felsen oder Gebäuden hängen bleiben. Sie umgehen Hindernisse und verfolgen dich über das tatsächlich begehbare Gelände statt in gerader Linie.",
     "section_qol_ai_p2": "Dadurch wirken Kämpfe und Dungeons natürlicher und fairer, und billige Tricks wie das Verstecken hinter einem Hindernis, damit ein Monster stehen bleibt, entfallen.",
-    "loading_text": "Lade Assets...",
-    "assets_loading": "Assets werden geladen..."
+    "loading_text": "Lade Assets..."
 }

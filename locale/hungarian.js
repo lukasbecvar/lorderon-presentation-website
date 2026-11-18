@@ -443,8 +443,6 @@ translations.hu = {
     "section_refine_img_caption": "Felszerelés finomítása megnövelt sikeraránnyal",
     "section_bonuses_title": "Különleges 6/7 bónuszok",
     "section_bonuses_p1": "Lorderon világában a legendás tárgyak a különleges 6. és 7. bónuszon keresztül érik el valódi potenciáljukat. Ezeket a fejlesztéseket nehéz megszerezni, és még nehezebb jól kidobni, így az ezen statisztikák tökéletes kombinációjával rendelkező felszerelés hihetetlenül ritka és nagyon értékes.",
-    "bonus_table_bonus": "Bónusz",
-    "bonus_table_value": "Érték",
     "bonus_table_items": "Tárgyak",
     "bonus_max_hp": "Max. HP",
     "bonus_items_all": "Minden felszerelés",
@@ -885,6 +883,5 @@ translations.hu = {
     "social_web": "Főoldal",
     "social_instagram": "Instagram",
     "social_facebook": "Facebook",
-    "social_discord": "Discord",
-    "assets_loading": "Adatok betöltése...",
+    "social_discord": "Discord"
 }

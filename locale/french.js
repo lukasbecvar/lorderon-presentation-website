@@ -443,8 +443,6 @@ translations.fr = {
     "section_refine_img_caption": "Raffinage de votre équipement avec des taux de réussite augmentés",
     "section_bonuses_title": "Bonus spéciaux 6/7",
     "section_bonuses_p1": "Dans le monde de Lorderon, les objets légendaires atteignent leur véritable potentiel grâce aux 6e et 7e bonus spéciaux. Ces améliorations sont difficiles à obtenir et encore plus difficiles à tirer, ce qui rend l'équipement avec la combinaison parfaite de ces statistiques incroyablement rare et très précieux.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Valeur",
     "bonus_table_items": "Objets",
     "bonus_max_hp": "PV max.",
     "bonus_items_all": "Tout l'équipement",
@@ -885,6 +883,5 @@ translations.fr = {
     "social_web": "Site principal",
     "social_instagram": "Instagram",
     "social_facebook": "Facebook",
-    "social_discord": "Discord",
-    "assets_loading": "Chargement des données...",
+    "social_discord": "Discord"
 }

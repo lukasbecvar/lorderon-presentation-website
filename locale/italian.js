@@ -443,8 +443,6 @@ translations.it = {
     "section_refine_img_caption": "Raffinazione del tuo equipaggiamento con probabilità di successo aumentate",
     "section_bonuses_title": "Bonus speciali 6/7",
     "section_bonuses_p1": "Nel mondo di Lorderon gli oggetti leggendari raggiungono il loro vero potenziale grazie ai bonus speciali 6° e 7°. Questi potenziamenti sono difficili da ottenere e ancora più difficili da ottenere con buon esito, il che rende l'equipaggiamento con la combinazione perfetta di queste statistiche incredibilmente raro e di grande valore.",
-    "bonus_table_bonus": "Bonus",
-    "bonus_table_value": "Valore",
     "bonus_table_items": "Oggetti",
     "bonus_max_hp": "PV max",
     "bonus_items_all": "Tutto l'equipaggiamento",
@@ -885,6 +883,5 @@ translations.it = {
     "social_web": "Sito principale",
     "social_instagram": "Instagram",
     "social_facebook": "Facebook",
-    "social_discord": "Discord",
-    "assets_loading": "Caricamento dei dati...",
+    "social_discord": "Discord"
 }

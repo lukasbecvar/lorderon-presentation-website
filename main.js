@@ -597,6 +597,10 @@ function showTab(tabId, button) {
     button.classList.add('active')
 }
 
+document.querySelectorAll('.tab-button[data-tab]').forEach(button => {
+    button.addEventListener('click', () => showTab(button.dataset.tab, button))
+})
+
 const lightbox = document.getElementById('lightbox')
 if (lightbox) {
     initLightbox()

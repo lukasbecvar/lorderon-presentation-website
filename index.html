@@ -22,6 +22,11 @@
     <meta property="og:locale:alternate" content="pl_PL">
     <meta property="og:locale:alternate" content="ro_RO">
     <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="hu_HU">
+    <meta property="og:locale:alternate" content="ru_RU">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://lorderon.eu/">
     <meta property="twitter:title" content="Lorderon – Private Server (Middleschool) | MMORPG">
@@ -405,8 +410,8 @@
             <h2 data-i18n="section_locations_title">Explore the World</h2>
             <p data-i18n="section_locations_p1">The world of Lorderon is vast and diverse. From freezing mountains to scorching deserts, every corner tells a story. Discover mysterious dungeons and breathtaking maps that await your exploration.</p>
             <div class="locations-tabs">
-                <button class="tab-button active" onclick="showTab('dungeons-tab', this)" data-i18n="tab_dungeons">Dungeons</button>
-                <button class="tab-button" onclick="showTab('maps-tab', this)" data-i18n="tab_maps">Maps</button>
+                <button class="tab-button active" data-tab="dungeons-tab" data-i18n="tab_dungeons">Dungeons</button>
+                <button class="tab-button" data-tab="maps-tab" data-i18n="tab_maps">Maps</button>
             </div>
             <div id="dungeons-tab" class="tab-content locations-grid active">
                 <div class="location-card">
@@ -1657,32 +1662,32 @@
                 </div>
                 <div class="aura-evolution-grid">
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Ordinary_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Běžná aura"><source src="assets/aura-system/IG-Ordinary_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Ordinary_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Ordinary_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Ordinary Aura"><source src="assets/aura-system/IG-Ordinary_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Ordinary_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_ordinary">Ordinary</h4>
                         <span data-i18n="aura_lv_1">Level 1-49</span>
                     </div>
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Simple_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Prostá aura"><source src="assets/aura-system/IG-Simple_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Simple_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Simple_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Simple Aura"><source src="assets/aura-system/IG-Simple_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Simple_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_simple">Simple</h4>
                         <span data-i18n="aura_lv_2">Level 50-99</span>
                     </div>
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Noble_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Vznešená aura"><source src="assets/aura-system/IG-Noble_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Noble_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Noble_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Noble Aura"><source src="assets/aura-system/IG-Noble_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Noble_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_noble">Noble</h4>
                         <span data-i18n="aura_lv_3">Level 100-149</span>
                     </div>
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Magnificent_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Zářivá aura"><source src="assets/aura-system/IG-Magnificent_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Magnificent_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Magnificent_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Magnificent Aura"><source src="assets/aura-system/IG-Magnificent_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Magnificent_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_magnificent">Magnificent</h4>
                         <span data-i18n="aura_lv_4">Level 150-199</span>
                     </div>
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Sparkling_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Úžasná aura"><source src="assets/aura-system/IG-Sparkling_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Sparkling_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Sparkling_Aura_Outfit.poster.webp" width="264" height="300" role="img" aria-label="Sparkling Aura"><source src="assets/aura-system/IG-Sparkling_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Sparkling_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_sparkling">Sparkling</h4>
                         <span data-i18n="aura_lv_5">Level 200-249</span>
                     </div>
                     <div class="aura-evo-card">
-                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Radiant_Aura_Outfit.poster.webp" width="296" height="328" role="img" aria-label="Zářící aura"><source src="assets/aura-system/IG-Radiant_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Radiant_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
+                        <video data-lazy muted loop playsinline preload="none" poster="assets/aura-system/IG-Radiant_Aura_Outfit.poster.webp" width="296" height="328" role="img" aria-label="Radiant Aura"><source src="assets/aura-system/IG-Radiant_Aura_Outfit.mp4" type="video/mp4"><source src="assets/aura-system/IG-Radiant_Aura_Outfit.webm" type="video/webm; codecs=vp9"></video>
                         <h4 data-i18n="aura_radiant">Radiant</h4>
                         <span data-i18n="aura_lv_6">Level 250</span>
                     </div>

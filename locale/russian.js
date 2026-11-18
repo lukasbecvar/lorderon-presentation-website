@@ -443,8 +443,6 @@ translations.ru = {
     "section_refine_img_caption": "Улучшение снаряжения с повышенными шансами на успех",
     "section_bonuses_title": "Особые бонусы 6/7",
     "section_bonuses_p1": "В мире Lorderon легендарные предметы раскрывают свой истинный потенциал благодаря особым 6-му и 7-му бонусам. Эти усиления трудно получить и ещё труднее выбить с хорошим результатом, поэтому снаряжение с идеальным сочетанием этих характеристик невероятно редко и очень ценно.",
-    "bonus_table_bonus": "Бонус",
-    "bonus_table_value": "Значение",
     "bonus_table_items": "Предметы",
     "bonus_max_hp": "Макс. HP",
     "bonus_items_all": "Всё снаряжение",
@@ -885,6 +883,5 @@ translations.ru = {
     "social_web": "Основной сайт",
     "social_instagram": "Instagram",
     "social_facebook": "Facebook",
-    "social_discord": "Discord",
-    "assets_loading": "Идёт загрузка данных...",
+    "social_discord": "Discord"
 }

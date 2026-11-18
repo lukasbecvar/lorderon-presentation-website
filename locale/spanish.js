@@ -443,8 +443,6 @@ translations.es = {
     "section_refine_img_caption": "Refinado de tu equipo con mayores probabilidades de éxito",
     "section_bonuses_title": "Bonificaciones especiales 6/7",
     "section_bonuses_p1": "En el mundo de Lorderon, los objetos legendarios alcanzan su verdadero potencial mediante las bonificaciones especiales 6.ª y 7.ª. Estas mejoras son difíciles de conseguir y aún más de obtener con buen resultado, por lo que el equipo con la combinación perfecta de estas estadísticas es increíblemente raro y muy valioso.",
-    "bonus_table_bonus": "Bonificación",
-    "bonus_table_value": "Valor",
     "bonus_table_items": "Objetos",
     "bonus_max_hp": "PV máx.",
     "bonus_items_all": "Todo el equipo",
@@ -885,6 +883,5 @@ translations.es = {
     "social_web": "Web principal",
     "social_instagram": "Instagram",
     "social_facebook": "Facebook",
-    "social_discord": "Discord",
-    "assets_loading": "Cargando datos...",
+    "social_discord": "Discord"
 }
